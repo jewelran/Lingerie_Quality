@@ -21,3 +21,12 @@
 .carousel-inner {
     border-radius: 10px;
 }
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #ff9109;
+    
+}

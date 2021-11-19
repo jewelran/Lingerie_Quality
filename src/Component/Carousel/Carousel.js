@@ -45,9 +45,27 @@ function Carousel() {
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" />
+              </div>
+              <div class="carousel-item">
                 <img src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" />
               </div>
               <div class="carousel-item">
@@ -83,7 +101,7 @@ function Carousel() {
             </button>
           </div>
         </div>
-        <div className="col-md-3 CarouselAsideBer2">
+        <div className="col-md-2.5 CarouselAsideBer2">
           <h1 className = "text-center">Vision</h1>
           <ul style ={{lineHeight:"2rem"}}>
               <li style = {{listStyleType:"number"}}> Stablish zero defect Method</li>
@@ -95,7 +113,7 @@ function Carousel() {
         </div>
       </div>
       <div className="d-flex justify-content-center mt-5 pt-5">
-          <img style ={{width:"95%"}} src={HeaderImg} alt="img" />
+          <img style ={{width:"100%"}} src={HeaderImg} alt="img" />
       </div>
     </div>
   );
