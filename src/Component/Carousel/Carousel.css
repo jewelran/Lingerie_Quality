@@ -1,0 +1,23 @@
+.CarouselAsideBer{
+    margin-right: 1rem;
+}
+.CarouselAsideBer2{
+    margin-left: 1rem;
+}
+
+.CarouselAsideBer, .CarouselAsideBer2{
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px #a6e6ff;
+    color: rgb(46, 45, 45);
+    padding: 5px;
+    justify-content: center;
+    height: 350px;
+    margin: auto 18px;
+    align-items: center;
+}
+.CarouselAsideBer ul li, .CarouselAsideBer2 ul li{
+    font-weight: bold;
+}
+.carousel-inner {
+    border-radius: 10px;
+}

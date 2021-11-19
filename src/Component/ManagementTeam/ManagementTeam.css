@@ -1,0 +1,29 @@
+.sideBer, .sideContainer{
+   box-shadow: 5px 5px 30px rgb(174, 207, 250);
+    color: rgb(34, 33, 33);
+    border-radius: 10px;
+    font-family: tahoma;
+    line-height: 1.5rem;
+    cursor: pointer;
+    background-color: #49bbf130;
+    opacity: 9;
+    
+   
+}
+.sideBer h3{
+    text-align: center;
+}
+.sideBer ul li {
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+    list-style-type: number;
+}
+.sideBer ul li:hover {
+        background-color: aquamarine;
+        color: orangered;
+        border-radius: 5px;
+        
+}
+.sideContainer{
+  margin-left: 3rem;
+}
