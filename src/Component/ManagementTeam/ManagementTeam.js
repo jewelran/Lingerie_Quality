@@ -4,9 +4,9 @@ import "./ManagementTeam.css"
 function ManagementTeam() {
   return (
     <div>
-      <div className="container pb-5 mt-5 ">
+      <div  className="container mainContainer pb-5 mt-5 ">
         <div className="d-flex">
-          <div className="sideBer col-md-3 pt-2 " >
+          <div className="sideBer col-md-3 pt-2 h-75" >
             <h3>All Information </h3>
                 <ul>
                     <li>Head of Quality</li>

@@ -13,7 +13,7 @@ import {
 import { Link } from "react-router-dom";
 function Navigation() {
   return (
-    <div>
+    <div style={{ background:"indigo",}} className ="sticky-top">
       <div className="container">
         <nav class="navbar navbar-expand-lg navbar-light ">
           <div class="container-fluid">
@@ -40,9 +40,9 @@ function Navigation() {
               <ul
                 style={{
                   margin: "0px auto",
-                  background: "#f8f9faa8",
+                  background: "#f1db89",
                   borderRadius: "8px",
-                  boxShadow: "rgb(104 190 255) 4px 4px 30px",
+                  boxShadow: "inset #41464b 1px 1px 20px 5px",
                 }}
                 class="navbar-nav"
               >

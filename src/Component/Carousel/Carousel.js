@@ -5,8 +5,9 @@ function Carousel() {
 
  
   return (
-    <div className="container mt-5 pb-5">
-      <div className="d-flex pb-5">
+    <div style={{maxWidth:"1800px"}} className="container mt-5 pb-5   justify-content-center">
+    
+      <div  className="d-flex pb-5">
         <div className="col-md-3 CarouselAsideBer">
           <h1 className =" text-center">Mission</h1>
           <ul style = {{lineHeight: "2rem" , }}>
@@ -18,7 +19,7 @@ function Carousel() {
           </ul>
         </div>
 
-        <div className=" col-md-6 ">
+        <div className=" col-md-5 ">
           <div
             id="carouselExampleIndicators"
             class="carousel slide rounded"
@@ -101,7 +102,7 @@ function Carousel() {
             </button>
           </div>
         </div>
-        <div className="col-md-2.5 CarouselAsideBer2">
+        <div className="col-md-3 CarouselAsideBer2">
           <h1 className = "text-center">Vision</h1>
           <ul style ={{lineHeight:"2rem"}}>
               <li style = {{listStyleType:"number"}}> Stablish zero defect Method</li>
@@ -113,9 +114,10 @@ function Carousel() {
         </div>
       </div>
       <div className="d-flex justify-content-center mt-5 pt-5">
-          <img style ={{width:"100%"}} src={HeaderImg} alt="img" />
+          <img style ={{width:"90%"}} src={HeaderImg} alt="img" />
       </div>
-    </div>
+      </div>
+  
   );
 }
 

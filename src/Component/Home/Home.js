@@ -7,7 +7,7 @@ import Admin from './../Admin/Admin';
 function Home() {
     return (
         <div>
-           <Carousel/>
+            <Carousel/>
             <Admin/>
           
         </div>
