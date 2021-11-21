@@ -42,7 +42,8 @@ function Navigation() {
                   margin: "0px auto",
                   background: "#f1db89",
                   borderRadius: "8px",
-                  boxShadow: "inset #41464b 1px 1px 20px 5px",
+                  alignItems:"center",
+                  boxShadow: "4px 10px 26px lightgrey"
                 }}
                 class="navbar-nav"
               >
@@ -51,7 +52,6 @@ function Navigation() {
                     <span style={{display:"block", textAlign:"center", color: "#385723", marginRight: "5px" }}>
                       <FontAwesomeIcon icon={faHome} />
                     </span>{" "}
-                    Home
                   </Link>
                 </li>
                 <li class="nav-item">
@@ -61,7 +61,6 @@ function Navigation() {
                       {" "}
                       <FontAwesomeIcon icon={faUsers} />
                     </span>
-                    Profile
                   </a>
                 </li>
                 <li class="nav-item">
@@ -71,7 +70,6 @@ function Navigation() {
                       {" "}
                       <FontAwesomeIcon icon={faSitemap} />
                     </span>
-                    Manage Quality
                   </a>
                 </li>
 
@@ -82,7 +80,6 @@ function Navigation() {
                       {" "}
                       <FontAwesomeIcon icon={faHeadset} />
                     </span>
-                    Contact
                   </a>
                 </li>
                 <li class="nav-item dropdown">
@@ -97,7 +94,6 @@ function Navigation() {
                     <span style={{display:"block", textAlign:"center", color: "rgb(37 189 93)", marginRight: "5px" }}>
                       <FontAwesomeIcon icon={faFileAlt} />
                     </span>
-                    Documents
                   </a>
                   <ul
                     class="dropdown-menu"
@@ -142,7 +138,6 @@ function Navigation() {
                       {" "}
                       <FontAwesomeIcon icon={faBell} />
                     </span>
-                    Notification
                   </a>
                 </li>
               </ul>
