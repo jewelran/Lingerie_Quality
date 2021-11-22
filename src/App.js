@@ -5,6 +5,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Carousel from './Component/Carousel/Carousel';
 import ManagementTeam from './Component/ManagementTeam/ManagementTeam';
 import Navigation from './Component/Navigation/Navigation';
+import Profile from './Component/Profile/Profile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
          <Route path = "/" element = {<Home/>} />
          <Route path = "/home" element = {<Home/>} />
+         <Route path = "/profile"  element = {<Profile/>} />
         <Route path = "/job_description" element = {<ManagementTeam/>} />
         </Routes>
       </div>

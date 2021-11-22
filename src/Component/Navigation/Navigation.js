@@ -55,13 +55,13 @@ function Navigation() {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-center" href="#">
+                  <Link to = "/profile" class="nav-link text-center" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#BF9000", marginRight: "5px" }}>
                       {" "}
                       <FontAwesomeIcon icon={faUsers} />
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-center" href="#">

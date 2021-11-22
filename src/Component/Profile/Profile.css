@@ -1,0 +1,21 @@
+
+.profileImgCard{
+    --bs-bg-opacity: 1;
+   box-shadow:  6px 17px 28px #000000;
+    border-radius: 10px;
+    z-index: 2;
+    height: 16rem;
+    background-image: url("../Images/bgImg/881563d6444b370fa4ceea0c3183bb4c.gif");
+}
+.profileImgCard img{
+    height: 141.5%;
+    transform: translateY(-106px);
+}
+.profileImgTitle{
+    width: 40%;
+    border-radius: 0px 10px 10px 0px;
+    height: 237px;
+    margin-top: 0.5rem;
+    box-shadow: 11px 6px 15px #100c08; 
+    line-height: 17px;
+}

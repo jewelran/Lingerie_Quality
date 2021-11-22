@@ -2,13 +2,13 @@
     display: none;
 }
 .nav-item{
-    margin: -8px 61px -13px 0px;
+    margin: -6px 37px -14px -2px;;
 }
 .nav-item span {
     font-size: 30px;
 }
 .navbar-nav:last-child{
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 
