@@ -1,6 +1,13 @@
 import React from "react";
 import "./Carousel.css";
-
+import DefectNature from "../Images/carouselImg/DefectNature.jpg"
+import DoIt from "../Images/carouselImg/DoIt.jpg"
+import Happiness from "../Images/carouselImg/Happiness.jpg"
+import KeyToSuccess from "../Images/carouselImg/KeyToSuccess.jpg"
+import QualityArt from "../Images/carouselImg/QualityArt.jpg"
+import QualityControl from "../Images/carouselImg/QualityControl.jpg"
+import QualityOwner from "../Images/carouselImg/QualityOwner.jpg"
+import Solution from "../Images/carouselImg/Solution.jpg"
 function Carousel() {
   return (
     <div className="container h-75 mt-5">
@@ -30,12 +37,56 @@ function Carousel() {
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="7"
+            aria-label="Slide 8"
+          ></button>
         </div>
         <div class="carousel-inner">
+        <div class="carousel-item">
+            <img
+              style={{ height: "70vh" }}
+              src={QualityControl}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
           <div class="carousel-item active">
             <img
               style={{ height: "70vh" }}
-              src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
+              src={DefectNature}
               class="d-block w-100"
               alt="..."
             />
@@ -49,7 +100,7 @@ function Carousel() {
           <div class="carousel-item">
             <img
               style={{ height: "70vh" }}
-              src="https://images.unsplash.com/photo-1618964823387-3d6ff4bb34db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFjaGFya2l8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+              src={DoIt}
               class="d-block w-100"
               alt="..."
             />
@@ -63,7 +114,64 @@ function Carousel() {
           <div class="carousel-item">
             <img
               style={{ height: "70vh" }}
-              src="https://images.unsplash.com/photo-1554330625-7155626a9fb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&w=1000&q=80"
+              src={Happiness}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              style={{ height: "70vh" }}
+              src={KeyToSuccess}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              style={{ height: "70vh" }}
+              src={QualityArt}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+         
+          <div class="carousel-item">
+            <img
+              style={{ height: "70vh" }}
+              src={QualityOwner}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              style={{ height: "70vh" }}
+              src={Solution}
               class="d-block w-100"
               alt="..."
             />

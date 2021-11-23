@@ -54,7 +54,7 @@ function Profile() {
                   fontFamily: "cursive",
                 }}
               >
-                Authority of KC Lingerie Ltd. Dynamic, Innovative & Constructive
+                Dynamic, Innovative & Constructive
                 solver of any kind of difficulties. Excellent experienced in
                 Marketing, Business, Management, Technical & Ethics. Wish to
                 dream the develop of company and is determined to make it a
@@ -71,6 +71,9 @@ function Profile() {
               profileList.map(profile => <ProfileCard key= {profile.id} profile = {profile}> </ProfileCard>)
           }
       </div>
+      <div className="pt-5">
+               <img className="w-100" src="https://1.bp.blogspot.com/-bMGcwzwmcWA/YJ-HdIkZpyI/AAAAAAAAAWI/JH9ak0_4kLEp4DPqA6vEhiy-O3AQKmcaACLcBGAsYHQ/s1600/Screenshot%2B%25281075%2529.webp" alt="" />
+           </div>
     </div>
   );
 }

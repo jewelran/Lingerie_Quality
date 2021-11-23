@@ -11,19 +11,22 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { linkClasses } from "@mui/material";
 function Navigation() {
   return (
     <div style={{ background:"indigo",}} className ="sticky-top">
       <div className="container">
         <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+          <div class="container-fluid ">
+            <a class="navbar-brand d-flex align-items-center " href="#">
               <img
                 style={{ width: "100px" }}
                 src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
                 alt=""
               />
-              <h3 className="text-center border border-dark rounded">User</h3>
+             <Link style={{textDecoration:"none"}} to = "/login">
+             <h3 className="text-center text-white border border-white rounded p-1 ">Login</h3>
+             </Link>
             </a>
             <button
               class="navbar-toggler"

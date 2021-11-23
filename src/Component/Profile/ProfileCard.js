@@ -1,9 +1,9 @@
 import React from 'react'
 import { CardActions, Button } from '@mui/material';
-
+import "./ProfileCard.css"
 function ProfileCard() {
     return (
-            <div class="card mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
+            <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
   <div class="row g-0">
     <div class="col-md-4">
       <img style={{height:'200px'}} src="https://s3-us-west-1.amazonaws.com/co-directory-images/davidgendelman.jpg" class="img-fluid rounded-start" alt="https://s3-us-west-1.amazonaws.com/co-directory-images/davidgendelman.jpg"/>
@@ -27,6 +27,7 @@ function ProfileCard() {
       </div>
     </div>
   </div>
+  
 </div>
     )
 }
