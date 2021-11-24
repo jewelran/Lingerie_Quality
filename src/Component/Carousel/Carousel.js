@@ -71,63 +71,7 @@ function Carousel() {
         <div class="carousel-inner">
         <div class="carousel-item">
             <img
-              style={{ height: "70vh" }}
-              src={QualityControl}
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <img
-              style={{ height: "70vh" }}
-              src={DefectNature}
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              style={{ height: "70vh" }}
-              src={DoIt}
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              style={{ height: "70vh" }}
-              src={Happiness}
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              style={{ height: "70vh" }}
+              style={{ height: "80vh" }}
               src={KeyToSuccess}
               class="d-block w-100"
               alt="..."
@@ -141,7 +85,21 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              style={{ height: "70vh" }}
+              style={{ height: "80vh" }}
+              src={DoIt}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              style={{ height: "80vh" }}
               src={QualityArt}
               class="d-block w-100"
               alt="..."
@@ -153,10 +111,38 @@ function Carousel() {
               </p>
             </div>
           </div>
-         
           <div class="carousel-item">
             <img
-              style={{ height: "70vh" }}
+              style={{ height: "80vh" }}
+              src={Happiness}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+
+        <div class="carousel-item">
+            <img
+              style={{ height: "80vh" }}
+              src={QualityControl}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              style={{ height: "80vh" }}
               src={QualityOwner}
               class="d-block w-100"
               alt="..."
@@ -170,7 +156,7 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              style={{ height: "70vh" }}
+              style={{ height: "80vh" }}
               src={Solution}
               class="d-block w-100"
               alt="..."
@@ -182,6 +168,25 @@ function Carousel() {
               </p>
             </div>
           </div>
+         
+   
+          <div class="carousel-item active">
+            <img
+              style={{ height: "80vh" }}
+              src={DefectNature}
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+       
+         
+        
         </div>
         <button
           class="carousel-control-prev"

@@ -5,7 +5,10 @@
     border-radius: 10px;
     z-index: 2;
     height: 16rem;
-    background-image: url("../Images/bgImg/unnamed.gif");
+    background-image: url("../Images/bgImg/cooBgImg.gif");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .profileImgCard img{
     height: 141.5%;

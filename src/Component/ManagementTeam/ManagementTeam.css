@@ -4,8 +4,9 @@
     border-radius: 10px;
     font-family: tahoma;
     line-height: 1.5rem;
+    color: #fff;
     cursor: pointer;
-    background-color: #49bbf130;
+    background-color: #000;
     opacity: 9;
     
    
@@ -19,11 +20,40 @@
     list-style-type: number;
 }
 .sideBer ul li:hover {
-        background-color: aquamarine;
-        color: orangered;
+        background-color: orangered;
+        color: white;
         border-radius: 5px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
         
 }
 .sideContainer{
   margin-left: 3rem;
 }
+.manageContainer{
+    display:flex;
+}
+.selection{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .selection{
+        display: block;
+        
+    }
+    .manageContainer{
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .sideBer{
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    .sideBer ul{
+        display: none;
+    }
+    .sideContainer{
+        justify-content: center;
+        padding: 1rem;
+    }
+  }
