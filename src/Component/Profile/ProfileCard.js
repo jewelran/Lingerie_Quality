@@ -1,17 +1,18 @@
 import React from 'react'
 import { CardActions, Button } from '@mui/material';
 import "./ProfileCard.css"
-function ProfileCard() {
+function ProfileCard(props) {
+  console.log(props);
     return (
             <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
   <div class="row g-0">
     <div class="col-md-4">
-      <img style={{height:'200px'}} src="https://s3-us-west-1.amazonaws.com/co-directory-images/davidgendelman.jpg" class="img-fluid rounded-start" alt="https://s3-us-west-1.amazonaws.com/co-directory-images/davidgendelman.jpg"/>
+      <img style={{height:'200px'}} src={props.profile.img} class="img-fluid rounded-start" alt=""/>
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">{props.profile.name}</h5>
+        <p class="card-text">{props.profile.about}</p>
         <CardActions>
           <Button size="small" color="primary">
             Facebook

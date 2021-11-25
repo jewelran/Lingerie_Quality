@@ -1,6 +1,6 @@
 .App{
   background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(circle, rgb(187 174 238) 0%, #0dcaf0 100%);
 }
 .mainContainer{
   max-width: 1800px;

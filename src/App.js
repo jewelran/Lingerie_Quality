@@ -7,6 +7,7 @@ import ManagementTeam from './Component/ManagementTeam/ManagementTeam';
 import Navigation from './Component/Navigation/Navigation';
 import Profile from './Component/Profile/Profile';
 import Login from './Component/Login/Login';
+import Footer from './Component/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path = "/job_description" element = {<ManagementTeam/>} />
         <Route path = "/login" element = {<Login/>} />
         </Routes>
+        <Footer/>
       </div>
     </div>
   );

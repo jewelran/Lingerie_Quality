@@ -2,18 +2,25 @@ import React from "react";
 import cooOfCompany from "../Images/CooOfCompany.png";
 import "./Profile.css";
 import ProfileCard from './ProfileCard';
+import { CardActions, Button } from '@mui/material';
+import "./ProfileCard.css"
 function Profile() {
 
     const profileList = [
         {
             id:1,
-            name:'Jewel Hossain'
+            name:'Jewel Hossain',
+            img:"https://i.ibb.co/QmZqDVB/IMG-20200731-233054-335.jpg",
+            about: "Authority of Product quality Control for KC Lingerie Ltd (Garments Unit). Highly Experienced in Quality & Technical field. Innovative, Creative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
         },
         {
             id:2,
-            name:'Majharul Islam'
+            name:'Hamidur Rohman Hamid',
+            img:"https://i.ibb.co/0jrQkSz/IMG-3992-removebg-preview.png",
+            about: "Production Authority of KC Lingerie Ltd (Garments Unit). Highly Experienced in Production & Technical field. Innovative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
+            
         },
-       
+     
     ]
 
   return (
@@ -56,7 +63,7 @@ function Profile() {
               >
                 Dynamic, Innovative & Constructive
                 solver of any kind of difficulties. Excellent experienced in
-                Marketing, Business, Management, Technical & Ethics. Wish to
+                Marketing, Business, Management, Technical & Ethics. Likes to
                 dream the develop of company and is determined to make it a
                 reality. Leading Subordinate for a better future & to be self
                 dependent.
@@ -71,9 +78,165 @@ function Profile() {
               profileList.map(profile => <ProfileCard key= {profile.id} profile = {profile}> </ProfileCard>)
           }
       </div>
-      <div className="pt-5">
-               <img className="w-100" src="https://1.bp.blogspot.com/-bMGcwzwmcWA/YJ-HdIkZpyI/AAAAAAAAAWI/JH9ak0_4kLEp4DPqA6vEhiy-O3AQKmcaACLcBGAsYHQ/s1600/Screenshot%2B%25281075%2529.webp" alt="" />
-           </div>
+
+      <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style={{height:'200px'}} src={profileList[0].img} class="img-fluid rounded-start" alt=""/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">About</p>
+        <CardActions>
+          <Button size="small" color="primary">
+            Facebook
+          </Button>
+          <Button size="small" color="primary">
+          Whatsapp
+          </Button>
+          <Button size="small" color="primary">
+          Linkedin
+          </Button>
+         
+        </CardActions>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style={{height:'200px'}} src={profileList[0].img} class="img-fluid rounded-start" alt=""/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">About</p>
+        <CardActions>
+          <Button size="small" color="primary">
+            Facebook
+          </Button>
+          <Button size="small" color="primary">
+          Whatsapp
+          </Button>
+          <Button size="small" color="primary">
+          Linkedin
+          </Button>
+         
+        </CardActions>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style={{height:'200px'}} src={profileList[0].img} class="img-fluid rounded-start" alt=""/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">About</p>
+        <CardActions>
+          <Button size="small" color="primary">
+            Facebook
+          </Button>
+          <Button size="small" color="primary">
+          Whatsapp
+          </Button>
+          <Button size="small" color="primary">
+          Linkedin
+          </Button>
+         
+        </CardActions>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style={{height:'200px'}} src={profileList[0].img} class="img-fluid rounded-start" alt=""/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">About</p>
+        <CardActions>
+          <Button size="small" color="primary">
+            Facebook
+          </Button>
+          <Button size="small" color="primary">
+          Whatsapp
+          </Button>
+          <Button size="small" color="primary">
+          Linkedin
+          </Button>
+         
+        </CardActions>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style={{height:'200px'}} src={profileList[0].img} class="img-fluid rounded-start" alt=""/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">About</p>
+        <CardActions>
+          <Button size="small" color="primary">
+            Facebook
+          </Button>
+          <Button size="small" color="primary">
+          Whatsapp
+          </Button>
+          <Button size="small" color="primary">
+          Linkedin
+          </Button>
+         
+        </CardActions>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      <div class="card ProfileCardContainer mb-3 m-2 shadow p-3 mb-5 bg-body rounded" style={{maxWidth: "540px"}}>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style={{height:'200px'}} src={profileList[0].img} class="img-fluid rounded-start" alt=""/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Name</h5>
+        <p class="card-text">About</p>
+        <CardActions>
+          <Button size="small" color="primary">
+            Facebook
+          </Button>
+          <Button size="small" color="primary">
+          Whatsapp
+          </Button>
+          <Button size="small" color="primary">
+          Linkedin
+          </Button>
+         
+        </CardActions>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  
     </div>
   );
 }

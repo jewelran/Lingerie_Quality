@@ -19,3 +19,6 @@
     background: rgb(10,235,81);
     background: linear-gradient(165deg, rgba(10,235,81,1) 0%, rgba(233,237,234,1) 100%, rgba(0,212,255,1) 100%);
 }
+.navContainer{
+    z-index: 9999;
+}

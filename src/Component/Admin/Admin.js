@@ -29,9 +29,7 @@ function Admin() {
                 admins.map(admin => <AdminCard key= {admin.id} admin = {admin}></AdminCard>)
             }
            </div>
-           <div className="pt-5">
-               <img className="w-100" src="https://1.bp.blogspot.com/-bMGcwzwmcWA/YJ-HdIkZpyI/AAAAAAAAAWI/JH9ak0_4kLEp4DPqA6vEhiy-O3AQKmcaACLcBGAsYHQ/s1600/Screenshot%2B%25281075%2529.webp" alt="" />
-           </div>
+         
         </div>
     )
 }

@@ -1,3 +1,13 @@
-.mission, .vision{
-    box-shadow: 4px 5px 20px grey;
+.missionContainer ul li, .visionContainer ul li{
+    padding: 5px;
+    background-color:#116ca1 ;
+    margin-top: 1rem;
+    border-radius: 7px;
+    padding-left: 10px;
+    width: 80%;
+    transition: all 0.3s ease;
+}
+.missionContainer ul li:hover, .visionContainer ul li:hover{
+    background-color: #133d55;
+    color: orange;
 }
