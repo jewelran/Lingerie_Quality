@@ -13,7 +13,6 @@
 }
 .missionContainer ul li:hover, .visionContainer ul li:hover{
     background-color: orangered;
-    ;
     font-weight: 500;
 }
 .visionContainer img {

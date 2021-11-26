@@ -20,7 +20,19 @@
     height: 237px;
     margin-top: 0.5rem;
     box-shadow: 11px 6px 15px #100c08; 
-    line-height: 17px;
+    line-height: 20px;
+    text-align: justify;
    
 
+}
+
+.profileCardContainer{
+    background: #244960;
+    border-radius: 10px;
+    border: none !important;
+    padding: 10px;
+    box-shadow: 4px 14px 15px #7f80
+}
+.profileDescription{
+    color: white;
 }

@@ -5,7 +5,7 @@ function MissionAndVisionCard() {
   return (
     <div className="d-flex justify-content-center mt-5 pt-5">
       <div style={{width:"95%"}} className=" h-100">
-        <div className="d-flex  pb-5 h-75 justify-content-start">
+        <div className="d-flex  pb-5 h-75 justify-content-start ">
           <div className="col-md-10 d-flex">
           <div className="col-md-7  missionContainer">
             <h2 className="text-center">MISSION</h2>

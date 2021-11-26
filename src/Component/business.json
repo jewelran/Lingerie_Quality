@@ -1,0 +1,140 @@
+[
+    {
+        "_id": "61a0c9ab906f5bcaec4eb119",
+        "index": 0,
+        "guid": "da9a85a5-c7c0-4b88-b79e-3737bc4d2b5b",
+        "isActive": true,
+        "balance": "$1,443.54",
+        "picture": "http://placehold.it/32x32",
+        "age": 25,
+        "eyeColor": "blue",
+        "name": "Ginger Jennings",
+        "gender": "female",
+        "company": "TECHMANIA",
+        "email": "gingerjennings@techmania.com",
+        "phone": "+1 (804) 468-3213",
+        "address": "695 Stratford Road, Independence, Wisconsin, 5657",
+        "about": "Officia magna id et velit duis Lorem nisi magna labore anim mollit ea aliquip. Ipsum voluptate non deserunt amet consectetur esse sunt fugiat do labore sit do exercitation.\r\n",
+        "registered": "2021-04-04T05:42:06 -06:00",
+        "latitude": 64.031929,
+        "longitude": 87.488747,
+        "tags": [
+            "incididunt",
+            "officia",
+            "ea",
+            "enim",
+            "aliquip",
+            "duis",
+            "elit"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Mendez Ray"
+            },
+            {
+                "id": 1,
+                "name": "Ladonna Hoffman"
+            },
+            {
+                "id": 2,
+                "name": "Audra Becker"
+            }
+        ],
+        "greeting": "Hello, Ginger Jennings! You have 1 unread messages.",
+        "favoriteFruit": "apple"
+    },
+    {
+        "_id": "61a0c9abaec0fddab68c9a72",
+        "index": 1,
+        "guid": "9395d8d7-bda5-4f08-a5aa-a606492de448",
+        "isActive": false,
+        "balance": "$2,584.20",
+        "picture": "http://placehold.it/32x32",
+        "age": 22,
+        "eyeColor": "green",
+        "name": "Gina Murphy",
+        "gender": "female",
+        "company": "PEARLESEX",
+        "email": "ginamurphy@pearlesex.com",
+        "phone": "+1 (945) 518-3026",
+        "address": "574 Hall Street, Matheny, Colorado, 5661",
+        "about": "Occaecat dolor nostrud nisi proident ea non mollit anim magna in enim commodo adipisicing dolore. Officia officia aute occaecat laboris proident aute elit anim est sint nulla. .\r\n",
+        "registered": "2017-08-10T10:44:33 -06:00",
+        "latitude": -81.345505,
+        "longitude": -43.945996,
+        "tags": [
+            "occaecat",
+            "commodo",
+            "pariatur",
+            "sunt",
+            "enim",
+            "magna",
+            "adipisicing"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Laverne Aguirre"
+            },
+            {
+                "id": 1,
+                "name": "Carmela Montoya"
+            },
+            {
+                "id": 2,
+                "name": "Lenora Cash"
+            }
+        ],
+        "greeting": "Hello, Gina Murphy! You have 2 unread messages.",
+        "favoriteFruit": "strawberry"
+    },
+    {
+        "_id": "61a0c9abaec0fddab68c9a52",
+        "index": 1,
+        "guid": "9395d8d7-bda5-4f08-a5aa-a606492de449",
+        "isActive": false,
+        "balance": "$2,584.20",
+        "picture": "http://placehold.it/32x32",
+        "age": 22,
+        "eyeColor": "green",
+        "name": "Gina Murphy",
+        "gender": "female",
+        "company": "PEARLESEX",
+        "email": "ginamurphy@pearlesex.com",
+        "phone": "+1 (945) 518-3026",
+        "address": "574 Hall Street, Matheny, Colorado, 5661",
+        "about": "Occaecat dolor nostrud nisi proident ea non mollit anim magna in enim commodo adipisicing dolore. Officia officia aute occaecat laboris proident aute elit anim est sint nulla. \r\n",
+        "registered": "2017-08-10T10:44:33 -06:00",
+        "latitude": -81.345505,
+        "longitude": -43.945996,
+        "tags": [
+            "occaecat",
+            "commodo",
+            "pariatur",
+            "sunt",
+            "enim",
+            "magna",
+            "adipisicing"
+        ],
+        "friends": [
+            {
+                "id": 0,
+                "name": "Laverne Aguirre"
+            },
+            {
+                "id": 1,
+                "name": "Carmela Montoya"
+            },
+            {
+                "id": 2,
+                "name": "Lenora Cash"
+            }
+        ],
+        "greeting": "Hello, Gina Murphy! You have 2 unread messages.",
+        "favoriteFruit": "strawberry"
+    }
+    
+    
+   
+]

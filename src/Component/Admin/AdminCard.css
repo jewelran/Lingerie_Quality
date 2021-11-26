@@ -1,0 +1,18 @@
+.adminImg{
+    padding-right: 10px;
+    height: 242px;
+    margin-left: -5px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.mediaBtn a h2{
+    color: darkslateblue;
+}
+.mediaBtn button{
+    margin-left: -20px !important;
+    padding: 0px!important;
+    margin: 5px;
+}
+.mediaBtn button a h2:hover{
+    color: rgb(33, 207, 62);
+}
