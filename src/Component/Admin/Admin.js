@@ -1,6 +1,5 @@
 import React from 'react'
 import AdminCard from './AdminCard';
-import HeaderImg from "../Images/quality.png";
 function Admin() {
     const admins = [
      
@@ -20,9 +19,7 @@ function Admin() {
     ]
     return (
         <div className="mt-5 pb-5">
-               <div style={{marginTop:"10rem"}} className="container">
-        <img className="w-100" src={HeaderImg} alt="" />
-      </div>
+               
             <h1 className="text-center mb-5">FOR HELP</h1>
            <div className="container d-flex justify-content-around mr-3 ">
            {

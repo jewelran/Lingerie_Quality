@@ -1,13 +1,35 @@
 .missionContainer ul li, .visionContainer ul li{
-    padding: 5px;
+    padding: 15px;
     background-color:#116ca1 ;
     margin-top: 1rem;
     border-radius: 7px;
     padding-left: 10px;
+    font-size: 23px;
+    align-items: center;
+    font-family: cursive;
+    margin-top: 1rem;
     width: 80%;
     transition: all 0.3s ease;
 }
 .missionContainer ul li:hover, .visionContainer ul li:hover{
-    background-color: #133d55;
-    color: orange;
+    background-color: orangered;
+    ;
+    font-weight: 500;
+}
+.visionContainer img {
+    border-radius: 10px 0px 0px 10px;
+}
+.visionCard{
+    background-color: #0A0546;
+    border-top: 14px solid white;
+    border-bottom: 14px solid white;
+    border-radius: 0px 10px 10px 0px;
+    height: 60vh;
+}
+.visionContainer ul li:first-child{
+    margin-top: 0px;
+}
+.visionCard h1{
+    font-size: 4rem;
+    font-family: cursive;
 }

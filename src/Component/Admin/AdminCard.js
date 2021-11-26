@@ -14,7 +14,7 @@ function AdminCard(props) {
           <CardMedia
           style={{borderRadius:"10px", marginLeft:"5px"}}
             component="img"
-            height="140"
+            height="160"
             image="https://www.realmenrealstyle.com/wp-content/uploads/2021/07/5-10.jpg"
             alt="green iguana"
           />
@@ -26,12 +26,7 @@ function AdminCard(props) {
               Lizards are a widespread group of squamate reptiles, with over 6,000
               species, ranging across all continents except Antarctica
             </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Facebook
-          </Button>
+            <CardActions>
           <Button size="small" color="primary">
           Whatsapp
           </Button>
@@ -42,6 +37,9 @@ function AdminCard(props) {
             Instagram
           </Button>
         </CardActions>
+          </CardContent>
+        </CardActionArea>
+       
       </Card>
         
     )
