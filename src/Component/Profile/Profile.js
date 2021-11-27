@@ -1,8 +1,14 @@
-import React, { useState, useEffect } from "react";
+import * as React from "react";
+import { useState, useEffect } from "react";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import cooOfCompany from "../Images/CooOfCompany.png";
 import "./Profile.css";
 import ProfileCard from "./ProfileCard";
-import { CardActions, Button } from "@mui/material";
 import managementFile from "../business.json";
 import ieAndStoreFile from "../ieAndStore.json";
 import cuttingMaintainceAndEnovationFile from "../cuttingMaintainceAndEnovation.json";
@@ -12,35 +18,33 @@ import qsAndNqcFile from "../qsAndNqc.json";
 import cadAndSampleFile from "../cadSamplePlaninng.json";
 import finishingAndMqacFile from "../finishing&Mqac.json";
 import hrd from "../hrd.json";
-
 import "./ProfileCard.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
 function Profile() {
-  const [businessDepartment, setBusinessDepartment] = useState([]);
+  const [businessDepartment, setBusinessDepartment] = React.useState([]);
   const [hrdDepartment, setHrdDepartment] = useState([]);
   const [finishingAndMqac, setFinishingAndMqac] = useState([]);
-  const [cadSamplePlanning, setCadSamplePlanning] = useState([])
+  const [cadSamplePlanning, setCadSamplePlanning] = useState([]);
   const [production, setProduction] = useState([]);
-  const [cuttingMaintainceAndEnovation, setCuttingMaintainceAndEnovation] = useState([]);
+  const [cuttingMaintainceAndEnovation, setCuttingMaintainceAndEnovation] =
+    useState([]);
   const [quality, setQuality] = useState([]);
   const [qsAndNqc, setQsAndNqc] = useState([]);
   const [ieAndStore, setIeAndStore] = useState([]);
 
-  
-  
   console.log(businessDepartment, hrd);
   useEffect(() => {
     setBusinessDepartment(managementFile);
-    setHrdDepartment(hrd)
-    setCadSamplePlanning(cadAndSampleFile)
-    setIeAndStore(ieAndStoreFile)
-    setQuality(qualityFile)
-    setFinishingAndMqac(finishingAndMqacFile)
-    setCuttingMaintainceAndEnovation(cuttingMaintainceAndEnovationFile)
-    setProduction(productionFile)
-    setQsAndNqc(qsAndNqcFile)
+    setHrdDepartment(hrd);
+    setCadSamplePlanning(cadAndSampleFile);
+    setIeAndStore(ieAndStoreFile);
+    setQuality(qualityFile);
+    setFinishingAndMqac(finishingAndMqacFile);
+    setCuttingMaintainceAndEnovation(cuttingMaintainceAndEnovationFile);
+    setProduction(productionFile);
+    setQsAndNqc(qsAndNqcFile);
   }, []);
-
-
 
   const profileList = [
     {
@@ -112,7 +116,7 @@ function Profile() {
                     fontSize: "25px",
                     color: "#4e4c4c",
                     textDecoration: "underline",
-                    fontFamily:"cursive"
+                    fontFamily: "cursive",
                   }}
                 >
                   About:
@@ -136,7 +140,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div className=" container card-deck d-flex justify-content-center pb-5">
+      <div className=" container card-deckprofileCard   d-flex justify-content-center pb-5">
         {profileList.map((profile) => (
           <ProfileCard key={profile.id} profile={profile}>
             {" "}
@@ -144,238 +148,251 @@ function Profile() {
         ))}
       </div>
 
-            {/* business container */}
+      {/* business container */}
 
-      <div
-        style={{ padding: "2rem" }}
-        className="  card-deck d-flex justify-content-center"
-      >
+      <div className="p-3profileCard   d-flex justify-content-between mb-5 ">
         {businessDepartment.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className= "profileCard" sx={{ maxWidth: 550, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+              <CardActions>
+                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
 
       {/* hrdDepartment container */}
-
-      <div
-        style={{ padding: "2rem" }}
-        className="   card-deck d-flex justify-content-around"
-      >
+      <div className="container    d-flex justify-content-around mb-5">
         {hrdDepartment.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
       {/* qs team  container*/}
-      <div
-        style={{ padding: "2rem" }}
-        className="   card-deck d-flex justify-content-between "
-      >
+      <div className="container    d-flex justify-content-around mb-5">
         {qsAndNqc.map((profile) => (
-          <div
-            className=" profileCardContainer col-md-4 h-25  border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
-
-      
-{/* cad sample file container */}
-      <div
-        style={{ padding: "2rem" }}
-        className="  card-deck d-flex justify-content-center"
-      >
+      {/* cad sample file container */}
+      <div className="p-3    d-flex justify-content-between mb-5">
         {cadSamplePlanning.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
 
-            {/* IE and store */}
-      <div
-        style={{ padding: "2rem" }}
-        className="  card-deck d-flex justify-content-center"
-      >
+      {/* IE and store */}
+      <div className="container  d-flex justify-content-around mb-5">
         {ieAndStore.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
 
       {/* cuttingMaintainceAndEnovation container */}
-      <div
-        style={{ padding: "2rem" }}
-        className="  card-deck d-flex justify-content-center"
-      >
+      <div className="p-3    d-flex justify-content-between mb-5">
         {cuttingMaintainceAndEnovation.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
 
-   
-{/* production container */}
-      <div
-        style={{ padding: "2rem" }}
-        className="  card-deck d-flex justify-content-center"
-      >
+      {/* production container */}
+      <div className="container    d-flex justify-content-around mb-5">
         {production.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
       {/* quality container */}
-      <div
-        style={{ padding: "2rem" }}
-        className="  card-deck d-flex justify-content-center"
-      >
+      <div className="container   d-flex justify-content-around mb-5">
         {quality.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
-    {/* finishing and MQac container */}
-      <div
-        style={{ padding: "2rem" }}
-        className="  card-deck d-flex justify-content-center"
-      >
+      {/* finishing and MQac container */}
+      <div className="container   d-flex justify-content-around mb-5">
         {finishingAndMqac.map((profile) => (
-          <div
-            className="  profileCardContainer  col-md-4 h-25 border d-flex m-2  text-dark "
-            key={profile.id}
-          >
-            <div className="col-md-4">
-              <img src={profile.picture} alt="" />
-            </div>
-            <div className=" profileDescription col-md-7">
-              <h3 className="text-center">{profile.name}</h3>
-              <p>{profile.about}</p>
-              <div className="media">
-                <button className="btn btn-primary ml-1">facebook</button>
-                <button className="btn btn-primary ml-1">linkedIn</button>
-                <button className="btn btn-primary">WhatsUp</button>
-              </div>
-            </div>
-          </div>
+          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
+            <CardMedia
+              component="img"
+              className=".css-o69gx8-MuiCardMedia-root "
+              image={profile.picture}
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {profile.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+
+              <CardActions>
+               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              </CardActions>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </div>

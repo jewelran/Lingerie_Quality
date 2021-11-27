@@ -37,3 +37,21 @@
 .profileDescription{
     color: white;
 }
+.css-o69gx8-MuiCardMedia-root {
+    display: block;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    width: 26% !important;
+    object-fit: cover;
+}
+
+.profileCard{
+    box-shadow: 6px 6px 12px #626161 !important;
+}
+.profileCard:hover{
+    box-shadow: 10px 10px 20px #363636 !important;
+    max-width: 565 !important;
+}
