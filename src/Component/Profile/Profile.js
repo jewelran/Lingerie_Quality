@@ -68,10 +68,10 @@ function Profile() {
     <div className="">
       <div className="container pt-5 pb-5">
         <div className="d-flex mt-5  justify-content-center">
-          <div className="col-md-3 profileImgCard">
+          <div className="col-md-3 profileImgCard Card">
             <img style={{ width: "100%" }} src={cooOfCompany} alt="" />
           </div>
-          <div className="col-md-7  bg-light profileImgTitle p-3">
+          <div className="col-md-7 profileImgTitle  bg-light Title p-3">
             <div className="ml-3">
               <h3
                 style={{
