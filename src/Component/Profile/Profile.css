@@ -37,7 +37,7 @@
 .profileDescription{
     color: white;
 }
-.css-o69gx8-MuiCardMedia-root {
+/* .css-o69gx8-MuiCardMedia-root {
     display: block;
     -webkit-background-size: cover;
     background-size: cover;
@@ -47,7 +47,7 @@
     width: 30% !important;
     height: 100% !important;
     object-fit: cover;
-}
+} */
 
 .profileCard{
     box-shadow: 6px 6px 12px #626161 !important;

@@ -1,8 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Home from './Component/Home/Home';
-import { Navigate, Route, Routes } from "react-router-dom";
-import Carousel from './Component/Carousel/Carousel';
+import {  Route, Routes } from "react-router-dom";
 import ManagementTeam from './Component/ManagementTeam/ManagementTeam';
 import Navigation from './Component/Navigation/Navigation';
 import Profile from './Component/Profile/Profile';

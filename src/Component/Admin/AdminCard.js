@@ -7,7 +7,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import "./AdminCard.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faWhatsapp, faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faGlobeEurope, faRetweet } from '@fortawesome/free-solid-svg-icons';
+import { faGlobeEurope,  } from '@fortawesome/free-solid-svg-icons';
 function AdminCard(props) {
     const {name, id,about, github,website, twitter, designation} = props.admin
     console.log(name , id);

@@ -140,7 +140,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div className=" container card-deckprofileCard   d-flex justify-content-center pb-5">
+      <div className=" container card-deck    d-flex justify-content-center pb-5">
         {profileList.map((profile) => (
           <ProfileCard key={profile.id} profile={profile}>
             {" "}
@@ -150,15 +150,12 @@ function Profile() {
 
       {/* business container */}
 
-      <div className="p-3profileCard   d-flex justify-content-between mb-5 ">
+      <div className="p-3    d-flex justify-content-between mb-5 ">
         {businessDepartment.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 550, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className= "profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+            <CardMedia>
+              <img style={{width:"100%",height:"100%"}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -179,13 +176,10 @@ function Profile() {
       {/* hrdDepartment container */}
       <div className="container    d-flex justify-content-around mb-5">
         {hrdDepartment.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+            <CardMedia>
+            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -204,15 +198,12 @@ function Profile() {
         ))}
       </div>
       {/* qs team  container*/}
-      <div className="container    d-flex justify-content-around mb-5">
+      <div className="p-3    d-flex justify-content-around mb-5">
         {qsAndNqc.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+            <CardMedia>
+            <img style={{width:"100%",height:"100%",height:"100%"}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -230,16 +221,14 @@ function Profile() {
           </Card>
         ))}
       </div>
+
       {/* cad sample file container */}
       <div className="p-3    d-flex justify-content-between mb-5">
         {cadSamplePlanning.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+            <CardMedia>
+            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -261,13 +250,10 @@ function Profile() {
       {/* IE and store */}
       <div className="container  d-flex justify-content-around mb-5">
         {ieAndStore.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+            <CardMedia>
+            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -289,13 +275,10 @@ function Profile() {
       {/* cuttingMaintainceAndEnovation container */}
       <div className="p-3    d-flex justify-content-between mb-5">
         {cuttingMaintainceAndEnovation.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+             <CardMedia>
+            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -317,13 +300,10 @@ function Profile() {
       {/* production container */}
       <div className="container    d-flex justify-content-around mb-5">
         {production.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+             <CardMedia>
+            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -344,13 +324,10 @@ function Profile() {
       {/* quality container */}
       <div className="container   d-flex justify-content-around mb-5">
         {quality.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+             <CardMedia>
+            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
@@ -371,13 +348,10 @@ function Profile() {
       {/* finishing and MQac container */}
       <div className="container   d-flex justify-content-around mb-5">
         {finishingAndMqac.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 545, display: "flex" }}>
-            <CardMedia
-              component="img"
-              className=".css-o69gx8-MuiCardMedia-root "
-              image={profile.picture}
-              alt="green iguana"
-            />
+          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+             <CardMedia>
+            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {profile.name}
