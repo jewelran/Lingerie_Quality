@@ -6,3 +6,23 @@
     border-radius: 10px;
     color: aliceblue;
 }
+
+.profileCardContainer{
+    background: #244960;
+    border-radius: 10px;
+    border: none !important;
+    height: 19rem !important;
+    padding: 10px;
+    box-shadow: 4px 14px 15px #7f80
+}
+
+
+.profileImgCard ::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #244960 ;
+}

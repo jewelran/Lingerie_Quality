@@ -14,6 +14,13 @@
     height: 141.5%;
     transform: translateY(-106px);
 }
+
+.profileCard img{
+    width: 125%;
+    height: 130%;
+    transform: translateY(-26px) !important;
+    background-color: aqua;
+}
 .profileImgTitle{
     width: 40%;
     border-radius: 0px 10px 10px 0px;
@@ -26,33 +33,14 @@
 
 }
 
-.profileCardContainer{
-    background: #244960;
-    border-radius: 10px;
-    border: none !important;
-    height: 19rem !important;
-    padding: 10px;
-    box-shadow: 4px 14px 15px #7f80
-}
-.profileDescription{
-    color: white;
-}
-/* .css-o69gx8-MuiCardMedia-root {
-    display: block;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-position: center;
-    background-position: center;
-    width: 30% !important;
-    height: 100% !important;
-    object-fit: cover;
-} */
 
 .profileCard{
     box-shadow: 6px 6px 12px #626161 !important;
+    transition: all 0.3s  ease;
+    overflow: inherit !important;
 }
+
 .profileCard:hover{
     box-shadow: 10px 10px 20px #363636 !important;
-    max-width: 565 !important;
+    max-width: 600px !important;
 }

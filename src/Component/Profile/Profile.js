@@ -21,6 +21,7 @@ import hrd from "../hrd.json";
 import "./ProfileCard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { shadows } from "@mui/system";
 function Profile() {
   const [businessDepartment, setBusinessDepartment] = React.useState([]);
   const [hrdDepartment, setHrdDepartment] = useState([]);
@@ -58,7 +59,7 @@ function Profile() {
     {
       id: 2,
       name: "Hamidur Rohman Hamid",
-      img: "https://i.ibb.co/0jrQkSz/IMG-3992-removebg-preview.png",
+      img: "https://i.ibb.co/SRDxQgf/Head-of-Production.png",
       about:
         "Production Authority of KC Lingerie Ltd (Garments Unit). Highly Experienced in Production & Technical field. Innovative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
     },
@@ -66,11 +67,12 @@ function Profile() {
 
   return (
     <div className="">
-      <div className="container pt-5 pb-5">
+      <div className="container  pt-5 pb-5">
         <div className="d-flex mt-5  justify-content-center">
-          <div className="col-md-3 profileImgCard Card">
+          <div className="col-md-3  profileImgCard Card">
             <img style={{ width: "100%" }} src={cooOfCompany} alt="" />
           </div>
+          
           <div className="col-md-7 profileImgTitle  bg-light Title p-3">
             <div className="ml-3">
               <h3
@@ -150,11 +152,11 @@ function Profile() {
 
       {/* business container */}
 
-      <div className="p-3    d-flex justify-content-between mb-5 ">
+      <div className="p-3    d-flex justify-content-between mb-5 mt-5 ">
         {businessDepartment.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, display: "flex" }}>
             <CardMedia>
-              <img style={{width:"100%",height:"100%"}} src={profile.picture} alt="" />
+              <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -164,21 +166,25 @@ function Profile() {
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
-              <CardActions>
+              <CardActions className="mb-0">
                 <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               </CardActions>
+           
             </CardContent>
+            
           </Card>
+          
         ))}
+      
+        
       </div>
-
       {/* hrdDepartment container */}
-      <div className="container    d-flex justify-content-around mb-5">
+      <div className="container    d-flex justify-content-around mb-5 mt-5">
         {hrdDepartment.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
             <CardMedia>
-            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(56px)", borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -198,11 +204,11 @@ function Profile() {
         ))}
       </div>
       {/* qs team  container*/}
-      <div className="p-3    d-flex justify-content-around mb-5">
+      <div className="p-3    d-flex justify-content-around mb-5 mt-5">
         {qsAndNqc.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
             <CardMedia>
-            <img style={{width:"100%",height:"100%",height:"100%"}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -222,12 +228,13 @@ function Profile() {
         ))}
       </div>
 
+
       {/* cad sample file container */}
-      <div className="p-3    d-flex justify-content-between mb-5">
+      <div className="p-3    d-flex justify-content-between mb-5 mt-5">
         {cadSamplePlanning.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
             <CardMedia>
-            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -248,11 +255,11 @@ function Profile() {
       </div>
 
       {/* IE and store */}
-      <div className="container  d-flex justify-content-around mb-5">
+      <div className="container  d-flex justify-content-around mb-5 mt-5">
         {ieAndStore.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
             <CardMedia>
-            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -273,11 +280,11 @@ function Profile() {
       </div>
 
       {/* cuttingMaintainceAndEnovation container */}
-      <div className="p-3    d-flex justify-content-between mb-5">
+      <div className="p-3  pt-4  d-flex justify-content-between mb-5 mt-5">
         {cuttingMaintainceAndEnovation.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
              <CardMedia>
-            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -298,11 +305,11 @@ function Profile() {
       </div>
 
       {/* production container */}
-      <div className="container    d-flex justify-content-around mb-5">
+      <div className="container  pt-4   d-flex justify-content-around mb-5 mt-5">
         {production.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
              <CardMedia>
-            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -322,11 +329,11 @@ function Profile() {
         ))}
       </div>
       {/* quality container */}
-      <div className="container   d-flex justify-content-around mb-5">
+      <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
         {quality.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
              <CardMedia>
-            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -346,11 +353,11 @@ function Profile() {
         ))}
       </div>
       {/* finishing and MQac container */}
-      <div className="container   d-flex justify-content-around mb-5">
+      <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
         {finishingAndMqac.map((profile) => (
           <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
              <CardMedia>
-            <img style={{width:"100%",height:"100%",}} src={profile.picture} alt="" />
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">

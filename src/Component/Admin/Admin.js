@@ -12,10 +12,12 @@ function Admin() {
             contact:"017xxxxxxxxx",
             about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium officiis esse ut hic illum aut possimus iure, nulla voluptate?",
             ImgUrl:"",
+            github:"faGithub",
             facebook:"faFacebook",
             linkedIn:"faLinkedinIn",
             instagram:"faInstagram",
             whatsApp:"faWhatsappSquare",
+            twitter:"faTweeter"
         },
         {   
             id:2,
