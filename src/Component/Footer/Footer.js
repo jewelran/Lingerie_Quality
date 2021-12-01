@@ -28,9 +28,7 @@ function Footer() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
               necessitatibus quaerat corrupti commodi quisquam repudiandae nisi
               saepe obcaecati nemo blanditiis nostrum cumque, officia rem
-              provident eligendi incidunt laudantium? Laborum, voluptatem
-              blanditiis magni ut nobis assumenda delectus laboriosam excepturi
-              id sunt expedita nam harum atque ipsam iusto vel natus magnam.
+              provident eligendi incidunt laudantium? Laborum,
             </p>
             <div className=" d-flex justify-content-around ">
               <h2 className="rounded text-primary">

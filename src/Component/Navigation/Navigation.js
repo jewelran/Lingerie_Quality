@@ -66,28 +66,28 @@ function Navigation() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-center" href="#">
+                  <Link to ="/organizational_chart" className="nav-link text-center" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#203864", marginRight: "5px" }}>
                       {" "}
                       <FontAwesomeIcon icon={faSitemap} />
                     </span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link text-center" href="#">
+                  <Link to= "/contact" className="nav-link text-center" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#7030A0", marginRight: "5px" }}>
                       {" "}
                       <FontAwesomeIcon icon={faHeadset} />
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <a  
                     className="nav-link text-center dropdown-toggle"
-                    href="#"
+                   
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -134,13 +134,13 @@ function Navigation() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-center" href="#">
+                  <Link to="/notification" className="nav-link text-center" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
                       {" "}
                       <FontAwesomeIcon icon={faBell} />
                     </span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

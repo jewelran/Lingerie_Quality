@@ -72,7 +72,7 @@ function Carousel() {
         <div class="carousel-item">
             <img
               style={{ height: "80vh" }}
-              src={KeyToSuccess}
+              src={DefectNature}
               class="d-block w-100"
               alt="..."
             />
@@ -173,7 +173,7 @@ function Carousel() {
           <div class="carousel-item active">
             <img
               style={{ height: "80vh" }}
-              src={DefectNature}
+              src={KeyToSuccess}
               class="d-block w-100"
               alt="..."
             />
