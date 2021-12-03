@@ -22,3 +22,7 @@
 .navContainer{
     z-index: 9999;
 }
+.profileLogo{
+    clip-path: polygon(23% 0, 80% 0, 100% 51%, 80% 91%, 23% 91%, 0% 50%);
+    padding: 10px;
+}

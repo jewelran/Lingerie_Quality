@@ -116,7 +116,7 @@ function Footer() {
           <div className=" d-flex justify-content-center">
               <form action="">
               <input type="text" placeholder="Your name" />
-              <input type="text"  placeholder="Your Email"/>
+              <input style ={{marginLeft:"20px"}} type="text"  placeholder="Your Email"/>
               <button className="btn btn-danger submitBtn">Submit</button>
               </form>
               

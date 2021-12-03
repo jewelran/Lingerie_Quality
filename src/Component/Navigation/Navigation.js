@@ -19,8 +19,9 @@ function Navigation() {
           <div className="container-fluid ">
             <a className="navbar-brand d-flex align-items-center " href="#">
               <img
-                style={{ width: "100px" }}
-                src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+              className="profileLogo"
+                style={{ width: "100px" , height:"100px" ,background:"#222244", }}
+                src="https://i.ibb.co/X4Yv37f/coo.png"
                 alt=""
               />
              <Link style={{textDecoration:"none"}} to = "/login">

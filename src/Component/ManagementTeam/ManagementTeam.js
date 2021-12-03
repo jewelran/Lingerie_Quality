@@ -1,6 +1,8 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import ManagementCard from "./ManagementCard";
 import "./ManagementTeam.css"
+import Navigation from './../Navigation/Navigation';
 function ManagementTeam() {
   const management = [
     {
@@ -30,6 +32,7 @@ function ManagementTeam() {
   ]
   return (
     <div>
+       <Navigation/>
       <div  className="container mainContainer pb-5 mt-5 ">
         <div className="manageContainer">
           <div className="sideBer col-md-3 pt-2 h-75" >
@@ -69,6 +72,7 @@ function ManagementTeam() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -19,7 +19,7 @@
     width: 125%;
     height: 130%;
     transform: translateY(-26px) !important;
-    background-color: aqua;
+    background-image: url("../Images/bgImg/giphy.gif");
 }
 .profileImgTitle{
     width: 40%;

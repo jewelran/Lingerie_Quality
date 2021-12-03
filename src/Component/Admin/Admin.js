@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Footer from '../Footer/Footer';
 import AdminCard from './AdminCard';
 
 function Admin() {
@@ -11,8 +12,7 @@ function Admin() {
             designation:"Sr. Quality Executive" ,
             contact:"017xxxxxxxxx",
             about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium officiis esse ut hic illum aut possimus iure, nulla voluptate?",
-            ImgUrl:"",
-            github:"faGithub",
+            ImgUrl:"https://i.ibb.co/Jr4yRWZ/Omor-Faruq.png",
             facebook:"faFacebook",
             linkedIn:"faLinkedinIn",
             instagram:"faInstagram",
@@ -25,7 +25,7 @@ function Admin() {
             designation:"Web Developer (QC)" ,
             contact:"017xxxxxxxxx",
             about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium officiis esse ut hic illum aut possimus iure, nulla voluptate?",
-            imgUrl:"",
+            ImgUrl:"https://i.ibb.co/pfT62fd/jewel.png",
             github:"faGithub",
             facebook:"faFacebook",
             linkedIn:"faLinkedinIn",
@@ -44,7 +44,6 @@ function Admin() {
                 admins.map(admin => <AdminCard key= {admin.id} admin = {admin}></AdminCard>)
             }
            </div>
-         
         </div>
     )
 }

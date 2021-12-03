@@ -20,8 +20,10 @@ import finishingAndMqacFile from "../finishing&Mqac.json";
 import hrd from "../hrd.json";
 import "./ProfileCard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { shadows } from "@mui/system";
+import { faWhatsapp, faFacebook, faInstagram, faGoogle, } from '@fortawesome/free-brands-svg-icons';
+import Footer from "../Footer/Footer";
+import Navigation from './../Navigation/Navigation';
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 function Profile() {
   const [businessDepartment, setBusinessDepartment] = React.useState([]);
   const [hrdDepartment, setHrdDepartment] = useState([]);
@@ -34,7 +36,7 @@ function Profile() {
   const [qsAndNqc, setQsAndNqc] = useState([]);
   const [ieAndStore, setIeAndStore] = useState([]);
 
-  console.log(businessDepartment, hrd);
+  console.log(businessDepartment);
   useEffect(() => {
     setBusinessDepartment(managementFile);
     setHrdDepartment(hrd);
@@ -67,6 +69,7 @@ function Profile() {
 
   return (
     <div className="">
+       <Navigation/>
       <div className="container  pt-5 pb-5">
         <div className="d-flex mt-5  justify-content-center">
           <div className="col-md-3  profileImgCard Card">
@@ -85,7 +88,7 @@ function Profile() {
               >
                 Mahbubur Rahman Russell
               </h3>
-              <h6
+              <h5
                 style={{
                   color: "#002060",
                   textAlign: "center",
@@ -93,25 +96,8 @@ function Profile() {
                 }}
               >
                 Authority of KC Lingerie Ltd.
-              </h6>
-              <p
-                style={{
-                  color: "#002060",
-                  fontFamily: "cursive",
-                  lineHeight: "9px",
-                }}
-              >
-                <span>Email:</span> <span>russell@knitconcern.com</span>
-              </p>
-              <p
-                style={{
-                  color: "#002060",
-                  fontFamily: "cursive",
-                  lineHeight: "9px",
-                }}
-              >
-                <span>Phone:</span> <span>+880 1713-000533</span>
-              </p>
+              </h5>
+          
               <p>
                 <span
                   style={{
@@ -138,41 +124,53 @@ function Profile() {
                   Subordinate for a better future & to be self dependent.
                 </span>
               </p>
+              <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+              <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+            </CardActions>
             </div>
           </div>
         </div>
       </div>
-      <div className=" container card-deck    d-flex justify-content-center pb-5">
-        {profileList.map((profile) => (
-          <ProfileCard key={profile.id} profile={profile}>
-            {" "}
-          </ProfileCard>
-        ))}
+      <div  style={{marginTop:"3rem"}} className=" container card-deck    d-flex justify-content-center pb-5">
+       {
+         profileList.map(profile => <ProfileCard key = {profile.id}  profile={profile}></ProfileCard>)
+       }
       </div>
 
       {/* business container */}
 
       <div className="p-3    d-flex justify-content-between mb-5 mt-5 ">
         {businessDepartment.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, display: "flex" }}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
             <CardMedia>
               <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
+            <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
               <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
+                <h2>{profile.name}</h2>
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+            <h5>  {profile.position}</h5>
               </Typography>
-              <CardActions className="mb-0">
-                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
-                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
+              <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+              </Typography>
+              
            
             </CardContent>
-            
+            <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+                <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+                <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+                <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+              </CardActions>
+            </CardContent>
           </Card>
           
         ))}
@@ -182,49 +180,65 @@ function Profile() {
       {/* hrdDepartment container */}
       <div className="container    d-flex justify-content-around mb-5 mt-5">
         {hrdDepartment.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-            <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(56px)", borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
-            </CardMedia>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-
-              <CardActions>
-               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
-               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
-            </CardContent>
-          </Card>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <CardMedia>
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+          </CardMedia>
+          <CardContent>
+          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+            <Typography gutterBottom variant="h5" component="div">
+              <h2>{profile.name}</h2>
+            </Typography>
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+          <h5>  {profile.position}</h5>
+            </Typography>
+            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            </Typography>
+            
+         
+          </CardContent>
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+              <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+            </CardActions>
+          </CardContent>
+        </Card>
         ))}
       </div>
       {/* qs team  container*/}
       <div className="p-3    d-flex justify-content-around mb-5 mt-5">
         {qsAndNqc.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-            <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
-            </CardMedia>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-
-              <CardActions>
-               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
-               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
-            </CardContent>
-          </Card>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <CardMedia>
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+          </CardMedia>
+          <CardContent>
+          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+            <Typography gutterBottom variant="h5" component="div">
+              <h2>{profile.name}</h2>
+            </Typography>
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+          <h5>  {profile.position}</h5>
+            </Typography>
+            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            </Typography>
+            
+         
+          </CardContent>
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+              <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+            </CardActions>
+          </CardContent>
+        </Card>
         ))}
       </div>
 
@@ -232,150 +246,199 @@ function Profile() {
       {/* cad sample file container */}
       <div className="p-3    d-flex justify-content-between mb-5 mt-5">
         {cadSamplePlanning.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-            <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
-            </CardMedia>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-
-              <CardActions>
-               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
-               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
-            </CardContent>
-          </Card>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <CardMedia>
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+          </CardMedia>
+          <CardContent>
+          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+            <Typography gutterBottom variant="h5" component="div">
+              <h2>{profile.name}</h2>
+            </Typography>
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+          <h5>  {profile.position}</h5>
+            </Typography>
+            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            </Typography>
+            
+         
+          </CardContent>
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+              <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+            </CardActions>
+          </CardContent>
+        </Card>
         ))}
       </div>
 
       {/* IE and store */}
       <div className="container  d-flex justify-content-around mb-5 mt-5">
         {ieAndStore.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-            <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
-            </CardMedia>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-
-              <CardActions>
-               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
-               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
-            </CardContent>
-          </Card>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <CardMedia>
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+          </CardMedia>
+          <CardContent>
+          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+            <Typography gutterBottom variant="h5" component="div">
+              <h2>{profile.name}</h2>
+            </Typography>
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+          <h5>  {profile.position}</h5>
+            </Typography>
+            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            </Typography>
+            
+         
+          </CardContent>
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+              <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+            </CardActions>
+          </CardContent>
+        </Card>
         ))}
       </div>
 
       {/* cuttingMaintainceAndEnovation container */}
       <div className="p-3  pt-4  d-flex justify-content-between mb-5 mt-5">
         {cuttingMaintainceAndEnovation.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-             <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
-            </CardMedia>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-
-              <CardActions>
+           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+           <CardMedia>
+             <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+           </CardMedia>
+           <CardContent>
+           <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+             <Typography gutterBottom variant="h5" component="div">
+               <h2>{profile.name}</h2>
+             </Typography>
+             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+           <h5>  {profile.position}</h5>
+             </Typography>
+             <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+             </Typography>
+             
+          
+           </CardContent>
+           <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
-            </CardContent>
-          </Card>
+               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+               <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+             </CardActions>
+           </CardContent>
+         </Card>
         ))}
       </div>
 
       {/* production container */}
       <div className="container  pt-4   d-flex justify-content-around mb-5 mt-5">
         {production.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-             <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
-            </CardMedia>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-
-              <CardActions>
+           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+           <CardMedia>
+             <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+           </CardMedia>
+           <CardContent>
+           <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+             <Typography gutterBottom variant="h5" component="div">
+               <h2>{profile.name}</h2>
+             </Typography>
+             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+           <h5>  {profile.position}</h5>
+             </Typography>
+             <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+             </Typography>
+             
+          
+           </CardContent>
+           <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
-            </CardContent>
-          </Card>
+               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+               <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+             </CardActions>
+           </CardContent>
+         </Card>
         ))}
       </div>
       {/* quality container */}
       <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
         {quality.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-             <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
-            </CardMedia>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-
-              <CardActions>
-               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
-               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
-              </CardActions>
-            </CardContent>
-          </Card>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <CardMedia>
+            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+          </CardMedia>
+          <CardContent>
+          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+            <Typography gutterBottom variant="h5" component="div">
+              <h2>{profile.name}</h2>
+            </Typography>
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+          <h5>  {profile.position}</h5>
+            </Typography>
+            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            </Typography>
+            
+         
+          </CardContent>
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+              <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+              <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+            </CardActions>
+          </CardContent>
+        </Card>
         ))}
       </div>
       {/* finishing and MQac container */}
       <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
         {finishingAndMqac.map((profile) => (
-          <Card className="profileCard" sx={{ maxWidth: 600, display: "flex" }}>
-             <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34",}} src={profile.picture} alt="" />
+            <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+            <CardMedia>
+              <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
+            <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
               <Typography gutterBottom variant="h5" component="div">
-                {profile.name}
+                <h2>{profile.name}</h2>
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+            <h5>  {profile.position}</h5>
               </Typography>
-
-              <CardActions>
-               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
-               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+              <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+              </Typography>
+              
+           
+            </CardContent>
+            <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
+                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
+                <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
+                <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
+                <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
               </CardActions>
             </CardContent>
           </Card>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }

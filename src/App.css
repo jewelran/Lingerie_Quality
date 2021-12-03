@@ -1,6 +1,8 @@
 .App{
   background: rgb(236, 151, 169);
-  background: radial-gradient(circle, rgb(187 174 238) 0%, #0dcaf0 100%);
+  /* background: radial-gradient(circle, rgb(187 174 238) 0%, #0dcaf0 100%); */
+
+  background-image: url("https://assets.website-files.com/602d060c40c93430b98bcc53/6039396776477b39c6099434_wavenet-v1.1-loop.gif");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
