@@ -20,6 +20,20 @@
     /* width: 100%; */
 }
 .TopProfileImg{
-    width: 100%;
-    height: 100%;
+    width: 113%;
+    height: 134%;
+    transform: translate(-27px, -103px);
+    overflow: hidden;
+}
+.topProfileImgArea{
+    width: 23rem;
+    background-image: url("../Images/bgImg/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 8px 11px 20px darkcyan;
+    height: 19rem;
+    margin: -3rem 0rem -3rem -1.3rem;
+    border-radius: 50px 0px 50px 0px;
+
 }

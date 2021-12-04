@@ -1,17 +1,18 @@
 
 .profileImgCard{
     --bs-bg-opacity: 1;
-   box-shadow:  6px 17px 28px #000000;
-    border-radius: 10px;
+    box-shadow: 6px 17px 28px #000000;
+    border-radius: 10px 10px 10px 10px;
     z-index: 2;
-    height: 16rem;
+    height: 20rem;
     background-image: url("../Images/bgImg/cooBgImg.gif");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -0.5rem;
 }
 .profileImgCard img{
-    height: 141.5%;
+    height: 133.5%;
     transform: translateY(-106px);
 }
 
@@ -22,14 +23,13 @@
     background-image: url("../Images/bgImg/giphy.gif");
 }
 .profileImgTitle{
-    width: 40%;
+    width: 45%;
     border-radius: 0px 10px 10px 0px;
-    height: 237px;
+    height: 288px;
     margin-top: 0.5rem;
-    box-shadow: 11px 6px 15px #100c08; 
+    box-shadow: 11px 6px 15px #100c08;
     line-height: 20px;
     text-align: justify;
-   
 
 }
 
@@ -43,4 +43,20 @@
 .profileCard:hover{
     box-shadow: 10px 10px 20px #363636 !important;
     max-width: 600px !important;
+}
+.cooProfileIconArea{
+    margin-top: 45px !important;
+}
+
+.cooProfileIconArea h2{
+        color:#4c2377;
+        transition: translate cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.cooProfileIconArea button:hover h2{
+    color:#dcdbdd;
+}
+.cooProfileIconArea button:hover{
+        background-color:#3f0b77;
+        
 }

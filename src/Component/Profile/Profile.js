@@ -124,7 +124,7 @@ function Profile() {
                   Subordinate for a better future & to be self dependent.
                 </span>
               </p>
-              <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+              <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="cooProfileIconArea">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>

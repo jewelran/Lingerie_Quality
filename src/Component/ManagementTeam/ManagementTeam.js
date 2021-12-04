@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
 import ManagementCard from "./ManagementCard";
 import "./ManagementTeam.css"
 import Navigation from './../Navigation/Navigation';
+import jobDescription from "../jobDescription.json"
 function ManagementTeam() {
+  
+  const [jobDescriptionInfo, setJonDescription] =useState([])
+  const jobInfo = jobDescription;
+  const index = 7;
+  const uniqJonDescription = jobDescriptionInfo.filter(info => info.index === index)
+  console.log("this is uniq object", uniqJonDescription);
+  useEffect(() => {
+    setJonDescription(jobInfo)
+  },[])
+  console.log(jobDescriptionInfo);
   const management = [
     {
       Id:1,
@@ -70,6 +81,7 @@ function ManagementTeam() {
           <div className="sideContainer col-md-8 pt-2 container container-fluid bg-white">
            <ManagementCard/>
           </div>
+         
         </div>
       </div>
       <Footer/>
