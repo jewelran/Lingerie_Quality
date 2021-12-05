@@ -87,8 +87,8 @@ function Login() {
                         Last name is required
                       </span>
                     )}
+                    <br/>
                   </div>
-                  <br />
                   <div className="">
                     <input
                       placeholder="Last name"
@@ -101,10 +101,10 @@ function Login() {
                         Last name is required
                       </span>
                     )}
+                     <br/>
                   </div>
                 </div>
 
-                <br />
                <div className="">
                <input
                   className="w-100 text-white rounded-3"
@@ -115,8 +115,8 @@ function Login() {
                 {errors.email && (
                   <span style={{ color: "red" , marginBottom:"10px" }}>Email is required</span>
                 )}
+                  <br/>
                </div>
-                <br />
                 <div className="">
                     <input
                       className="w-100 text-white rounded-3"
@@ -130,8 +130,8 @@ function Login() {
                        Company name is required
                       </span>
                     )}
+                      <br/>
                   </div>
-                <br />
                 <div className="d-flex justify-content-between">
                   <div className="">
                     <input
@@ -141,10 +141,10 @@ function Login() {
                     />
                     <br />
                     {errors.department && (
-                      <span style={{ color: "red" }}>department is required</span>
+                      <span style={{ color: "red" }}>Department is required</span>
                     )}
+                     <br/>
                   </div>
-                  <br />
                   <div className="">
                     <input
                       placeholder="designation"
@@ -154,13 +154,13 @@ function Login() {
                     <br />
                     {errors.designation && (
                       <span style={{ color: "red" }}>
-                        designation is required
+                        Designation is required
                       </span>
                     )}
+                     <br/>
                   </div>
                 </div>
 
-                <br />
                 <div className="d-flex justify-content-between">
                   <div className="">
                     <input
@@ -172,6 +172,7 @@ function Login() {
                     {errors.password && (
                       <span style={{ color: "red" }}>Password is required</span>
                     )}
+                     <br/>
                   </div>
                   <br />
                   <div className="">
@@ -186,6 +187,7 @@ function Login() {
                         Confirm password is required
                       </span>
                     )}
+                     <br/>
                   </div>
                 </div>
                 <br />
@@ -212,9 +214,9 @@ function Login() {
                         Your Photo is required
                       </span>
                     )}
+                     <br/>
                    </div>
                   </div>
-                <br />
                <div className="d-flex justify-content-center">
                <input
                   className="w-50 bg-danger"

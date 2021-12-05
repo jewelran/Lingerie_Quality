@@ -23,7 +23,8 @@
 .uploadImgIcon{
     font-size: 65px;
     margin-left: 20px;
-    color: darkgrey
+    color: darkgrey;
+    text-align: center;
 }
 input{
     height: 48px;
