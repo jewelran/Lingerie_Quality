@@ -1,0 +1,76 @@
+
+
+  .mainContainer{
+    height: 200px;
+    width: 200px;
+    margin: 200px auto;
+    position: relative;
+    perspective: 1000px;
+  }
+  .mainContainer .slides {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    animation: animate  25s linear infinite;
+  }
+  @keyframes animate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(360deg);
+    }
+  }
+  .mainContainer .slides>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: auto;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+
+  }
+  .slides>img:nth-child(1){
+    transform: rotateY(45deg) translateZ(270px);
+  }
+  .slides>img:nth-child(2){
+    transform: rotateY(90deg) translateZ(270px);
+  }
+  .slides>img:nth-child(3){
+    transform: rotateY(45deg) translateZ(270px);
+  }
+  .slides>img:nth-child(4){
+    transform: rotateY(180deg) translateZ(270px);
+  }
+  .slides>img:nth-child(5){
+    transform: rotateY(225deg) translateZ(270px);
+  }
+  .slides>img:nth-child(6){
+    transform: rotateY(270deg) translateZ(270px);
+  }
+  .slides>img:nth-child(7){
+    transform: rotateY(315deg) translateZ(270px);
+  }
+  .slides>img:nth-child(8){
+    transform: rotateY(360deg) translateZ(270px);
+  }
+  .slides>img:nth-child(9){
+    transform: rotateY(136deg) translateZ(270px);
+  }
+ .mainContainer:hover .slides {
+   animation-play-state: paused;
+
+ }
+
+ .slides>img:hover{
+   transition: all .2s ease-in-out;
+   box-shadow: 0px 0px 10px white;
+   cursor: pointer;
+   bottom: 10px;
+   width: 400px;
+   height:400px;
+   top: 50px;
+   -webkit-box-reflect: below 20px linear-gradient(0deg, rgb(85, 30, 30));
+ }

@@ -25,7 +25,7 @@ function Navigation() {
                 alt=""
               />
              <Link style={{textDecoration:"none"}} to = "/login">
-             <h3 className="text-center text-white border border-white rounded p-1 ">Login</h3>
+             <h3 className="text-center text-white mt-2 border-bottom rounded p-1 loginBtn ">Login</h3>
              </Link>
             </a>
             <button
@@ -51,14 +51,14 @@ function Navigation() {
                 className="navbar-nav"
               >
                 <li className="nav-item">
-                  <Link  to= "/home" className="nav-link text-center active text-center" aria-current="page" href="#">
+                  <Link  to= "/home" className="nav-link text-center  navIcons active text-center" aria-current="page" href="#">
                     <span style={{display:"block", textAlign:"center", color: "#385723", marginRight: "5px" }}>
                       <FontAwesomeIcon icon={faHome} />
                     </span>{" "}
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to = "/profile" className="nav-link text-center" href="#">
+                  <Link to = "/profile" className="nav-link text-center  navIcons" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#BF9000", marginRight: "5px" }}>
                       {" "}
@@ -67,7 +67,7 @@ function Navigation() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to ="/organizational_chart" className="nav-link text-center" href="#">
+                  <Link to ="/organizational_chart" className="nav-link text-center  navIcons" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#203864", marginRight: "5px" }}>
                       {" "}
@@ -77,7 +77,7 @@ function Navigation() {
                 </li>
 
                 <li className="nav-item">
-                  <Link to= "/contact" className="nav-link text-center" href="#">
+                  <Link to= "/contact" className="nav-link text-center  navIcons" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#7030A0", marginRight: "5px" }}>
                       {" "}
@@ -87,7 +87,7 @@ function Navigation() {
                 </li>
                 <li className="nav-item dropdown">
                   <a  
-                    className="nav-link text-center dropdown-toggle"
+                    className="nav-link text-center  navIcons dropdown-toggle"
                    
                     id="navbarDropdownMenuLink"
                     role="button"
@@ -135,7 +135,7 @@ function Navigation() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link to="/notification" className="nav-link text-center" href="#">
+                  <Link to="/notification" className="nav-link text-center  navIcons" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
                       {" "}

@@ -5,6 +5,7 @@ import MissionAndVisionCard from './../MissionAndVision/MissionAndVisionCard';
 import Slogan from '../Slogan/Slogan';
 import Footer from './../Footer/Footer';
 import Navigation from './../Navigation/Navigation';
+import Gallery from '../Gallery/Gallery';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
              <Navigation/>
             <Carousel/>
             <MissionAndVisionCard/>
+            <Gallery/>
             <Slogan/>
             <Admin/>
             <Footer/>

@@ -109,6 +109,7 @@ function Login() {
                <input
                   className="w-100 text-white rounded-3"
                   placeholder="Enter your Email"
+                  type="email"
                   {...register("email", { required: true })}
                 />
                 <br />
@@ -166,6 +167,7 @@ function Login() {
                     <input
                       className="w-100 text-white rounded-3"
                       placeholder="Password"
+                      type="password"
                       {...register("password", { required: true })}
                     />
                     <br />
@@ -179,12 +181,14 @@ function Login() {
                     <input
                       placeholder="Confirm password"
                       className="w-100 text-white rounded-3"
+                      type="password"
+                  
                       {...register("confirmPass", { required: true })}
                     />
                     <br />
                     {errors.confirmPass && (
                       <span style={{ color: "red" }}>
-                        Confirm password is required
+                        Password is required
                       </span>
                     )}
                      <br/>

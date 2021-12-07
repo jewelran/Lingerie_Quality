@@ -2,9 +2,17 @@
     padding-right: 10px;
     margin-left: -5px;
     height: 360px;
-    overflow: hidden;
     border-radius: 10px;
     position: relative;
+    transition: all 0.4s ease-in-out;
+
+}
+.profileContainer{
+    overflow: hidden;
+}
+ .profileContainer:hover .adminImg{
+    
+    transform: scale(1.1) !important;
 }
 .mediaBtn a h2{
     color: darkslateblue;
@@ -17,20 +25,29 @@
 .mediaBtn button a h2:hover{
     color: rgb(33, 207, 62);
 }
-.layer{
+.details{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 41%;
-    opacity: 0.6;
-    height: 73%;
-    background-color:rgb(20, 20, 32);
+    top: 160px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: 40%;
+    height: 27%;
+    transform: scaleY(0);
+    transition: transform 0.2s;
+    border-radius: 5px;
 }
-.layer2{
+.profileContainer:hover .details{
+    transform: scaleY(1);
+}
+.details .content{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 41%;
-    color: white;
-    height: 73%;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.adminProfileBtn{
+    margin-left: 4rem;
+}
+
+

@@ -6,7 +6,15 @@
 }
 .nav-item span {
     font-size: 30px;
+    transition: all 0.2s ease-in-out;
+
 }
+.nav-item:hover span{
+    background-color: rgb(241, 102, 37);
+    border-radius: 5px;
+    padding: auto;
+}
+
 .navbar-nav:last-child{
     padding-left: 20px;
 }
@@ -25,4 +33,7 @@
 .profileLogo{
     clip-path: polygon(52% 0, 96% 27%, 95% 77%, 46% 99%, 4% 76%, 5% 27%);
     padding: 10px;
+}
+.loginBtn{
+    margin-top: 18px !important;
 }

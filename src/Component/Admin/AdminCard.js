@@ -24,7 +24,7 @@ function AdminCard(props) {
   };
   return (
     <Card sx={{ maxWidth: 800, marginLeft: "1rem", height: "260px" }}>
-      <CardActionArea className="d-flex">
+      <CardActionArea className="d-flex profileContainer">
         <CardMedia
           className="adminImg"
           component="img"
@@ -32,12 +32,14 @@ function AdminCard(props) {
           image={ImgUrl}
           alt="green iguana"
         />
-        <div className="layer "> </div>
-        <div className="layer2 d-flex justify-content-center align-items-center"> 
-       <div className="">
-        <button className="btn btn-danger">view Profile</button>
-       </div>
+      <div className="details">
+        <div className="content d-flex justify-content-center align-items-center">
+        <button className="btn btn-danger border-none adminProfileBtn">View Profile</button>
         </div>
+        
+        
+      </div>   
+     
         <CardContent style={{ marginTop: "-5rem" }}>
           <Typography  gutterBottom variant="h5" component="div">
             <h2>{name}</h2>
