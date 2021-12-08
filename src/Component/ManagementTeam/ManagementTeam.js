@@ -44,7 +44,7 @@ function ManagementTeam() {
   return (
     <div>
        <Navigation/>
-      <div  className="container mainContainer pb-5 mt-5 ">
+      <div  className="container  pb-5 mt-5 ">
         <div className="manageContainer">
           <div className="sideBer col-md-3 pt-2 h-75" >
             <h3>Job Description </h3>

@@ -30,6 +30,7 @@
     image-rendering: auto;
     position: absolute;
     transition: all 0.5s ease-in-out;
+    -webkit-box-reflect:below 0px linear-gradient(transparent,  transparent, #0006)
 
   }
   .slides>img:nth-child(1){

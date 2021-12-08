@@ -9,11 +9,7 @@
     transition: all 0.2s ease-in-out;
 
 }
-.nav-item:hover span{
-    background-color: rgb(241, 102, 37);
-    border-radius: 5px;
-    padding: auto;
-}
+
 
 .navbar-nav:last-child{
     padding-left: 20px;
