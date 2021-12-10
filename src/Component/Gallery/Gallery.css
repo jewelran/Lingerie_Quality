@@ -1,8 +1,8 @@
 
 
   .mainContainer{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 15%;
     margin: 200px auto;
     position: relative;
     perspective: 1000px;
@@ -30,36 +30,40 @@
     image-rendering: auto;
     position: absolute;
     transition: all 0.5s ease-in-out;
-    -webkit-box-reflect:below 0px linear-gradient(transparent,  transparent, #0006)
+    -webkit-box-reflect:below 7px linear-gradient(transparent,  transparent, #0006)
 
   }
   .slides>img:nth-child(1){
-    transform: rotateY(45deg) translateZ(270px);
+    transform: rotateY(36deg) translateZ(500px);
   }
   .slides>img:nth-child(2){
-    transform: rotateY(90deg) translateZ(270px);
+    transform: rotateY(72deg) translateZ(500px);
   }
   .slides>img:nth-child(3){
-    transform: rotateY(45deg) translateZ(270px);
+    transform: rotateY(108deg) translateZ(500px);
   }
   .slides>img:nth-child(4){
-    transform: rotateY(180deg) translateZ(270px);
+    transform: rotateY(144deg) translateZ(500px);
   }
   .slides>img:nth-child(5){
-    transform: rotateY(225deg) translateZ(270px);
+    transform: rotateY(180deg) translateZ(500px);
   }
   .slides>img:nth-child(6){
-    transform: rotateY(270deg) translateZ(270px);
+    transform: rotateY(216deg) translateZ(500px);
   }
   .slides>img:nth-child(7){
-    transform: rotateY(315deg) translateZ(270px);
+    transform: rotateY(252deg) translateZ(500px);
   }
   .slides>img:nth-child(8){
-    transform: rotateY(360deg) translateZ(270px);
+    transform: rotateY(288deg) translateZ(500px);
   }
   .slides>img:nth-child(9){
-    transform: rotateY(136deg) translateZ(270px);
+    transform: rotateY(324deg) translateZ(500px);
   }
+  .slides>img:nth-child(10){
+    transform: rotateY(360deg) translateZ(500px);
+  }
+  
  .mainContainer:hover .slides {
    animation-play-state: paused;
 
@@ -67,11 +71,6 @@
 
  .slides>img:hover{
    transition: all .2s ease-in-out;
-   box-shadow: 0px 0px 10px white;
    cursor: pointer;
-   bottom: 10px;
-   width: 400px;
-   height:400px;
-   top: 50px;
    -webkit-box-reflect: below 20px linear-gradient(0deg, rgb(85, 30, 30));
  }

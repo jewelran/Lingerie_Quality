@@ -1,20 +1,55 @@
 import React from 'react'
 import "./Gallery.css"
+import agaton from "./Gallery_img/Set/agaton.png"
+import alberts from "./Gallery_img/Set/alberts.png"
+import alice from "./Gallery_img/Set/alice.png"
+import ella from "./Gallery_img/Set/ella.png"
+import Ellen from "./Gallery_img/Set/Ellen.png"
+import friend from "./Gallery_img/Set/friend.png"
+import short from "./Gallery_img/Set/short.png"
+import saraRashgurd from "./Gallery_img/Set/saraRashgurd.png"
+
+
+import basicBoxer from "./Gallery_img/Single/basicBoxer.png"
+import basicBrief from "./Gallery_img/Single/basicBrief.png"
+import saga from "./Gallery_img/Single/saga.png"
+import swimsuit from "./Gallery_img/Single/swimsuit.png"
+import bikiniBottom from "./Gallery_img/Single/bikiniBottom.png"
+import swimsuit2 from "./Gallery_img/Single/swimsuit2.png"
+import bikiniSet from "./Gallery_img/Single/bikiniSet.png"
+import swimsuit3 from "./Gallery_img/Single/swimsuit3.png"
+
+
 function Gallery() {
     return (
         <div>
-             <div class="mainContainer">
+             <div className="mainContainer">
     <div class="slides">
-      <img src="https://sc04.alicdn.com/kf/U663109d37be1475691e6ef6f9a1cc9c30.jpg" alt=""/>
-      <img src="https://my-live-01.slatic.net/p/d79573d3e842c966ef7ee6927ddc8ac5.jpg" alt=""/>
-      <img src="https://ae01.alicdn.com/kf/HTB1LoB6XODxK1RjSsphq6zHrpXaD.jpg" alt=""/>
-      <img src="https://assets.vogue.com/photos/601339a5ebfcd177a26773dc/master/w_1280%2Cc_limit/slide_11.jpg" alt=""/>
-      <img src="https://hips.hearstapps.com/clv.h-cdn.co/assets/15/27/1435691552-uniquevintage-1950s-style-pin-up-yellow-white-gingham-fit-n-flare-bandeau-swimsuit.jpg?crop=1xw:0.99975xh;center,top&resize=480:*" alt=""/>
-      <img src="https://bettylicious.co.uk/wp-content/uploads/2017/11/BETTY-1-400x400.jpg" alt=""/>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBq3S4zOGgW4zKAoW6VoxY7i2rUVr4U4ZvZHTFoHf2xdPvWBJ1U0DvydAroyBEyKOteVY&usqp=CAU" alt=""/>
-      <img src="https://i.pinimg.com/originals/54/7e/32/547e32214f79d0b10e05496ce73974a2.jpg" alt=""/>
-      <img src="https://static.yoursurprise.com/galleryimage/f4/f41514c0d8f2f0e38b06af23f93f24bb/underwear-personalised-boxer-shorts-size-m-name.jpg?width=900&crop=1%3A1" alt=""/>
-      
+      <img src={agaton} alt=""/>
+      <img src={alberts} alt=""/>
+      <img src={alice} alt=""/>
+      <img src={Ellen} alt=""/>
+      <img src={ella} alt=""/>
+      <img src={friend} alt=""/>
+      <img src={short} alt=""/>
+      <img src={saraRashgurd} alt=""/>
+      <img src={short} alt=""/>
+      <img src={saraRashgurd} alt=""/>
+    </div>
+  </div>
+  <br />
+             <div className="mainContainer">
+    <div class="slides">
+      <img src={basicBoxer} alt=""/>
+      <img src={basicBrief} alt=""/>
+      <img src={saga} alt=""/>
+      <img src={swimsuit} alt=""/>
+      <img src={bikiniBottom} alt=""/>
+      <img src={swimsuit2} alt=""/>
+      <img src={swimsuit3} alt=""/>
+      <img src={bikiniSet} alt=""/>
+      <img src={swimsuit3} alt=""/>
+      <img src={bikiniSet} alt=""/>
     </div>
   </div>
         </div>
