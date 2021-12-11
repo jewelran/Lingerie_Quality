@@ -11,6 +11,7 @@ import {
   
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { Typography } from '@mui/material/Typography';
 function Navigation() {
   return (
     <div style={{ background:"indigo",}} className ="sticky-top">
@@ -103,7 +104,7 @@ function Navigation() {
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <li>
-                      <Link to="/*"  className="dropdown-item" href="#">
+                      <Link to="/qualityManual"  className="dropdown-item" href="#">
                         Quality Manual
                       </Link>
                     </li>
@@ -113,24 +114,24 @@ function Navigation() {
                       </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link to = "/sopFollowChart" className="dropdown-item" href="#">
                         SOP & Flaw chart
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link to="/routineAndMethod" className="dropdown-item" href="#">
                         Routine & method
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link to="/hAndMEducation" className="dropdown-item" href="#">
                         H&M Education
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link to="/qualityReport" className="dropdown-item" href="#">
                         Quality Report
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>

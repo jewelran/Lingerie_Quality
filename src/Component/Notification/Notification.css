@@ -1,8 +1,4 @@
 .notification{
-    background-image: url("../Images/bgImg/notification_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 100vh;
+   background-color:#4B32AA;
+    
 }
