@@ -5,12 +5,7 @@
     margin: 5px;
 }
 
-input{
-    padding: 5px;
-    background-color: black;
-    border: none;
-    border-radius: 5px;
-}
+
 .submitBtn{
     margin-left: 30px;
     padding:"5px 30px"

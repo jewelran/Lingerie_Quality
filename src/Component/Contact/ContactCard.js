@@ -1,10 +1,10 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
-import "./AdminCard.css";
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -13,48 +13,48 @@ import {
   faGithub,
   faTwitter,
   faOpencart,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
-function AdminCard(props) {
-  const { name, id, about, github, website, twitter, designation, ImgUrl,email } =
-    props.admin;
-
-;
+ function ContactCard(props) {
+     const {name, ImgUrl,designation, about, github, facebook, linkedIn, instagram,whatsApp,website,twitter, email} = props.admin
   return (
-    <Card sx={{ maxWidth: 800, marginLeft: "1rem", height: "260px" }}>
-      <CardActionArea className="d-flex profileContainer">
-        <CardMedia
-          className="adminImg"
-          component="img"
-        
-          image={ImgUrl}
-          alt="green iguana"
-        />
-      <div className="details">
-        <div className="content d-flex justify-content-center align-items-center">
-        <button className="btn btn-danger border-none adminProfileBtn">View Profile</button>
-        </div>
-        
-        
-      </div>   
-     
-        <CardContent style={{ marginTop: "-5rem" }}>
-          <Typography  gutterBottom variant="h5" component="div">
-            <h2>{name}</h2>
-          </Typography>
-          <Typography style={{marginTop:"-17px", marginBottom:"20px"}} gutterBottom variant="h8" component="div">
-            <h5>{designation}</h5>
-          </Typography>
-          <Typography variant="body2" style={{color:"#212525"}}>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-          <CardActions className="mt-5 mediaBtn">
-            <Button size="small" color="primary">
+    <Card sx={{ maxWidth: 445 , height:625, backgroundColor:"#adb5bd"}}>
+      <CardMedia
+        component="img"
+        height="340"
+
+        image={ImgUrl}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h4" component="div">
+       {name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        {designation}
+        </Typography>
+        <br />
+        <Typography variant="body2" color="text.secondary">
+         {about}
+        </Typography>
+
+      </CardContent>
+     <CardActions className="mediaBtn d-flex justify-content-center align-items-center">
+           <div className="">
+           <Button size="small" color="primary">
               <a href="">
                 {" "}
                 <h2>
                   <FontAwesomeIcon icon={faInstagram} />
+                </h2>{" "}
+              </a>
+            </Button>
+           <Button size="small" color="primary">
+              <a href="">
+                {" "}
+                <h2>
+                  <FontAwesomeIcon icon={faLinkedin} />
                 </h2>{" "}
               </a>
             </Button>
@@ -123,11 +123,10 @@ function AdminCard(props) {
             ) : (
               ""
             )}
+           </div>
           </CardActions>
-        </CardContent>
-      </CardActionArea>
     </Card>
   );
 }
 
-export default AdminCard;
+export default ContactCard

@@ -6,8 +6,24 @@ import "./Login.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudUploadAlt, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { faAviato } from "@fortawesome/free-brands-svg-icons";
+
+// import { initializeApp } from "firebase/app";
+import firebase from 'firebase/compat/app'
+import "firebase/auth"
+import firebaseConfig from './firebase-config';
+
+
 function Login() {
-  const [loginUser, setLoginUser] = useState(false);
+ if (firebase.app.length === 0) {
+  firebase.initializeApp(firebaseConfig);
+ }
+
+
+//  var provider = new firebase.auth.GoogleAuthProvider();
+  const [newUser, setNewUser] = useState(false);
+  const [loggedInUser, SetLoggedInUser] = useState({})
+
+// const {fastName, lastName,email,password,confirmPass, img,designation,company} = newUser;
 
   const {
     register,
@@ -15,12 +31,25 @@ function Login() {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data, e) => {
-    e.preventDefault();
-    console.log(data);
+  const onSubmit = (data) => {
+  
+      if (!newUser && data.email && data.password && data.password === data.confirmPass) {
+        alert("data is ready")
+        firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
+        .then((result) => {
+          // Signed in 
+        console.log(result);
+          // ...
+        })
+        .catch((error) => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          console.log(errorMessage);
+          // ..
+        });
+      }
   };
 
-  console.log(watch("example"));
 
   return (
     <div  style={{ background: "#222244" }} className="pb-5 pt-5 loginContainer">
@@ -32,12 +61,12 @@ function Login() {
           >
             
             <h3 style={{fontFamily:"cursive"}} className="pb-4">
-              {loginUser ? <span>Log-In</span> : <span>Sign-Up</span>}
+              {!newUser ? <span>Log-In</span> : <span>Sign-Up</span>}
             </h3>
-            {loginUser ? (
+            {newUser ? (
               <form onSubmit={handleSubmit(onSubmit)}>
                 <input
-                  className="w-100 text-white rounded-3"
+                  className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                   type="email"
                   {...register("email", { required: true })}
                   placeholder="enter your Email"
@@ -50,7 +79,7 @@ function Login() {
                 <br />
                 <br />
                 <input
-                  className="w-100 text-white rounded-3"
+                  className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                   type="password"
                   {...register("password", { required: true })}
                   placeholder="enter your password"
@@ -77,7 +106,7 @@ function Login() {
                 <div className="d-flex justify-content-between">
                   <div className="">
                     <input
-                      className="w-100 text-white rounded-3"
+                      className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       placeholder="Fast name"
                       {...register("fastName", { required: true })}
                     />
@@ -92,7 +121,7 @@ function Login() {
                   <div className="">
                     <input
                       placeholder="Last name"
-                      className="w-100 text-white rounded-3"
+                      className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       {...register("lastName", { required: true })}
                     />
                     <br />
@@ -107,7 +136,7 @@ function Login() {
 
                <div className="">
                <input
-                  className="w-100 text-white rounded-3"
+                  className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                   placeholder="Enter your Email"
                   type="email"
                   {...register("email", { required: true })}
@@ -120,7 +149,7 @@ function Login() {
                </div>
                 <div className="">
                     <input
-                      className="w-100 text-white rounded-3"
+                      className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       style={{ padding: "  7px 10px" }}
                       placeholder="Your Company name"
                       {...register("company", { required: true })}
@@ -136,7 +165,7 @@ function Login() {
                 <div className="d-flex justify-content-between">
                   <div className="">
                     <input
-                      className="w-100 text-white rounded-3"
+                      className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       placeholder="department"
                       {...register("department", { required: true })}
                     />
@@ -149,7 +178,7 @@ function Login() {
                   <div className="">
                     <input
                       placeholder="designation"
-                      className="w-100 text-white rounded-3"
+                      className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       {...register("designation", { required: true })}
                     />
                     <br />
@@ -165,7 +194,7 @@ function Login() {
                 <div className="d-flex justify-content-between">
                   <div className="">
                     <input
-                      className="w-100 text-white rounded-3"
+                      className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       placeholder="Password"
                       type="password"
                       {...register("password", { required: true })}
@@ -180,7 +209,7 @@ function Login() {
                   <div className="">
                     <input
                       placeholder="Confirm password"
-                      className="w-100 text-white rounded-3"
+                      className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       type="password"
                   
                       {...register("confirmPass", { required: true })}
@@ -234,8 +263,8 @@ function Login() {
           </div>
         </div>
         <div className="text-center mt-5">
-          {loginUser ? (
-            <p style={{display:"inline-block"}} className="fs-5" onClick={() => setLoginUser(!loginUser)}>
+          {newUser ? (
+            <p style={{display:"inline-block"}} className="fs-5" onClick={() => setNewUser(!newUser)}>
               Not a member? :{" "}
               <span
                 style={{ cursor: "pointer", marginLeft: "5px" }}
@@ -245,7 +274,7 @@ function Login() {
               </span>
             </p>
           ) : (
-            <p style={{display:"inline-block"}} className="fs-5 "  onClick={() => setLoginUser(!loginUser)}>
+            <p style={{display:"inline-block"}} className="fs-5 "  onClick={() => setNewUser(!newUser)}>
               Already a member? :{" "}
               <span
                 style={{

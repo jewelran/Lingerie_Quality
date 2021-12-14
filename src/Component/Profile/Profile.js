@@ -53,7 +53,8 @@ function Profile() {
     {
       id: 1,
       name: "Jewel Hossain",
-      img: "https://i.ibb.co/QmZqDVB/IMG-20200731-233054-335.jpg",
+      title:"Quality Responsible",
+      img: "https://i.ibb.co/ZBRxg24/What.png",
       about:
         "Authority of Product quality Control for KC Lingerie Ltd (Garments Unit). Highly Experienced in Quality & Technical field. Innovative, Creative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
     },
@@ -61,7 +62,8 @@ function Profile() {
     {
       id: 2,
       name: "Hamidur Rohman Hamid",
-      img: "https://i.ibb.co/SRDxQgf/Head-of-Production.png",
+      title:"Production Responsible",
+      img: "https://i.ibb.co/kmXBzC4/Head-of-Production.png",
       about:
         "Production Authority of KC Lingerie Ltd (Garments Unit). Highly Experienced in Production & Technical field. Innovative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
     },

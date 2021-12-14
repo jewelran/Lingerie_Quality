@@ -1,4 +1,5 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,17 +11,43 @@ import {
   faTelegram,
   faMailchimp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faClock, faLocationArrow, faMailBulk, faMapPin, faPhone, faSearchLocation } from "@fortawesome/free-solid-svg-icons";
-import Navigation from './../Navigation/Navigation';
-import { Button } from '@mui/material';
+import {
+  faClock,
+  faEnvelope,
+  faGlobeEurope,
+  faMapPin,
+} from "@fortawesome/free-solid-svg-icons";
+import Navigation from "./../Navigation/Navigation";
+import { Button } from "@mui/material";
 function Footer() {
+  const dateAndTime = new Date().toDateString();
 
-  const dateAndTime = new Date().toDateString()
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    fetch("http://localhost:5000/subscriber",{
+      method:"POST",
+      headers:{"content-type": "application/json"},
+      body: JSON.stringify(data)
+    })
+    .then((response) => {
+      if (response) {
+        alert("data upload successfully")
+        window.location.reload()
+      }
+    })
+  };
+
+  console.log(watch("example"));
   return (
     <div className="bg-dark h-50">
       <div className="container d-flex justify-content-center align-items-center">
-        <div className="d-flex">
-          <div className="col-md-3 ">
+        <div className="d-flex justify-content-between">
+          <div className="col-md-4 ">
             <h1>
               <span style={{ borderBottom: "3px solid white" }}> About</span> Us
             </h1>
@@ -48,33 +75,20 @@ function Footer() {
               </h2>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4">
             <h1>
               <span style={{ textDecoration: "underline" }}>Get</span> In Touch
             </h1>
-            <ul style={{lineHeight:"45px"}}>
-                <li> <span><FontAwesomeIcon icon={faMapPin}/></span>57/1 street Narayongonj , Bangladesh  </li>
-                <li> <span><FontAwesomeIcon icon={faPhone}/></span>019xxxxxxxxxx  </li>
-                <li> <span><FontAwesomeIcon icon={faMailBulk}/></span>mdexample@gmail.com  </li>
-                <li> <span><FontAwesomeIcon icon={faClock}/></span> {dateAndTime} </li>
-            
-            </ul>
-          
+            <ul>
+                <li> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faMapPin}/> </span> <span style={{marginLeft:"10px"}}>Narayongonj, Dhaka , Bangladesh</span> </li>
+                <li><a href="mailto:"><span className="fs-4  mediaIcon"><FontAwesomeIcon icon = {faEnvelope}/></span> <span style={{marginLeft:"10px"}}>mdjewelrana6487@gmail.com</span> </a></li>
+                <li><a href="https://confident-heyrovsky-c8a58c.netlify.app/" target="_blank"><span className="fs-4  mediaIcon"><FontAwesomeIcon icon = {faGlobeEurope}/></span> <span style={{marginLeft:"10px"}}>website</span></a></li>
+                <li><a href=""> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faLinkedin}/></span> <span style={{marginLeft:"10px"}}>linkedin</span></a></li>
+               
+            </ul>  
           </div>
-          <div className="col-md-3">
-            <h1>
-              <span style={{ textDecoration: "underline" }}>Useful</span> Links
-            </h1>
-              <ul>
-                <li><a href="">Useful link here</a></li>
-                <li><a href="">Useful link here</a></li>
-                <li><a href="">Useful link here</a></li>
-                <li><a href="">Useful link here</a></li>
-                <li><a href="">Useful link here</a></li>
-              </ul>
-         
-          </div>
-          <div className="col-md-3">
+        
+          <div className="col-md-4">
             <h1>
               <span style={{ textDecoration: "underline" }}>Latest</span>{" "}
               Projects
@@ -101,31 +115,43 @@ function Footer() {
                 />
               </div>
             </div>
-           
           </div>
         </div>
-      
       </div>
       <div className=" container pt-4 pb-5">
-          <div className=" d-flex justify-content-center">
-            <div className="col-md-6">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore reiciendis laborum repellendus natus tenetur perferendis, beatae hic, culpa distinctio vitae ut, blanditiis obcaecati dolorem! Iusto tempora reprehenderit ad. Amet nisi odio dolor maxime explicabo repellendus rerum nemo culpa voluptatem exercitationem quia provident id enim, consequuntur recusandae, vitae impedit maiores.</p>
-            </div>
-           
+        <div className=" d-flex justify-content-center">
+          <div className="col-md-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              tempore reiciendis laborum repellendus natus tenetur perferendis,
+              beatae hic, culpa distinctio vitae ut, blanditiis obcaecati
+              dolorem! Iusto tempora reprehenderit ad. 
+            </p>
           </div>
-          <div className=" d-flex justify-content-center">
-              <form action="">
-              <input type="text" placeholder="Your name" />
-              <input style ={{marginLeft:"20px"}} type="text"  placeholder="Your Email"/>
-              <button className="btn btn-danger submitBtn">Submit</button>
-              </form>
-              
-            </div>
-          
         </div>
-        <div className="text-center bg-black p-3 text-white">
-              <p>@Foolish Developer.All Right Reserved</p>
+        <div className=" d-flex justify-content-center">
+          <form onSubmit={handleSubmit(onSubmit)} className="d-flex">
+            <div className="text-center">
+            <input className="bg-transparent border  border-secondary m-4 text-white p-2 rounded" {...register("name", { required: true })} placeholder="Your Name" />
+            <br />
+            {errors.name && <span className="text-danger">Name is required</span>}
             </div>
+              <div className="text-center">
+              <input className="bg-transparent border  border-secondary m-4 text-white p-2 rounded" {...register("email", { required: true })}  placeholder="Enter Your Email"/>
+              <br />
+            {errors.email && <span className="text-danger">Email is required</span>}
+              </div>
+          <div className="mt-4">
+          <input className="btn btn-dark border border-danger text-secondary" type="submit"  value="Submit"/>
+          </div>
+           
+          </form>
+        </div>
+        
+      </div>
+      <div className="text-center bg-black p-3 text-white">
+          <p>@Foolish Developer.All Right Reserved</p>
+        </div>
     </div>
   );
 }

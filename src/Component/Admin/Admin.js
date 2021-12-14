@@ -17,7 +17,8 @@ function Admin() {
             linkedIn:"faLinkedinIn",
             instagram:"faInstagram",
             whatsApp:"faWhatsappSquare",
-            twitter:"faTweeter"
+            twitter:"faTweeter",
+            email:"omarfaruq6809@gmail.com "
         },
         {   
             id:2,
@@ -26,13 +27,14 @@ function Admin() {
             contact:"017xxxxxxxxx",
             about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium officiis esse ut hic illum aut possimus iure, nulla voluptate?",
             ImgUrl:"https://i.ibb.co/pfT62fd/jewel.png",
-            github:"faGithub",
+            github:"https://github.com/jewelran",
             facebook:"faFacebook",
             linkedIn:"faLinkedinIn",
             instagram:"faInstagram",
             whatsApp:"faWhatsappSquare",
-            website:"faGlobeEurope",
-            twitter:"faTweeter"
+            website:"https://confident-heyrovsky-c8a58c.netlify.app/",
+            twitter:"faTweeter",
+            email:"mdjewelrana6487@gmail.com"
         },
      
     ]

@@ -1,0 +1,30 @@
+.contactMedia ul {
+    display: inline-block;
+}
+.contactMedia ul li:first-child{
+    margin-top: 0px;
+}
+.contactMedia ul li {
+    line-height: 40px;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out ;
+
+
+}
+
+.contactMedia ul li a{
+    color:aliceblue;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out ;
+  
+}
+.contactMedia ul li  a:hover, .contactMedia ul li:hover{
+    color: orange;
+    transform:translateX(10px);
+}
+.mediaIcon{
+    color: lightslategrey;
+}
+.contactMedia ul li:hover .mediaIcon{
+    color: orange;
+}
