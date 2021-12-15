@@ -15,13 +15,14 @@ import QualityManual from './Component/ManagementTeam/ManagementContainer/Qualit
 import QualityReport from './Component/ManagementTeam/ManagementContainer/QualityReport/QualityReport';
 import RoutineAndMethod from './Component/ManagementTeam/ManagementContainer/RoutineAndMethod/RoutineAndMethod';
 import SopFollowChart from './Component/ManagementTeam/ManagementContainer/SopAndFollowChart/SopFollowChart';
-
+import { createContext } from 'react';
+import { useState } from 'react';
+export const userContext = createContext();
 function App() {
-  
+  const [userLoggedIn , setUserLoggedIn] = useState({})
   return (
     <div className="App" id= "App">
-      <div className="text-white">
-     
+      <userContext.Provider value={ [userLoggedIn, setUserLoggedIn]} className="text-white"> 
         <Routes>
          <Route path = "/" element = {<Home/>} />
          <Route path = "/home" element = {<Home/>} />
@@ -37,7 +38,7 @@ function App() {
         <Route path = "/routineAndMethod" element = {<RoutineAndMethod/>} />
         <Route path = "/sopFollowChart" element = {<SopFollowChart/>} />
         </Routes>
-      </div>
+      </userContext.Provider>
     </div>
   );
 }

@@ -101,20 +101,20 @@ function Contact() {
             <div className="col-md-5 pb-4 text-white">
               <form onSubmit={handleSubmit(onSubmit)}>
                   <h6>NAME</h6>
-                <input  style={{width:"90%"}}  className=" rounded text-white bg-transparent border border-secondary" {...register("name", { required: true })} />
+                <input  style={{width:"90%"}}  className=" rounded text-white bg-transparent border border-secondary" placeholder="Your Name" {...register("name", { required: true })} />
                 <br />
                 {errors.name && <span className="text-danger">This field is required</span>}
                 <br />
                 <br />
                 <h6>EMAIL</h6>
 
-                <input   style={{width:"90%"}} className=" rounded text-white bg-transparent border border-secondary" {...register("email", { required: true })} />
+                <input   style={{width:"90%"}} className=" rounded text-white bg-transparent border border-secondary" placeholder="Your Email" {...register("email", { required: true })} />
                 <br />
                 {errors.email && <span className="text-danger">This field is required</span>}
                 <br />
                 <br />
                 <h6>MESSAGE</h6>
-                <textarea   className="rounded bg-transparent text-white" rows="5" cols="63" {...register("massage", { required: true })} />
+                <textarea   className="rounded bg-transparent text-white" rows="5" cols="63" placeholder="Your Comments" {...register("massage", { required: true })} />
                 <br />
                 {errors.massage && <span className="text-danger">massage field is required</span>}
                 <br />
