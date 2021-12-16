@@ -66,7 +66,15 @@ function ManagementTeam() {
                     <li>GPQ</li>
                     <li>Sr. Auditor / Auditor Quality</li>
                     <li>MIS Officer</li>
-                    <li>In-Charge (Quality)</li>
+                    <li>In-Charge (Quality)
+
+                      <ul className="">
+                        <li>Fabric Store</li>
+                        <li>Cutting</li>
+                        <li>Sewing</li>
+                        <li>Finishing</li>
+                      </ul>
+                    </li>
                     <li>Sr. QC</li>
                     <li>QC</li>
                     <li>Supervisor (Check)</li>

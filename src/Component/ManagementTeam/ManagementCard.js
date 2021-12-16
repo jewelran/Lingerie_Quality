@@ -93,9 +93,6 @@ const id = 0;
                                             <li style = {{listStyleType:"upper-roman"}}>{info.li_1}</li>
                                             <li style = {{listStyle:"upper-roman"}}>{info.li_2}</li>
                                             <li style = {{listStyle:"upper-roman"}}>{info.li_3}</li>
-                                           
-                                           
-                                         
 
                                         </li> )
                                     }
