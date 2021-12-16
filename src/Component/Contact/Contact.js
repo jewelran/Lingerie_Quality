@@ -108,7 +108,7 @@ function Contact() {
                 <br />
                 <h6>EMAIL</h6>
 
-                <input   style={{width:"90%"}} className=" rounded text-white bg-transparent border border-secondary" placeholder="Your Email" {...register("email", { required: true })} />
+                <input  type="email"  style={{width:"90%"}} className=" rounded text-white bg-transparent border border-secondary" placeholder="Your Email" {...register("email", { required: true })} />
                 <br />
                 {errors.email && <span className="text-danger">This field is required</span>}
                 <br />

@@ -3,1086 +3,956 @@
     "_id": "61ab958e6086faf14878427d",
     "index": 0,
     "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Head of Quality & Production Coordinator",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Head of Quality & Production Coordinator",
+        "qualification": "Graduate / Post Graduate.",
+        "experience": "08-10 Years",
+        "reportTo": "Project Head (C.O.O)",
+        "workArea": "Production & Quality of Entire Project."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure all routine, requirement, Procedure, Method with quality Standard & Smooth Production as per expectation & Requirement of Buyer & Company. Continuous development of Quality & Production Status."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Find out and stablish Creative & Innovative ideas align with buyer demand to improve quality standard.",
+        "li_2": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_3": "Set Department Goal (Short & Long Term) as well as trace & Analyze them continuously with necessary action.",
+        "li_4": "Maintain all routine, Method & requirement as per buyer demand at all working area.",
+        "li_5": "Conduct Bulk Quality Validation at every line & Inspection point minimum 5pcs randomly.",
+        "li_6": "Ensure quality standard with higher productivity of all section as per customer & company demand.",
+        "li_7": "Responsible to follow up cut to ship through standard operating procedure.",
+        "li_8": "Conduct final inspection with buyer QC.",
+        "li_9": "Conduct all kind of technical & quality audit.",
+        "li_10": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take all kind quality Related decision.",
+        "li_2": "Share Idea to increase Productivity of all section."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random In-line Inspection Report.",
+        "li_2": "Initial & Trial cutting Inspection report.",
+        "li_3": "Pre-final / final inspection report (if need).",
+        "li_4": "Finished Garments Measurement Report.",
+        "li_5": "Corrective & Preventive Action Plan.",
+        "li_6": "Skill Development Training Format.",
+        "li_7": "Meeting Minutes."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
-
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427a",
     "index": 1,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "aadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Deputy Manager Quality",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Deputy Manager Quality",
+        "qualification": "Graduate / Post Graduate.",
+        "experience": "05-08 Years",
+        "reportTo": "Head of Department",
+        "workArea": "Allocated area / section."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure all routine, requirement, Procedure, Method & quality standard of designated area with continuous development."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand at allocated working area.",
+        "li_3": "Conduct Bulk Quality Validation at all allocated working area minimum 5pcs randomly.",
+        "li_4": "Be up to date about all quality status & Requirement as well as communicate with dept. head for any kind of difficulties.",
+        "li_5": "To be up-date about goal progress & work accordingly.",
+        "li_6": "Make instant decision of any quality related issues to run smooth work flow.",
+        "li_7": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take all kind of quality related decision of allocated area."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random In-line Inspection Report.",
+        "li_2": "Finished Garments Measurement Report.",
+        "li_3": "Skill Development Training Format.",
+        "li_4": "Meeting Minutes."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
-
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427b",
     "index": 2,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "badb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Asst. Manager Quality",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Asst. Manager Quality",
+        "qualification": "Graduate / Post Graduate.",
+        "experience": "05-08 Years",
+        "reportTo": "Head of Department",
+        "workArea": "Allocated area / section."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure all routine, requirement, Procedure, Method & quality standard of designated area with continuous development."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand at allocated working area.",
+        "li_3": "Conduct Bulk Quality Validation at all allocated working area minimum 5pcs randomly.",
+        "li_4": "Be up to date about all quality status & Requirement as well as communicate with dept. head for any kind of difficulties.",
+        "li_5": "To be up-date about goal progress & work accordingly.",
+        "li_6": "Make instant decision of any quality related issues to run smooth work flow.",
+        "li_7": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take all kind of quality related decision of allocated area."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random In-line Inspection Report.",
+        "li_2": "Finished Garments Measurement Report.",
+        "li_3": "Skill Development Training Format.",
+        "li_4": "Meeting Minutes."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
-
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427c",
     "index": 3,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "cadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Senior Quality Executive",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Senior Quality Executive",
+        "qualification": "Graduate / Post Graduate.",
+        "experience": "04-06 Years",
+        "reportTo": "Head of Department",
+        "workArea": "Entire Quality Dept. & Material Inspection Area."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure all routine, requirement, Procedure, Method & quality standard of designated area with continuous development."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Collect Order Related all information & Up-date as well as distribute to the respective person at right time to Secure Product quality & Requirements.",
+        "li_2": "Monitor all Material Quality Inspectors work progress & develop their skill align with buyer up-dates as MQC.",
+        "li_3": "Monitor total Documentation System of Quality Control Department to Represent the Department to Auditor & Buyers.",
+        "li_4": "Collect all Guidelines & Up-date information of buyer’s & go through to respective persons and explain to them for implement with continuous monitoring.",
+        "li_5": "Responsible to monitor all procedures of QC Team as per buyer & Company demand, which is maintain by floor Quality responsible.",
+        "li_6": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take all kind of quality related decision of Material & Documentation."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "First Bulk Fabric Record.",
+        "li_2": "Control Elastic Record.",
+        "li_3": "Fabric Receive, inspection & Test Status.",
+        "li_4": "Skill Development Training Format.",
+        "li_5": "Meeting Minutes."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
     "_id": "61ab958e6086faf14878427d",
     "index": 4,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "dadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Senior Quality Executive",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Quality Executive",
+        "qualification": "Graduate / Post Graduate.",
+        "experience": "03-05 Years",
+        "reportTo": "Head of Department",
+        "workArea": "Entire Quality Department."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure all routine, requirement, Procedure, Method & quality standard of designated area as per company & Buyer demand."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Collect Order Related all information & Up-date as well as distribute to the respective person at right time to Secure Product quality & Requirements.",
+        "li_2": "Prepare Quality Related Documents such as M-list, Buyer Comments, Initial Findings Summary, Manpower Status as well as support to Data Entry with Proper monitoring.",
+        "li_3": "Maintain Documentation System of Quality Control Department, submit report to department head about daily status of goal data progress.",
+        "li_4": "Conduct size set sample evaluation & make correction if necessary.",
+        "li_5": "Describe buyer Updated requirements to quality controllers to make sure proper monitoring of 1st produced garments in order to complete initial process properly.",
+        "li_6": "Any findings of quality issue on initial garments, share with Sr. Quality Executive and take corrective action and monitoring.",
+        "li_7": "Having file of new Order details to go through respective person & brief to them about the requirement of Buyer.",
+        "li_8": "To monitor all procedures of QC Team as per buyer & Company demand, which is maintain by floor Quality responsible.",
+        "li_9": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take all kind of quality related decision of initial goods."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random Inline Inspection Report.",
+        "li_2": "Finished Garments Measurement Report.",
+        "li_3": "Initial & 1st Inline Inspection Summary.",
+        "li_4": "Pattern Test & Trail Cutting Summary.",
+        "li_5": "Week Wise Initial Up-Date.",
+        "li_6": "Buyer Wise Order Summary.",
+        "li_7": "Pattern Test & Trail Cutting Measurement Report."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427e",
     "index": 5,
     "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "GPQ",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "title here right now!",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "GPQ",
+        "qualification": "Graduate / Post Graduate.",
+        "experience": "03-05 Years",
+        "reportTo": "Head of Department",
+        "workArea": "Material to Ship Quality for Specific Buyer."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure all routine, requirement, Procedure, Method & Product quality standard of designated Buyer as per company & Buyer demand."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Secure well communication with buyer QC & Factory Merchandiser.",
+        "li_2": "Make order wise file by Collect order related all Documents & information.",
+        "li_3": "Attend pre-production, First Production & Pilot cutting meeting to spread out buyer demands to related people.",
+        "li_4": "Conduct Random Bulk validation from Raw Material to finished product & Carton. Make Decision for any kind of Product quality issues.",
+        "li_5": "Prepare shipment / Production sample from random bulk goods as well as secure all test routine as per demand.",
+        "li_6": "Follow up Production status as per shipment date & Qty.",
+        "li_7": "Conduct Pre-Final Inspection after complete 80% of Shippable goods.",
+        "li_8": "Conduct Final Inspection with Buyer QC.",
+        "li_9": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision for product quality, Routine & Method.",
+        "li_2": "Communicate with Buyer QC for any Up-dates.",
+        "li_3": "To decide result of pre-final inspection based on inspection findings."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random In-line Inspection Report.",
+        "li_2": "Initial / Inline / Final Garments Measurement Report.",
+        "li_3": "Pre-Final / Final inspection Report.",
+        "li_4": "Order wise Production progress Report.",
+        "li_5": "Inspection Summary.",
+        "li_6": "Moisture Check Report."
       }
-    ],
-    "greeting": "Hello, jewel rana! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427f",
     "index": 6,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "fadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "MIS Officer",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "MIS Officer",
+        "qualification": "Graduate / Post Graduate.",
+        "experience": "03-05 Years",
+        "reportTo": "Quality Executive",
+        "workArea": "Entire Quality Department."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure proper maintain, Keeping & Analysis of all Data, Report, Format & Routine as per Buyer Expectation & Company Demand."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "To collect Daily all Quality Related reports from all responsible person with signature.",
+        "li_2": "Keep record by entry all quality report & analyze all data to submit to Quality Executive.",
+        "li_3": "Provide all required information & paper to respective person in order to run smooth work flow at all working station by maintain quality requirement.",
+        "li_4": "Keep all report to designated files as based on Document control system.",
+        "li_5": "Share quality progress through analysis report to all respective person in order to make sure about their acknowledgement.",
+        "li_6": "Any findings of report related issue share with Quality Executive and take corrective action and monitoring.",
+        "li_7": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Keep all report as per Document Control System.",
+        "li_2": "Analyze all Quality Related Report."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "All Report of Quality Team."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427g",
     "index": 7,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "gadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "In-Charge QC",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "In-Charge QC",
+        "qualification": "Graduate.",
+        "experience": "03-05 Years",
+        "reportTo": "Deputy / Asst. Manager QC",
+        "workArea": "Fabric Store."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Monitor Work Flow & Routine of Fabric store as per SOP & Buyer instruction to secure Fabric Quality before delivery for Cutting."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand at Fabric Store.",
+        "li_3": "Make Sure about proper availability & use of approved sample, FTD, MTD during inspection.",
+        "li_4": "Conduct cross inspection after finish inspection of subordinate randomly.",
+        "li_5": "Collect Update information of Fabric & spread out to related inspectors to make sure about required quality standard.",
+        "li_6": "Be up to date about quality status & Requirement of Fabric as well as communicate with dept. head for any kind of difficulties.",
+        "li_7": "Make instant decision of any quality related issues to run smooth work flow.",
+        "li_8": "Be up to date about goal progress of Fabric & take necessary action.",
+        "li_9": "Maintain proper communication With Cutting & Sewing QC In-charge & Provide all information about any kind of Fabric related issue.",
+        "li_10": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about material quality related issues.",
+        "li_2": "Communicate with Supplier about material quality & Routine related issues."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Lot Wise Fabric Shrinkage Test Report.",
+        "li_2": "Lot Wise Fabric Wash Test Report.",
+        "li_3": "Random Cross / Inline Inspection Report.",
+        "li_4": "Meeting Minutes. (If Need).",
+        "li_5": "Skill Development Training Format."
       }
-    ],
-    "greeting": "Hello, shohel rana! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427h",
     "index": 8,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "hadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "In-Charge QC",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "In-Charge QC",
+        "qualification": "Graduate.",
+        "experience": "03-05 Years",
+        "reportTo": "Deputy / Asst. Manager QC",
+        "workArea": "Cutting."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Monitor Regarding Work Flow & Routine of Cutting as per SOP & Buyer Requirement to secure Spreading to Cut panel Quality before delivery to sewing."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand.",
+        "li_3": "Make Sure about proper availability & use of approved sample, Fabric, Pattern, M-List & Order related update Information during inspection.",
+        "li_4": "Conduct cross inspection after finish inspection of subordinate randomly as well as visit sewing floor to take update about cut panel quality status.",
+        "li_5": "Collect Update information about Design, Fabric, Measurement & Pattern & spread out to related inspectors to maintain required quality standard.",
+        "li_6": "Propose to superior for correction of pattern in case found measurement deviation, as uneven shape, looseness, etc.",
+        "li_7": "Found any quality discrepancies not control under by own, instantly communicate with Senior.",
+        "li_8": "Make instant decision of any quality related issues to run smooth work flow.",
+        "li_9": "Be up to date about goal progress of Cutting & take necessary action.",
+        "li_10": "Maintain proper communication With Sewing QC In-charge & Provide all information about any kind of Cutting related issue.",
+        "li_11": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about Layer to cut panel quality related issues.",
+        "li_2": "Communicate with Merchandising & Buyer Representative Team about quality related updates."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random Inline inspection of cutting & Sewing.",
+        "li_2": "Daily Cutting Production & Inspection Status.",
+        "li_3": "Skill Development Training Format.",
+        "li_4": "Meeting Minutes."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427i",
     "index": 9,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "iadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "In-Charge QC",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "In-Charge QC",
+        "qualification": "Graduate.",
+        "experience": "03-05 Years",
+        "reportTo": "Deputy / Asst. Manager QC",
+        "workArea": "Sewing."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure Expected Quality work with proper maintaining of Routine, Method, SOP & Buyer Requirement at Sewing Floor. Run Smooth Work follow at sewing."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand.",
+        "li_3": "Make Sure about proper availability & use of approved sample, Pattern, M-List, Art Work & Order related update Information during Line Feeding & inspection.",
+        "li_4": "Check & Confirm every style in detail against Approved Sample, M-List, Material Shade, Technical Instructions after finish every lay out.",
+        "li_5": "Conduct cross inspection randomly at sewing line against product quality & requirement as well as visit Finishing floor to take update about Product quality status.",
+        "li_6": "Collect Update information about Design, Requirement, Measurement, Technical issues & spread out to related Peoples to maintain required quality standard.",
+        "li_7": "Found any quality discrepancies not control under by own, instantly communicate with Senior.",
+        "li_8": "Make instant decision of any quality related issues to run smooth work flow.",
+        "li_9": "Be up to date about goal progress of Sewing & take necessary action.",
+        "li_10": "Maintain proper communication With Finishing QC In-charge & Provide all information about any kind of Sewing related issue.",
+        "li_11": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about Finished Garments quality related issues.",
+        "li_2": "Communicate with Merchandising & Buyer Representative Team about quality related updates."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random Inline inspection report.",
+        "li_2": "Finished Garments Measurement Report.",
+        "li_3": "Skill Development Training Format.",
+        "li_4": "Meeting Minutes."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427j",
     "index": 10,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "jadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "In-Charge QC",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "In-Charge QC",
+        "qualification": "Graduate.",
+        "experience": "03-05 Years",
+        "reportTo": "Deputy / Asst. Manager QC",
+        "workArea": "Finishing."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure Expected Quality work with proper maintaining of Routine, Method, SOP & Buyer Requirement at Finishing Floor."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand.",
+        "li_3": "Make Sure about proper availability & use of approved sample, M-List, Art Work & Order related update Information Before Start inspection.",
+        "li_4": "Check & Confirm every style in detail against Approved Sample, M-List, Material Shade, Technical Instructions before start work of Inspectors.",
+        "li_5": "Conduct cross inspection randomly against product quality & requirement after finish inspection of subordinate.",
+        "li_6": "Take update of Running & Upcoming pre-final / final Inspection & shipment status.",
+        "li_7": "Collect Update information about Design, Requirement, Measurement, Technical issues & spread out to related Peoples to Ensure required quality standard.",
+        "li_8": "Found any quality discrepancies not control under by own, instantly communicate with Senior & Related Sewing QC In-Charge.",
+        "li_9": "Be up to date about goal progress of Finishing & take necessary action.",
+        "li_10": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about Finished Garments & Packing quality related issues.",
+        "li_2": "Communicate with Finishing Responsible & Buyer Representative Team about quality related updates."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random Inline inspection report.",
+        "li_2": "Finished Garments Measurement Report.",
+        "li_3": "Skill Development Training Format.",
+        "li_4": "Meeting Minutes."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427k",
     "index": 11,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "kadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Senior QC",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Senior QC",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "03 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Cutting."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Monitor Work Flow & Routine of Cutting as per SOP & Buyer Requirement to secure Spreading to Cut panel Quality before delivery to sewing."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand.",
+        "li_3": "Collect & Provide approved sample, Fabric, Pattern, M-List & Order related update Information to QC & Supervisor Before start Spreading or inspection.",
+        "li_4": "Conduct cross inspection after finish inspection of subordinate randomly.",
+        "li_5": "Collect Update information about Design, Fabric, Measurement & Pattern as well as spread out to related inspectors to maintain required quality standard.",
+        "li_6": "Found any quality discrepancies not control under by own, instantly communicate with Senior.",
+        "li_7": "Make instant decision of any quality related issues by discus with senior to run smooth work flow.",
+        "li_8": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about Layer to cut panel quality related issues by discus with senior."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Random Inline inspection of Spreading to cut panel.",
+        "li_2": "Daily Cutting & Inspection Status.",
+        "li_3": "Skill Development Training Format."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427l",
     "index": 12,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "ladb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Senior QC",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Senior QC",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Sewing."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure Proper Monitoring about Product Quality with proper maintaining of Routine, Method, SOP & Buyer Requirement at Sewing Floor."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Subordinate & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand.",
+        "li_3": "Collect & make sure about proper use of approved sample, Pattern, M-List, Art Work & Order related update Information during Line Feeding & inspection.",
+        "li_4": "Conduct cross inspection randomly at sewing line against product quality & requirement.",
+        "li_5": "Ask for any update about Design, Requirement, Measurement, Technical issues to QC In-Charge & spread out to related Peoples to maintain required quality standard.",
+        "li_6": "Found any quality discrepancies not control under by own, instantly communicate with Senior.",
+        "li_7": "Make instant decision of any quality related issues to run smooth work flow.",
+        "li_8": "Be up to date about goal progress of Sewing & Work by following instruction of QC In-charge to achieve goal.",
+        "li_9": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about Finished Garments quality related issues.",
+        "li_2": "Communicate with Buyer Representative Team about quality related updates."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "2-Hours End-Table Cross Checking Report.",
+        "li_2": "Skill Development Training Format."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427m",
     "index": 13,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "madb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Supervisor",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Supervisor",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Fabric Store."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Monitor proper maintaining of work flow & Routine of Fabric store. Supervise Fabric inspector to make the inspection functional."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of Fabric Inspectors & develop their skill through continuous training.",
+        "li_2": "Maintain all routine, Method & requirement as per buyer & Company demand at material Store.",
+        "li_3": "Make Sure about proper availability & use of approved sample, FTD, MTD during inspection.",
+        "li_4": "Conduct cross inspection after finish inspection of Fabric inspectors randomly.",
+        "li_5": "Collect Update information of Fabric & spread out to related inspectors to make sure about required quality standard.",
+        "li_6": "Provide necessary equipment & support to the inspector to make them more efficient.",
+        "li_7": "Communicate with reporting person for any quality related issues to run smooth work flow.",
+        "li_8": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Assign inspectors as based on work requirement.",
+        "li_2": "Take Decision of inspection pass or fail based on findings."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Daily Fabric Receive & GSM Defect Report.",
+        "li_2": "Lot Wise Shade Record.",
+        "li_3": "Roll Wise GSM Record.",
+        "li_4": "Fabric Relax Report.",
+        "li_5": "Non-Confirming Item Summary."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427n",
     "index": 14,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "nadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Supervisor",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Supervisor",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Cut & Print Panel Inspection Area."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure Work Flow & Routine of Cut & Print Panel Inspection as per SOP & Buyer Requirement to secure expected quality standard with required productivity."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of subordinate & develop their working skill by continuous training.",
+        "li_2": "Collect all required paper, information, Sample & Art work of every order from Senior QC on due time before start Cutting as well as make sure about proper understanding of inspectors.",
+        "li_3": "Provide inspection related necessary equipment to inspectors on due time to make their work smoother.",
+        "li_4": "Make sure strong follow up at inspection area against quality & Productivity.",
+        "li_5": "Conduct cross inspection at least 2 time of every person in a day.",
+        "li_6": "For any kind of findings communicate with Senior QC & QC In-charge for solution with documented record.",
+        "li_7": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about cut & Print panel quality is Ok or Not based on findings.",
+        "li_2": "Assign Inspectors based on area wise work demand."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Today & Total Check with QC Pass Report.",
+        "li_2": "Skill Development Training Format."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427o",
     "index": 15,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "oadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Supervisor",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Supervisor",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Re-cut Inspection Area."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure Work Flow & Routine of Re-cut panel Inspection as per SOP & Buyer Requirement to secure expected quality standard."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of subordinate & develop their working skill by continuous training.",
+        "li_2": "Provide inspection related necessary equipment to inspectors on due time to make their work smoother.",
+        "li_3": "Take up-date about remains fabric of every cutting lot is available for re-cut & provide it to re-cut area with strong follow up.",
+        "li_4": "Make sure that all re-cut man is following Correct roll of Remains fabric, approved swatch & paper pattern during re-cutting & inspectors are checking properly.",
+        "li_5": "Conduct cross inspection to ensure re-cut parts are Ok & matching with original bundle.",
+        "li_6": "For any kind of findings communicate with Senior QC & QC In-charge for solution with documented record.",
+        "li_7": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Take decision about Re-cut panel quality is Ok or Not based on inspection findings."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Daily Re-cut inspection summary.",
+        "li_2": "Skill Development Training Format."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427p",
     "index": 16,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "padb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Supervisor",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Supervisor",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Sewing."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure Work Flow & Routine of End-Table Inspection area as per SOP & Buyer Requirement to secure expected quality standard with required productivity."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of subordinate & develop their working skill by continuous training.",
+        "li_2": "Collect & Prepare all required paper, information, Duplicate Counter Sample & Art work of every order from Senior QC on due time During Line lay out as well as make sure about proper understanding of inspectors at the beginning of every style.",
+        "li_3": "Provide inspection related necessary equipment to inspectors on due time to make their work smoother.",
+        "li_4": "Make sure strong follow up at inspection area against quality & Productivity.",
+        "li_5": "Conduct cross inspection at least 2 time of every person in a day & Council with them about findings.",
+        "li_6": "For any kind of major Issue communicate with Line QC, Senior QC & QC In-charge for solution with documented record.",
+        "li_7": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Assign Inspectors based on line wise work demand."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Daily Line Wise Rejection Status.",
+        "li_2": "Order Wise End-table QC Pass Summary.",
+        "li_3": "Daily Line Status.",
+        "li_4": "Skill Development Training Format."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   },
   {
-    "_id": "61ab958e6086faf14878427d",
+    "_id": "61ab958e6086faf14878427q",
     "index": 17,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "guid": "qadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Supervisor",
     "isActive": true,
     "headerTitle": [
       {
         "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
+        "title": "Supervisor",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Finishing."
       }
     ],
 
     "purposeOfThePosition": [
       {
         "id": 0,
-        "position": ".........."
+        "position": "Ensure Work Flow & Routine of Finishing Inspection area as per SOP & Buyer Requirement to secure expected quality standard with required productivity."
       }
     ],
     "responsibilities": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
+        "li_1": "Monitor the work of subordinate & develop their working skill by continuous training.",
+        "li_2": "Collect & Prepare all required paper, information, Duplicate Counter Sample & Art work of every order from QC In-Charge before Start Inspection as well as make sure about proper understanding of inspectors at the beginning of every style.",
+        "li_3": "Provide inspection related necessary equipment to inspectors on due time to make their work smoother.",
+        "li_4": "Make sure strong follow up at inspection area against quality & Productivity.",
+        "li_5": "Conduct cross inspection at least 2 time of every person in a day & Council with them about findings.",
+        "li_6": "For any kind of major Issue communicate with QC In-charge for solution with documented record.",
+        "li_7": "Work must be done as per instruction of authorities."
       }
     ],
     "authority": [
       {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
+        "id": 0,
+        "li_1": "Assign Inspectors based on work demand.",
+        "li_2": "Communicate with Sewing QC In-Charge about Product Quality issue."
       }
     ],
     "maintained": [
       {
         "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
+        "li_1": "Hourly Order Wise Finishing QC Pass Summary.",
+        "li_2": "Daily Order & Color Wise Finishing QC Pass Summary.",
+        "li_3": "Hourly Finishing Inspection Summary.",
+        "li_4": "100% Re-check Done Report. (If Need).",
+        "li_5": "Skill Development Training Format."
       }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
-  },
-  {
-    "_id": "61ab958e6086faf14878427d",
-    "index": 18,
-    "guid": "eadb2187-0080-43d7-b249-b1dccf4e4fc3",
-    "isActive": true,
-    "headerTitle": [
-      {
-        "id": 0,
-        "title": "..............",
-        "qualification": "graduate......",
-        "experience": ".........",
-        "reportTo": "..........",
-        "workArea": "........."
-      }
-    ],
-
-    "purposeOfThePosition": [
-      {
-        "id": 0,
-        "position": ".........."
-      }
-    ],
-    "responsibilities": [
-      {
-        "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": ".................................",
-        "li_6": ".................................",
-        "li_7": ".................................",
-        "li_8": ".................................",
-        "li_9": ".................................",
-        "li_10": ".................................",
-        "li_11": "................................."
-      }
-    ],
-    "authority": [
-      {
-        "id": 3,
-        "li_1": "...........",
-        "li_2": "............"
-      }
-    ],
-    "maintained": [
-      {
-        "id": 0,
-        "li_1": ".................................",
-        "li_2": ".................................",
-        "li_3": ".................................",
-        "li_4": ".................................",
-        "li_5": "................................."
-      }
-    ],
-    "greeting": "Hello, undefined! You have 5 unread messages."
+    ]
   }
 ]

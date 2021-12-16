@@ -117,6 +117,7 @@ function Profile() {
                     color: "#002060",
                     fontWeight: "bold",
                     fontFamily: "cursive",
+                    fontSize:"20px"
                   }}
                 >
                   Dynamic, Innovative & Constructive solver of any kind of
@@ -126,7 +127,7 @@ function Profile() {
                   Subordinate for a better future & to be self dependent.
                 </span>
               </p>
-              <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="cooProfileIconArea">
+              <CardActions style={{marginTop:"10px"}} className="cooProfileIconArea">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -137,7 +138,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div  style={{marginTop:"3rem"}} className=" container card-deck    d-flex justify-content-center pb-5">
+      <div className="container d-flex justify-content-center">
        {
          profileList.map(profile => <ProfileCard key = {profile.id}  profile={profile}></ProfileCard>)
        }
@@ -148,10 +149,10 @@ function Profile() {
       <div className="p-3    d-flex justify-content-between mb-5 mt-5 ">
         {businessDepartment.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
-            <CardMedia>
+            <CardMedia  style={{width:"23rem !important"}}>
               <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
-            <CardContent>
+            <CardContent style={{width:"25rem !important"}}>
             <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
               <Typography gutterBottom variant="h5" component="div">
                 <h2>{profile.name}</h2>

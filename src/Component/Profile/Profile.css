@@ -34,6 +34,8 @@
 }
 
 
+
+
 .profileCard{
     box-shadow: 6px 6px 12px #626161 !important;
     transition: all 0.3s  ease;
@@ -43,9 +45,6 @@
 .profileCard:hover{
     box-shadow: 10px 10px 20px #363636 !important;
     max-width: 600px !important;
-}
-.cooProfileIconArea{
-    margin-top: 45px !important;
 }
 
 .cooProfileIconArea h2{

@@ -1,24 +1,28 @@
 import React from 'react'
 import "./MissionAndVisionCard.css"
 import visionImg from "../Images/bgImg/visionImg.gif"
+import mission from "../Images/bgImg/mission.gif"
 function MissionAndVisionCard() {
   return (
     <div className="d-flex justify-content-center mt-5 pt-5">
       <div style={{width:"95%"}} className=" h-100">
         <div className="d-flex  pb-5 h-75 justify-content-start ">
-          <div className="col-md-10 d-flex">
+          <div className="col-md-10 d-flex  bg-light mainMissionContainer">
           <div className="col-md-7  missionContainer">
-            <h2 className="text-center">MISSION</h2>
+           <div className="pb-3  ">
+           <h2 className="text-center">MISSION</h2>
             <ul>
               <li>Secure product quality as per buyer demand.</li>
               <li>Maintain all routine of buyer at all stage of work.</li>
               <li>Sustain quality standard for long time.</li>
               <li>Ensure all safety requirement at work stage.</li>
+              <li>Ensure Customer Satisfaction</li>
             
             </ul>
+           </div>
           </div>
           <div className="col-md-5 ">
-            <img  style ={{ width:"100%"}}src="https://newstar-online.com/wp-content/uploads/2019/07/big-image-1080x675.png" alt="" />
+            <img  style ={{ width:"100%",height:'100%'}}src={mission} alt="" />
           </div>
           </div>
         </div>

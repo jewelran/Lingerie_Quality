@@ -9,28 +9,71 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 function ProfileCard(props) {
   const {name, img, id ,title, about} =props.profile
     return (
-      <div className="">
-        <div className="border m-3 p-3 rounded bg-white text-dark">
-          <div style={{height:"213px"}} className="d-flex justify-content-center">
-            <div  className=" topProfileImgArea  ">
-              <img className = "TopProfileImg"  src={img} alt="img" />
-            </div>
-            <div style={{marginLeft:"15px"}} className="">
-              <h2>{name}</h2>
-              <h4>{title}</h4>
-              <p>{about}</p>
-              <div className="d-flex">
+      <div className=" pt-5 pb-5 m-5">
+        <div  className="d-flex mt-5 justify-content-between">
+          <div style={{width:"12rem"}} className="col-md-4  profileImgCard underProfileImg Card">
+            <img style={{ width: "100%" }} src={img} alt="" />
+          </div>
+          
+          <div className="col-md-7 profileImgTitle underProfileCard  bg-light Title p-3">
+            <div className="ml-3">
+              <h3
+                style={{
+                  color: "#002060",
+                  textAlign: "center",
+                  lineHeight: "7px",
+                  fontFamily: "arial",
+                }}
+              >
+            {name}
+              </h3>
+              <h5
+                style={{
+                  color: "#002060",
+                  textAlign: "center",
+                  fontFamily: "arial",
+                }}
+              >
+                {title}
+              </h5>
+          
+              <p>
+                <span
+                  style={{
+                    fontSize: "25px",
+                    color: "#4e4c4c",
+                    textDecoration: "underline",
+                    fontFamily: "arial",
+                  }}
+                >
+                  About:
+                </span>{" "}
+                <span
+                  style={{
+                    marginLeft: "1rem",
+                    color: "#002060",
+                    fontFamily: "arial",
+                    fontSize:"20px"
+                  }}
+                >
+                 {about}
+                </span>
+              </p>
+              <CardActions style={{marginTop:"10px"}} className="cooProfileIconArea">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
               <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+            </CardActions>
             </div>
-            </div>
-           
           </div>
         </div>
       </div>
+
+
+
+
     )
 }
 

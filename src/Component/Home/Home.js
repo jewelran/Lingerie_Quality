@@ -13,8 +13,12 @@ function Home() {
              <Navigation/>
             <Carousel/>
             <MissionAndVisionCard/>
-            <Gallery/>
+           <div className="mt-5 pt-5">
+           <Gallery/>
+           </div>
+            <div className="mt-5">
             <Slogan/>
+            </div>
             <Admin/>
             <Footer/>
         </div>

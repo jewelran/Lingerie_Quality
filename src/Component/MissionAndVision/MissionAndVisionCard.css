@@ -32,3 +32,14 @@
     font-size: 4rem;
     font-family: cursive;
 }
+.mainMissionContainer{
+    border-top: 13px solid #0A0546!important;
+    border-bottom: 13px solid #0A0546!important;
+    border-radius: 12px !important;
+}
+.mainMissionContainer h2{
+    color: #0A0546;
+    font-size: 3rem;
+    font-family: cursive;
+    
+}

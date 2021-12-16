@@ -1,21 +1,44 @@
 
 
-  .mainContainer{
-    height: 300px;
+  .mainContainer, .underMainContainer , .centerMainContainer{
+    height: 510px;
     width: 15%;
-    margin: 200px auto;
+    margin: 150px auto;
     position: relative;
     perspective: 1000px;
   }
-  .mainContainer .slides {
+  .mainContainer .slides, .underMainContainer .slides, .centerMainContainer .slides {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     transform-style: preserve-3d;
+  
+  }
+  .mainContainer .slides{
     animation: animate  25s linear infinite;
   }
-  @keyframes animate {
+  .centerMainContainer .slides{
+    animation: animate2  25s linear infinite;
+  }
+  .underMainContainer .slides {
+    animation: animate3  25s linear infinite;
+  }
+  .mainContainer{
+    margin-top: 20rem;
+  }
+  .underMainContainer{
+    margin-top: -60px;
+  }
+  @keyframes animate{
+    from {
+      transform: rotateY(360deg);
+    }
+    to{
+      transform: rotateY(0deg);
+    }
+  }
+  @keyframes animate2{
     from {
       transform: rotateY(0deg);
     }
@@ -23,48 +46,124 @@
       transform: rotateY(360deg);
     }
   }
-  .mainContainer .slides>img{
+  @keyframes animate3 {
+    from {
+      transform: rotateY(360deg);
+    }
+    to{
+      transform: rotateY(0deg);
+    }
+  }
+
+  .mainContainer .slides>img, .centerMainContainer .slides>img{
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     image-rendering: auto;
     position: absolute;
     transition: all 0.5s ease-in-out;
-    -webkit-box-reflect:below 7px linear-gradient(transparent,  transparent, #0006)
+    /* -webkit-box-reflect:below 7px linear-gradient(transparent,  transparent, #0006); */
+    border: 1px solid rgba(199, 35, 35, 0.993);
+    padding-top: 3rem;
+    box-shadow: 5px 5px 20px red;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-bottom: 3rem;
 
   }
-  .slides>img:nth-child(1){
-    transform: rotateY(36deg) translateZ(500px);
+
+
+  .underMainContainer .slides>img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    image-rendering: auto;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 15px red;
+    border-right: none;
+    border-radius: 10px;
+    padding-bottom: 3rem;
+
   }
-  .slides>img:nth-child(2){
-    transform: rotateY(72deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(1),.centerMainContainer .slides>img:nth-child(1){
+    transform: rotateY(30deg) translateZ(600px);
   }
-  .slides>img:nth-child(3){
-    transform: rotateY(108deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(2),.centerMainContainer .slides>img:nth-child(2){
+    transform: rotateY(60deg) translateZ(600px);
   }
-  .slides>img:nth-child(4){
-    transform: rotateY(144deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(3),.centerMainContainer .slides>img:nth-child(3){
+    transform: rotateY(90deg) translateZ(600px);
   }
-  .slides>img:nth-child(5){
-    transform: rotateY(180deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(4),.centerMainContainer .slides>img:nth-child(4){
+    transform: rotateY(120deg) translateZ(600px);
   }
-  .slides>img:nth-child(6){
-    transform: rotateY(216deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(5), .centerMainContainer .slides>img:nth-child(5){
+    transform: rotateY(150deg) translateZ(600px);
   }
-  .slides>img:nth-child(7){
-    transform: rotateY(252deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(6),.centerMainContainer .slides>img:nth-child(6){
+    transform: rotateY(180deg) translateZ(600px);
   }
-  .slides>img:nth-child(8){
-    transform: rotateY(288deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(7),.centerMainContainer .slides>img:nth-child(7){
+    transform: rotateY(210deg) translateZ(600px);
   }
-  .slides>img:nth-child(9){
-    transform: rotateY(324deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(8),.centerMainContainer .slides>img:nth-child(8){
+    transform: rotateY(240deg) translateZ(600px);
   }
-  .slides>img:nth-child(10){
-    transform: rotateY(360deg) translateZ(500px);
+  .mainContainer .slides>img:nth-child(9),.centerMainContainer .slides>img:nth-child(9){
+    transform: rotateY(270deg) translateZ(600px);
   }
+  .mainContainer .slides>img:nth-child(10),.centerMainContainer .slides>img:nth-child(10){
+    transform: rotateY(300deg) translateZ(600px);
+  }
+  .mainContainer .slides>img:nth-child(11),.centerMainContainer .slides>img:nth-child(11){
+    transform: rotateY(330deg) translateZ(600px);
+  }
+  .mainContainer .slides>img:nth-child(12),.centerMainContainer .slides>img:nth-child(12){
+    transform: rotateY(360deg) translateZ(600px);
+  }
+ 
+ 
+  .underMainContainer .slides>img:nth-child(1){
+    transform: rotateY(30deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(2){
+    transform: rotateY(60deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(3){
+    transform: rotateY(90deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(4){
+    transform: rotateY(120deg) translateZ(510px);
+  }
+  .underMainContainer  .slides>img:nth-child(5){
+    transform: rotateY(150deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(6){
+    transform: rotateY(180deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(7){
+    transform: rotateY(210deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(8){
+    transform: rotateY(240deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(9){
+    transform: rotateY(270deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(10){
+    transform: rotateY(300deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(11){
+    transform: rotateY(330deg) translateZ(510px);
+  }
+  .underMainContainer .slides>img:nth-child(12){
+    transform: rotateY(360deg) translateZ(510px);
+  }
+ 
+ 
   
- .mainContainer:hover .slides {
+ .mainContainer:hover .slides, .underMainContainer:hover .slides {
    animation-play-state: paused;
 
  }

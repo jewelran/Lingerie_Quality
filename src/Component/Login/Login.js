@@ -21,7 +21,7 @@ function Login() {
   } = useForm();
   const onSubmit = (data) => {
 
-    
+    // create user email and password
     if (
       newUser &&
       data.email &&
@@ -44,6 +44,7 @@ function Login() {
       });
     }
    
+// sign in with email and password
 
     if (!newUser && data.email && data.password) {
       firebase.auth().signInWithEmailAndPassword(data.email, data.password)

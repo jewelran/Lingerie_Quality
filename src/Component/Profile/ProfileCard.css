@@ -1,39 +1,19 @@
-.ProfileCardContainer{
-    background-image: url("../Images/bgImg/circle-scatter-haikei.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.underProfileCard{
+    width: 80%!important;
+   
+}
+.underProfileImg img {
+    height: 123.5%;
+    transform: translateY(-74px);
+   
+    
+}
+.underProfileImg{
+    background-image: url("../Images/bgImg/departmentHead.gif");
     background-position: center center;
-    border-radius: 10px;
-    color: aliceblue;
-}
-
-.profileCardContainer{
-    background: #244960;
-    border-radius: 10px;
-    border: none !important;
-    height: 19rem !important;
-    padding: 10px;
-    box-shadow: 4px 14px 15px #7f80
-}
-
-.topProfileImg{
-    /* width: 100%; */
-}
-.TopProfileImg{
-    width: 113%;
-    height: 134%;
-    transform: translate(-27px, -103px);
-    overflow: hidden;
-}
-.topProfileImgArea{
-    width: 23rem;
-    background-image: url("../Images/bgImg/giphy.gif");
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    box-shadow: 8px 11px 20px darkcyan;
-    height: 19rem;
-    margin: -3rem 0rem -3rem -1.3rem;
-    border-radius: 50px 0px 50px 0px;
-
+    background-repeat: no-repeat;
+}
+.MuiCardMedia-root{
+    width: 23rem !important;
 }

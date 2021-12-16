@@ -142,7 +142,7 @@ function Footer() {
             {errors.email && <span className="text-danger">Email is required</span>}
               </div>
           <div className="mt-4">
-          <input className="btn btn-dark border border-danger text-secondary" type="submit"  value="Submit"/>
+          <input className="btn btn-dark border border-danger text-secondary" type="submit"  value="Subscribe"/>
           </div>
            
           </form>
