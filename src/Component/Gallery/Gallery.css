@@ -163,7 +163,7 @@
  
  
   
- .mainContainer:hover .slides, .underMainContainer:hover .slides {
+ .mainContainer:hover .slides, .centerMainContainer:hover .slides, .underMainContainer:hover .slides {
    animation-play-state: paused;
 
  }

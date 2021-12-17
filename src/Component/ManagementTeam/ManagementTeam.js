@@ -4,9 +4,16 @@ import ManagementCard from "./ManagementCard";
 import "./ManagementTeam.css"
 import Navigation from './../Navigation/Navigation';
 import jobDescription from "../jobDescription.json"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams,useNavigate
+} from "react-router-dom";
 function ManagementTeam() {
   
   const [jobDescriptionInfo, setJonDescription] =useState([])
+
   const jobInfo = jobDescription;
   const index = 7;
   const uniqJonDescription = jobDescriptionInfo.filter(info => info.index === index)
@@ -41,6 +48,11 @@ function ManagementTeam() {
       name:"GPQ"
     }
   ]
+
+  const handleClick = (uId) =>{
+    console.log(uId);
+
+  }
   return (
     <div>
        <Navigation/>
@@ -58,31 +70,62 @@ function ManagementTeam() {
               </select>
             
                 <ul>
-                    <li>Head of Quality</li>
-                    <li>Deputy Manager(quality)</li>
-                    <li>Ass.Manager (Quality)</li>
-                    <li>Sr.Quality Executive</li>
-                    <li>Quality Executive</li>
-                    <li>GPQ</li>
-                    <li>Sr. Auditor / Auditor Quality</li>
-                    <li>MIS Officer</li>
-                    <li>In-Charge (Quality)
+                     <li  onClick={() => handleClick(0)}>Head of Quality</li>
+                     <li  onClick={() => handleClick(1)}>Deputy Manager(quality)</li>
+                     <li  onClick={() => handleClick(2)}>Ass.Manager (Quality)</li>
+                     <li  onClick={() => handleClick(3)}>Sr.Quality Executive</li>
+                     <li  onClick={() => handleClick(4)}>Quality Executive</li>
+                     <li  onClick={() => handleClick(5)}>GPQ</li>
+                     <li  onClick={() => handleClick(6)}>Sr. Auditor / Auditor Quality</li>
+                     <li  onClick={() => handleClick(7)}>MIS Officer</li>
+                     <li  onClick={() => handleClick(8)}>In-Charge (Quality)
 
                       <ul className="">
-                        <li>Fabric Store</li>
-                        <li>Cutting</li>
-                        <li>Sewing</li>
-                        <li>Finishing</li>
+                         <li  onClick={() => handleClick(0)}>Fabric Store</li>
+                         <li  onClick={() => handleClick(0)}>Cutting</li>
+                         <li  onClick={() => handleClick(0)}>Sewing</li>
+                         <li  onClick={() => handleClick(0)}>Finishing</li>
                       </ul>
                     </li>
-                    <li>Sr. QC</li>
-                    <li>QC</li>
-                    <li>Supervisor (Check)</li>
-                    <li>Line QC</li>
-                    <li>QI / Ord Qi</li>
-                    <li>Reporter</li>
-                    <li>Loader</li>
-                    <li>Spot Remover</li>
+                     <li  onClick={() => handleClick(9)}>Sr. QC
+                      
+                      <ul className="">
+                          <li  onClick={() => handleClick(0)}>Cutting</li>
+                          <li  onClick={() => handleClick(0)}>Sewing</li>
+                        </ul>
+                        
+                     </li>
+                     <li  onClick={() => handleClick(10)}>QC
+                     <ul className="">
+                          <li  onClick={() => handleClick(0)}>External Part</li>
+                          <li  onClick={() => handleClick(0)}>Spreading & Marker</li>
+                        </ul>
+                     </li>
+                     <li  onClick={() => handleClick(11)}>Supervisor (Check)
+                     <ul className="">
+                          <li  onClick={() => handleClick(0)}>Fabric Store</li>
+                          <li  onClick={() => handleClick(0)}>Cut & Print Panel Inspection</li>
+                          <li  onClick={() => handleClick(0)}>Recut Panel Inspection</li>
+                          <li  onClick={() => handleClick(0)}>End Table Inspection</li>
+                          <li  onClick={() => handleClick(0)}>Finishing Inspection</li>
+                        </ul>
+                     
+                     </li>
+                     <li  onClick={() => handleClick(12)}>Line QC</li>
+                     <li  onClick={() => handleClick(13)}>QI / Ord Qi
+                     <ul className="">
+                          <li  onClick={() => handleClick(0)}>Fabric Inspection</li>
+                          <li  onClick={() => handleClick(0)}>Spreading & Marker Inspection</li>
+                          <li  onClick={() => handleClick(0)}>Cut & Print Panel Inspection</li>
+                          <li  onClick={() => handleClick(0)}>Band knife & Auto Cutter Inspection</li>
+                          <li  onClick={() => handleClick(0)}>End Table Inspection</li>
+                          <li  onClick={() => handleClick(0)}>Finishing Inspection</li>
+                        </ul>
+                     
+                     </li>
+                     <li  onClick={() => handleClick(14)}>Reporter</li>
+                     <li  onClick={() => handleClick(15)}>Loader</li>
+                     <li  onClick={() => handleClick(16)}>Spot Remover</li>
                 </ul>
 
           </div>

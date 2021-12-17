@@ -142,7 +142,7 @@ function Login() {
                   <div className="">
                     <input
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
-                      placeholder="department"
+                      placeholder="Department"
                       {...register("department", { required: true })}
                     />
                     <br />
@@ -155,7 +155,7 @@ function Login() {
                   </div>
                   <div className="">
                     <input
-                      placeholder="designation"
+                      placeholder="Designation"
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       {...register("designation", { required: true })}
                     />

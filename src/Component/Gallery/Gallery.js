@@ -81,7 +81,7 @@ function Gallery() {
     </div>
   </div>
   <br />
-             <div className="underMainContainer">
+  <div className="underMainContainer">
     <div class="slides">
       <img src={basicBoxer} alt=""/>
       <img src={basicBrief} alt=""/>
