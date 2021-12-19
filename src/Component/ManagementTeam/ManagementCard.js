@@ -17,7 +17,7 @@ console.log(uId, "this is useParams");
     useEffect(() =>{
         setJobInfo(jobDescription)
     },[])
-const id = 0;
+const id = 7;
     const singleJobInfo = jobInfo.filter(info => info.index === id)
     console.log(singleJobInfo);
     return (
@@ -86,15 +86,35 @@ const id = 0;
                                          <span style={{fontSize:"16px" ,fontWeight:"bold" , textDecoration:"underline"}}>Responsibilities</span>
                                     {
                                         headerInfo.responsibilities.map(info=><li>
-                                            <li style = {{listStyleType:"circle"}}>{info.li_1}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_2}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_3}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_4}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_5}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_6}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_7}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_8}</li>
-                                            <li style = {{listStyle:"circle"}}>{info.li_9}</li>
+                                           
+                                            {
+                                                info.li_1? <li style = {{listStyle:"circle"}}>{info.li_1}</li>: ""
+                                            }
+                                            {
+                                                info.li_2? <li style = {{listStyle:"circle"}}>{info.li_2}</li>: ""
+                                            }
+                                            {
+                                                info.li_3? <li style = {{listStyle:"circle"}}>{info.li_3}</li>: ""
+                                            }
+                                            {
+                                                info.li_4? <li style = {{listStyle:"circle"}}>{info.li_4}</li>: ""
+                                            }
+                                            {
+                                                info.li_5? <li style = {{listStyle:"circle"}}>{info.li_5}</li>: ""
+                                            }
+                                            {
+                                                info.li_6? <li style = {{listStyle:"circle"}}>{info.li_6}</li>: ""
+                                            }
+                                            {
+                                                info.li_7? <li style = {{listStyle:"circle"}}>{info.li_7}</li>: ""
+                                            }
+                                            {
+                                                info.li_8? <li style = {{listStyle:"circle"}}>{info.li_8}</li>: ""
+                                            }
+                                            {
+                                                info.li_9?  <li style = {{listStyle:"circle"}}>{info.li_9}</li> : ""
+                                            }
+                                           
                                          
 
                                         </li> )
@@ -108,9 +128,23 @@ const id = 0;
                                          <span style={{fontSize:"16px" ,fontWeight:"bold" , textDecoration:"underline"}}>Authority</span>
                                     {
                                         headerInfo.authority.map(info=><li>
-                                            <li style = {{listStyleType:"square"}}>{info.li_1}</li>
-                                            <li style = {{listStyle:"square"}}>{info.li_2}</li>
-                                            <li style = {{listStyle:"square"}}>{info.li_3}</li>
+                                            {
+                                                info.li_1?<li style = {{listStyle:"square"}}>{info.li_1}</li>:""
+                                            }
+                                            {
+                                                info.li_2?<li style = {{listStyle:"square"}}>{info.li_2}</li>:""
+                                            }
+                                            {
+                                                info.li_3?<li style = {{listStyle:"square"}}>{info.li_3}</li>:""
+                                            }
+                                            {
+                                                info.li_4?<li style = {{listStyle:"square"}}>{info.li_4}</li>:""
+                                            }
+                                            {
+                                                info.li_5?<li style = {{listStyle:"square"}}>{info.li_5}</li>:""
+                                            }
+                                            
+                                            
 
                                         </li> )
                                     }
@@ -123,12 +157,39 @@ const id = 0;
                                          <span style={{fontSize:"16px" ,fontWeight:"bold" , textDecoration:"underline"}}>Report to be maintain</span>
                                     {
                                         headerInfo.maintained.map(info=><li>
-                                            <li style = {{listStyleType:"number"}}>{info.li_1}</li>
-                                            <li style = {{listStyleType:"number"}}>{info.li_2}</li>
-                                            <li style = {{listStyleType:"number"}}>{info.li_3}</li>
-                                            <li style = {{listStyleType:"number"}}>{info.li_4}</li>
-                                            <li style = {{listStyleType:"number"}}>{info.li_5}</li>
-                                            <li style = {{listStyleType:"number"}}>{info.li_6}</li>
+
+                                            {
+                                                info.li_1? <li style = {{listStyleType:"number"}}>{info.li_1}</li> :""
+                                            }
+                                            {
+                                                info.li_2? <li style = {{listStyleType:"number"}}>{info.li_2}</li> :""
+                                            }
+                                            {
+                                                info.li_3? <li style = {{listStyleType:"number"}}>{info.li_3}</li> :""
+                                            }
+
+                                            {
+                                                info.li_4? <li style = {{listStyleType:"number"}}>{info.li_4}</li> :""
+                                            }
+
+                                            {
+                                                info.li_5? <li style = {{listStyleType:"number"}}>{info.li_5}</li> :""
+                                            }
+                                            {
+                                                info.li_6? <li style = {{listStyleType:"number"}}>{info.li_6}</li> :""
+                                            }
+                                            {
+                                                info.li_7? <li style = {{listStyleType:"number"}}>{info.li_7}</li> :""
+                                            }
+                                            {
+                                                info.li_8? <li style = {{listStyleType:"number"}}>{info.li_8}</li> :""
+                                            }
+                                            {
+                                                info.li_9? <li style = {{listStyleType:"number"}}>{info.li_9}</li> :""
+                                            }
+                                            {
+                                                info.li_10? <li style = {{listStyleType:"number"}}>{info.li_10}</li> :""
+                                            }
                                            
                                              
                                     

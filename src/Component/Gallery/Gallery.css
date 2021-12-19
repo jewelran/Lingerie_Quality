@@ -15,6 +15,9 @@
     transform-style: preserve-3d;
   
   }
+  .underMainContainer .slides{
+    width: 95% !important;
+  }
   .mainContainer .slides{
     animation: animate  25s linear infinite;
   }
