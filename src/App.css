@@ -1,9 +1,9 @@
 .App{
-  background-image: url("https://assets.website-files.com/602d060c40c93430b98bcc53/6039396776477b39c6099434_wavenet-v1.1-loop.gif");
+  background-image: url("../src/Component/Images/bgImg/uiBg.gif");
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
   color: white ;
+  /* background-size: cover; */
 }
 .mainContainer{
   max-width: 1800px;

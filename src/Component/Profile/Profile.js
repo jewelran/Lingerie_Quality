@@ -54,7 +54,7 @@ function Profile() {
       id: 1,
       name: "Jewel Hossain",
       title:"Quality Responsible",
-      img: "https://i.ibb.co/ZBRxg24/What.png",
+      img: "https://i.ibb.co/NL0P5YC/Head-of-Quality.png",
       about:
         "Authority of Product quality Control for KC Lingerie Ltd (Garments Unit). Highly Experienced in Quality & Technical field. Innovative, Creative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
     },

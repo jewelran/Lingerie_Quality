@@ -67,9 +67,9 @@ function Login() {
   return (
     <div style={{ background: "#222244" }} className="pb-5 pt-5 loginContainer">
       <div className="container ">
-        <div className="d-flex justify-content-center align-items-center  w-100 pt-5">
+        <div className="d-flex justify-content-center align-items-center  w-100 pt-5" style={{height:"80vh"}}>
           <div
-            style={{ justifyContent: "center" }}
+            style={{ justifyContent: "center" , }}
             className="border loginInput p-5"
           >
             <h3 style={{ fontFamily: "cursive" }} className="pb-4">
@@ -79,36 +79,44 @@ function Login() {
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="d-flex justify-content-between">
                   <div className="">
+                  {errors.fastName && (
+                      <span style={{color: "red", fontSize:"18px" }}>
+                      **
+                      </span>
+                    )}
+                    <br />
                     <input
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       placeholder="Fast name"
                       {...register("fastName", { required: true })}
                     />
                     <br />
-                    {errors.fastName && (
-                      <span style={{ color: "red" }}>
-                        Last name is required
+                
+                  </div>
+                  <div className="">
+                  {errors.lastName && (
+                      <span style={{color: "red", fontSize:"18px" }}>
+                      **
                       </span>
                     )}
                     <br />
-                  </div>
-                  <div className="">
                     <input
                       placeholder="Last name"
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       {...register("lastName", { required: true })}
                     />
                     <br />
-                    {errors.lastName && (
-                      <span style={{ color: "red" }}>
-                        Last name is required
-                      </span>
-                    )}
-                    <br />
+                  
                   </div>
                 </div>
 
                 <div className="">
+                {errors.email && (
+                    <span style={{color: "red", fontSize:"18px", marginBottom: "10px" }}>
+                   **
+                    </span>
+                  )}
+                  <br />
                   <input
                     className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                     placeholder="Enter your Email"
@@ -116,14 +124,15 @@ function Login() {
                     {...register("email", { required: true })}
                   />
                   <br />
-                  {errors.email && (
-                    <span style={{ color: "red", marginBottom: "10px" }}>
-                      Email is required
+                
+                </div>
+                <div className="">
+                {errors.company && (
+                    <span style={{color: "red", fontSize:"18px" }}>
+                    **
                     </span>
                   )}
                   <br />
-                </div>
-                <div className="">
                   <input
                     className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                     style={{ padding: "  7px 10px" }}
@@ -131,46 +140,47 @@ function Login() {
                     {...register("company", { required: true })}
                   />
                   <br />
-                  {errors.company && (
-                    <span style={{ color: "red" }}>
-                      Company name is required
-                    </span>
-                  )}
-                  <br />
+                
                 </div>
                 <div className="d-flex justify-content-between">
                   <div className="">
+                  {errors.department && (
+                      <span style={{color: "red", fontSize:"18px" }}>
+                       **
+                      </span>
+                    )}
+                    <br />
                     <input
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       placeholder="Department"
                       {...register("department", { required: true })}
                     />
                     <br />
-                    {errors.department && (
-                      <span style={{ color: "red" }}>
-                        Department is required
+                   
+                  </div>
+                  <div className="">
+                  {errors.designation && (
+                      <span style={{color: "red", fontSize:"18px" }}>
+                        **
                       </span>
                     )}
                     <br />
-                  </div>
-                  <div className="">
                     <input
                       placeholder="Designation"
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       {...register("designation", { required: true })}
                     />
                     <br />
-                    {errors.designation && (
-                      <span style={{ color: "red" }}>
-                        Designation is required
-                      </span>
-                    )}
-                    <br />
+                   
                   </div>
                 </div>
 
                 <div className="d-flex justify-content-between">
                   <div className="">
+                  {errors.password && (
+                      <span style={{color: "red", fontSize:"18px" }}>**</span>
+                    )}
+                    <br />
                     <input
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
                       placeholder="Password"
@@ -178,13 +188,14 @@ function Login() {
                       {...register("password", { required: true })}
                     />
                     <br />
-                    {errors.password && (
-                      <span style={{ color: "red" }}>Password is required</span>
-                    )}
-                    <br />
+                   
                   </div>
                   <br />
                   <div className="">
+                  {errors.confirmPass && (
+                      <span style={{color: "red", fontSize:"18px" }}>**</span>
+                    )}
+                    <br />
                     <input
                       placeholder="Confirm password"
                       className="w-100 text-white rounded-3 bg-transparent border border-secondary"
@@ -192,10 +203,7 @@ function Login() {
                       {...register("confirmPass", { required: true })}
                     />
                     <br />
-                    {errors.confirmPass && (
-                      <span style={{ color: "red" }}>Password is required</span>
-                    )}
-                    <br />
+                  
                   </div>
                 </div>
                 <br />
@@ -205,6 +213,12 @@ function Login() {
                 <br />
                 <div className="d-flex justify-content-center">
                   <div className="">
+                  {errors.img && (
+                      <span style={{color: "red", fontSize:"18px" }}>
+                       **
+                      </span>
+                    )}
+                    <br />
                     <input
                       placeholder="Upload Your Image"
                       type="file"
@@ -223,12 +237,7 @@ function Login() {
                       </span>
                     </label>
                     <br />
-                    {errors.img && (
-                      <span style={{ color: "red" }}>
-                        Your Photo is required
-                      </span>
-                    )}
-                    <br />
+                   
                   </div>
                 </div>
                 <div className="d-flex justify-content-center">
@@ -246,18 +255,24 @@ function Login() {
               </form>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)}>
+                  {errors.email && (
+                  <span style={{color: "red", fontSize:"18px" }}>**</span>
+                )}
+                <br />
                 <input
-                  className="w-100 text-white rounded-3 bg-transparent border border-secondary"
+                  className="w-100  text-white rounded-3 bg-transparent border border-secondary"
                   type="email"
                   {...register("email", { required: true })}
                   placeholder="enter your Email"
                 />
                 <br />
 
-                {errors.email && (
-                  <span style={{ color: "red" }}>Email is required</span>
-                )}
+              
                 <br />
+                {errors.password && (
+                  <span style={{color: "red", fontSize:"18px" }}>**</span>
+                )}
+
                 <br />
                 <input
                   className="w-100 text-white rounded-3 bg-transparent border border-secondary"
@@ -266,11 +281,7 @@ function Login() {
                   placeholder="enter your password"
                 />
                 <br />
-                {errors.password && (
-                  <span style={{ color: "red" }}>Password is required</span>
-                )}
-
-                <br />
+                
                 {
                   message
                 }

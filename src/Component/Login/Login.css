@@ -9,7 +9,8 @@
 }
 
 .loginContainer{
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 2rem;
     
 }
 .uploadBtn{
@@ -29,3 +30,16 @@
 input{
     height: 48px;
 }
+
+input:focus { 
+    outline: none !important;
+    background-color: transparent !important;
+    box-shadow: 0 0 12px red;
+ }
+ textarea:focus {
+    outline-color: #719ECE;
+    outline: none !important;
+    box-shadow: 0 0 12px #719ECE;
+
+
+  }
