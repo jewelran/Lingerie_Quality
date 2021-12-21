@@ -43,7 +43,7 @@ function ProfileCard(props) {
                     fontSize: "25px",
                     color: "#4e4c4c",
                     textDecoration: "underline",
-                    fontFamily: "arial",
+                    fontFamily:"cursive",
                   }}
                 >
                   About:
@@ -53,7 +53,7 @@ function ProfileCard(props) {
                     marginLeft: "1rem",
                     color: "#002060",
                     fontFamily: "arial",
-                    fontSize:"20px"
+                    fontSize:"16px"
                   }}
                 >
                  {about}

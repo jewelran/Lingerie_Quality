@@ -124,7 +124,7 @@ function Contact() {
             </div>
             <div className="col-md-5 contactMedia">
             <ul>
-                <li> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faPhone}/> </span> <span style={{marginLeft:"10px"}}>01708648728 <span className="fs-3">/</span> 01947946784</span> </li>
+                <li> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faPhone}/> </span> <span style={{marginLeft:"10px"}}> <a href="tel:+8801708648728">Call now</a> <span className="fs-3">/</span> 01947946784</span> </li>
                 <li><a href="mailto:"><span className="fs-4  mediaIcon"><FontAwesomeIcon icon = {faEnvelope}/></span> <span style={{marginLeft:"10px"}}>Email</span> </a></li>
                 <li><a href="https://confident-heyrovsky-c8a58c.netlify.app/" target="_blank"><span className="fs-4  mediaIcon"><FontAwesomeIcon icon = {faGlobeEurope}/></span> <span style={{marginLeft:"10px"}}>website</span></a></li>
                 <li><a href=""> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faLinkedin}/></span> <span style={{marginLeft:"10px"}}>linkedin</span></a></li>

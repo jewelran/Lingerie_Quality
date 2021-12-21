@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { Typography } from '@mui/material/Typography';
 function Navigation() {
   return (
-    <div style={{ background:"transparent",}} className ="sticky-top">
+    <div style={{ background:"#DE0959",}} className ="sticky-top">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container-fluid ">

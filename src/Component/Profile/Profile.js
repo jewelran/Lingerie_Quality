@@ -55,8 +55,7 @@ function Profile() {
       name: "Jewel Hossain",
       title:"Quality Responsible",
       img: "https://i.ibb.co/NL0P5YC/Head-of-Quality.png",
-      about:
-        "Authority of Product quality Control for KC Lingerie Ltd (Garments Unit). Highly Experienced in Quality & Technical field. Innovative, Creative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
+      about:"Authority of product quality control for kc lingerie ltd (garments unit). Highly experienced in quality, management & technical field. Innovative, creative & constructive decision maker of any difficulties to handle any situation. Determined to ensure continuous development of product quality standard. Likes to share knowledge & new ideas to subordinates to develop their skill.",
     },
 
     {
@@ -64,8 +63,7 @@ function Profile() {
       name: "Hamidur Rohman Hamid",
       title:"Production Responsible",
       img: "https://i.ibb.co/kmXBzC4/Head-of-Production.png",
-      about:
-        "Production Authority of KC Lingerie Ltd (Garments Unit). Highly Experienced in Production & Technical field. Innovative & Constructive division maker for any situation. Likes to share knowledge to subordinate to develop their skill.",
+      about:"Production authority of kc lingerie ltd (garments unit). Highly experienced in production, management & technical field. Innovative & constructive decision maker of any difficulties to handle any situation. Determined to increase productivity. Likes to share knowledge & new innovations to subordinates to develop their skill.",
     },
   ];
 
@@ -120,19 +118,16 @@ function Profile() {
                     fontSize:"20px"
                   }}
                 >
-                  Dynamic, Innovative & Constructive solver of any kind of
-                  difficulties. Excellent experienced in Marketing, Business,
-                  Management, Technical & Ethics. Likes to dream the develop of
-                  company and is determined to make it a reality. Leading
-                  Subordinate for a better future & to be self dependent.
+                Dynamic, innovative & constructive solver of any kind of difficulties. Excellent experience in marketing, business, management, technical & ethics. Likes to dream the develop of company and is determined to make it a reality. Ready to take any challenge to keep up company status align with trend. Leading subordinate for a better future & to be self-dependent.
                 </span>
               </p>
-              <CardActions style={{marginTop:"10px"}} className="cooProfileIconArea">
+              <CardActions style={{marginTop:"-25px"}} className="cooProfileIconArea">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+               <Button size="small"><a href="mailto:"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
             </CardActions>
             </div>
           </div>
@@ -148,30 +143,31 @@ function Profile() {
 
       <div className="p-3    d-flex justify-content-between mb-5 mt-5 ">
         {businessDepartment.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
             <CardMedia  style={{width:"23rem !important"}}>
-              <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+              <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent style={{width:"25rem !important"}}>
-            <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+            <CardContent  style={{marginLeft:"56px", marginTop:"-11px"}}>
               <Typography gutterBottom variant="h5" component="div">
                 <h2>{profile.name}</h2>
               </Typography>
               <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
             <h5>  {profile.position}</h5>
               </Typography>
-              <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+              <Typography  variant="body2" color="text.secondary">
+               {profile.about}
               </Typography>
               
            
             </CardContent>
-            <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+            <CardActions style={{marginTop:"-25px", paddingBottom:"6px",marginLeft:"40px"}} className="">
                 <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-                <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+                 <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
               </CardActions>
             </CardContent>
           </Card>
@@ -183,30 +179,31 @@ function Profile() {
       {/* hrdDepartment container */}
       <div className="container    d-flex justify-content-around mb-5 mt-5">
         {hrdDepartment.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+            <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            <Typography  variant="body2" color="text.secondary">
+             {profile.about}
             </Typography>
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+               <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
             </CardActions>
           </CardContent>
         </Card>
@@ -215,30 +212,31 @@ function Profile() {
       {/* qs team  container*/}
       <div className="p-3    d-flex justify-content-around mb-5 mt-5">
         {qsAndNqc.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+            <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            <Typography  variant="body2" color="text.secondary">
+             {profile.about}
             </Typography>
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+              <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
             </CardActions>
           </CardContent>
         </Card>
@@ -249,30 +247,31 @@ function Profile() {
       {/* cad sample file container */}
       <div className="p-3    d-flex justify-content-between mb-5 mt-5">
         {cadSamplePlanning.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+            <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            <Typography  variant="body2" color="text.secondary">
+             {profile.about}
             </Typography>
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+              <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
             </CardActions>
           </CardContent>
         </Card>
@@ -282,30 +281,31 @@ function Profile() {
       {/* IE and store */}
       <div className="container  d-flex justify-content-around mb-5 mt-5">
         {ieAndStore.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+            <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            <Typography  variant="body2" color="text.secondary">
+             {profile.about}
             </Typography>
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+              <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
             </CardActions>
           </CardContent>
         </Card>
@@ -315,30 +315,31 @@ function Profile() {
       {/* cuttingMaintainceAndEnovation container */}
       <div className="p-3  pt-4  d-flex justify-content-between mb-5 mt-5">
         {cuttingMaintainceAndEnovation.map((profile) => (
-           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
            <CardMedia>
-             <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
            </CardMedia>
            <CardContent>
-           <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+           <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
              <Typography gutterBottom variant="h5" component="div">
                <h2>{profile.name}</h2>
              </Typography>
              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
            <h5>  {profile.position}</h5>
              </Typography>
-             <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+             <Typography  variant="body2" color="text.secondary">
+              {profile.about}
              </Typography>
              
           
            </CardContent>
-           <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+           <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-               <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+               <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
              </CardActions>
            </CardContent>
          </Card>
@@ -348,30 +349,31 @@ function Profile() {
       {/* production container */}
       <div className="container  pt-4   d-flex justify-content-around mb-5 mt-5">
         {production.map((profile) => (
-           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
            <CardMedia>
-             <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
            </CardMedia>
            <CardContent>
-           <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+           <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
              <Typography gutterBottom variant="h5" component="div">
                <h2>{profile.name}</h2>
              </Typography>
              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
            <h5>  {profile.position}</h5>
              </Typography>
-             <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+             <Typography  variant="body2" color="text.secondary">
+              {profile.about}
              </Typography>
              
           
            </CardContent>
-           <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+           <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-               <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+               <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
              </CardActions>
            </CardContent>
          </Card>
@@ -380,30 +382,31 @@ function Profile() {
       {/* quality container */}
       <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
         {quality.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
-            <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+            <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+            <Typography  variant="body2" color="text.secondary">
+             {profile.about}
             </Typography>
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-              <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+              <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+
             </CardActions>
           </CardContent>
         </Card>
@@ -412,30 +415,30 @@ function Profile() {
       {/* finishing and MQac container */}
       <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
         {finishingAndMqac.map((profile) => (
-            <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"250px"}}>
+            <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
             <CardMedia>
-              <img style={{width:"110%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+              <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
-            <CardContent style={{marginLeft:"18px", marginTop:"-17px"}}>
+            <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
               <Typography gutterBottom variant="h5" component="div">
                 <h2>{profile.name}</h2>
               </Typography>
               <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
             <h5>  {profile.position}</h5>
               </Typography>
-              <Typography style={{marginTop:"24px"}} variant="body2" color="text.secondary">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti voluptatibus pariatur at odit consequatur?</p>
+              <Typography  variant="body2" color="text.secondary">
+               {profile.about}
               </Typography>
               
            
             </CardContent>
-            <CardActions style={{marginTop:"-20px", paddingBottom:"6px"}} className="">
+            <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
                 <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faPhone}/></h2></Button>
-                <Button size="small"><a href="mdjewelrana6487@gmail.com"><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
+                <Button size="small"><a href={`mailto:${profile.email}`}><h2><FontAwesomeIcon icon={faEnvelope}/></h2></a></Button>
               </CardActions>
             </CardContent>
           </Card>
