@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,13 +6,19 @@ import {  faUserTie } from "@fortawesome/free-solid-svg-icons";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import { firebaseConfig } from './firebaseConfig';
+import { userContext } from './../../App';
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Login() {
 
   firebase.initializeApp(firebaseConfig);
   const [newUser, setNewUser] = useState(false);
-  const [loggedInUser, SetLoggedInUser] = useState({});
   const [message, setMessage] = useState("")
+  const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
+  console.log("user context is ready", userLoggedIn);
+  let history = useNavigate();
+  let location = useLocation();
+  let { from } = location.state || { from: { pathname: "/" } };
 
   const {
     register,
@@ -33,7 +39,6 @@ function Login() {
       .then((result) => {
         // Signed in
         const user = result.user;
-        SetLoggedInUser(user)
         console.log(user);
         // ...
       })
@@ -48,11 +53,12 @@ function Login() {
 
     if (!newUser && data.email && data.password) {
       firebase.auth().signInWithEmailAndPassword(data.email, data.password)
-  .then((result) => {
-      const user = result.user
+  .then((res) => {
+      const user= res.user
       const message = "LoggedIn successfully"
       setMessage(message)
-      SetLoggedInUser(user)
+      setUserLoggedIn(user)
+      history(from)
     // ...
   })
   .catch((error) => {
@@ -237,9 +243,9 @@ function Login() {
                       </span>
                     </label>
                     <br />
-                   
                   </div>
                 </div>
+                <br />
                 <div className="d-flex justify-content-center">
                   <input
                     className="w-50 bg-danger"
@@ -309,12 +315,13 @@ function Login() {
               className="fs-5"
               onClick={() => setNewUser(!newUser)}
             >
-              Not a member? :{" "}
+              
+              Already a member? :{" "}
               <span
                 style={{ cursor: "pointer", marginLeft: "5px" }}
                 className="text-danger"
               >
-                SignUp
+               Log in
               </span>
             </p>
           ) : (
@@ -323,7 +330,7 @@ function Login() {
               className="fs-5 "
               onClick={() => setNewUser(!newUser)}
             >
-              Already a member? :{" "}
+              Not a member? :{" "}
               <span
                 style={{
                   cursor: "pointer",
@@ -332,7 +339,7 @@ function Login() {
                 }}
                 className="text-danger pointer"
               >
-                Log-in
+               SignUp
               </span>
             </p>
           )}

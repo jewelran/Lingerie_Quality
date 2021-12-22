@@ -17,6 +17,8 @@ import RoutineAndMethod from './Component/ManagementTeam/ManagementContainer/Rou
 import SopFollowChart from './Component/ManagementTeam/ManagementContainer/SopAndFollowChart/SopFollowChart';
 import { createContext } from 'react';
 import { useState } from 'react';
+import PrivateRoute from './Component/Login/PrivateRoute';
+import NotFound from './Component/NotFound/NotFound';
 export const userContext = createContext();
 function App() {
   const [userLoggedIn , setUserLoggedIn] = useState({})
@@ -26,7 +28,17 @@ function App() {
         <Routes>
          <Route path = "/" element = {<Home/>} />
          <Route path = "/home" element = {<Home/>} />
-         <Route path = "/profile"  element = {<Profile/>} />
+         {/* <Route path = "/profile"  element = {<Profile/>}  /> */}
+
+         <Route
+          path="/profile"
+          element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }
+        />
+
         <Route path = "/job_description" element = {<ManagementTeam/>} />
         <Route path = "/login" element = {<Login/>} />
         <Route path = "/notification" element = {<Notification/>} />
@@ -37,6 +49,9 @@ function App() {
         <Route path = "/qualityReport" element = {<QualityReport/>} />
         <Route path = "/routineAndMethod" element = {<RoutineAndMethod/>} />
         <Route path = "/sopFollowChart" element = {<SopFollowChart/>} />
+        <Route path = "*" element = {<NotFound/>} />
+        
+
         </Routes>
       </userContext.Provider>
     </div>
