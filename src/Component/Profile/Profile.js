@@ -133,7 +133,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div className="container d-flex justify-content-center">
+      <div className="container d-flex justify-content-center" style={{maxWidth:"1600px"}}>
        {
          profileList.map(profile => <ProfileCard key = {profile.id}  profile={profile}></ProfileCard>)
        }
@@ -145,10 +145,10 @@ function Profile() {
         {businessDepartment.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
             <CardMedia  style={{width:"23rem !important"}}>
-              <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+              <img style={{width:"200%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent style={{width:"25rem !important"}}>
-            <CardContent  style={{marginLeft:"56px", marginTop:"-11px"}}>
+            <CardContent  style={{marginLeft:"80px", marginTop:"-11px"}}>
               <Typography gutterBottom variant="h5" component="div">
                 <h2>{profile.name}</h2>
               </Typography>
@@ -161,7 +161,7 @@ function Profile() {
               
            
             </CardContent>
-            <CardActions style={{marginTop:"-25px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+            <CardActions style={{marginTop:"-25px", paddingBottom:"6px",marginLeft:"72px"}} className="">
                 <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -184,7 +184,7 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
@@ -197,7 +197,7 @@ function Profile() {
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -217,7 +217,7 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
@@ -230,7 +230,7 @@ function Profile() {
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -252,7 +252,7 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
@@ -265,7 +265,7 @@ function Profile() {
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -286,7 +286,7 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
@@ -299,7 +299,7 @@ function Profile() {
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -320,7 +320,7 @@ function Profile() {
              <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
            </CardMedia>
            <CardContent>
-           <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+           <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
              <Typography gutterBottom variant="h5" component="div">
                <h2>{profile.name}</h2>
              </Typography>
@@ -333,7 +333,7 @@ function Profile() {
              
           
            </CardContent>
-           <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+           <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -351,10 +351,10 @@ function Profile() {
         {production.map((profile) => (
            <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
            <CardMedia>
-             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+             <img style={{width:"190%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
            </CardMedia>
            <CardContent>
-           <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+           <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
              <Typography gutterBottom variant="h5" component="div">
                <h2>{profile.name}</h2>
              </Typography>
@@ -367,7 +367,7 @@ function Profile() {
              
           
            </CardContent>
-           <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+           <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
                <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -384,10 +384,10 @@ function Profile() {
         {quality.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
-            <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+            <img style={{width:"190%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
             <Typography gutterBottom variant="h5" component="div">
               <h2>{profile.name}</h2>
             </Typography>
@@ -400,7 +400,7 @@ function Profile() {
             
          
           </CardContent>
-          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+          <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
               <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
               <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>
@@ -417,10 +417,10 @@ function Profile() {
         {finishingAndMqac.map((profile) => (
             <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
             <CardMedia>
-              <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
+              <img style={{width:"190%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
-            <CardContent style={{marginLeft:"56px", marginTop:"-11px"}}>
+            <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
               <Typography gutterBottom variant="h5" component="div">
                 <h2>{profile.name}</h2>
               </Typography>
@@ -433,7 +433,7 @@ function Profile() {
               
            
             </CardContent>
-            <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"40px"}} className="">
+            <CardActions style={{marginTop:"-20px", paddingBottom:"6px",marginLeft:"72px"}} className="">
                 <Button size="small"><h2><FontAwesomeIcon icon={faFacebook}/></h2> </Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faWhatsapp}/></h2></Button>
                 <Button size="small"><h2><FontAwesomeIcon icon={faInstagram}/></h2></Button>

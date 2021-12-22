@@ -11,7 +11,7 @@ function ProfileCard(props) {
     return (
       <div className=" pt-5 pb-5 m-5">
         <div  className="d-flex mt-5 justify-content-between">
-          <div style={{width:"12rem"}} className="col-md-4  profileImgCard underProfileImg Card">
+          <div style={{width:"16rem"}} className=" col-md-4  profileImgCard underProfileImg Card">
             <img style={{ width: "100%" }} src={img} alt="" />
           </div>
           
@@ -52,8 +52,8 @@ function ProfileCard(props) {
                   style={{
                     marginLeft: "1rem",
                     color: "#002060",
-                    fontFamily: "arial",
-                    fontSize:"16px"
+                    fontFamily: "cursive",
+                    fontSize:"17px"
                   }}
                 >
                  {about}
