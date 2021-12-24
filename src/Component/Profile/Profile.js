@@ -35,7 +35,6 @@ function Profile() {
   const [quality, setQuality] = useState([]);
   const [qsAndNqc, setQsAndNqc] = useState([]);
   const [ieAndStore, setIeAndStore] = useState([]);
-
   console.log(businessDepartment);
   useEffect(() => {
     setBusinessDepartment(managementFile);
@@ -80,7 +79,7 @@ function Profile() {
             <div className="ml-3">
               <h3
                 style={{
-                  color: "#002060",
+                  color: "#002060", 
                   textAlign: "center",
                   lineHeight: "7px",
                   fontFamily: "cursive",
@@ -90,7 +89,7 @@ function Profile() {
               </h3>
               <h5
                 style={{
-                  color: "#002060",
+                  color: "#002060", 
                   textAlign: "center",
                   fontFamily: "cursive",
                 }}
@@ -112,7 +111,7 @@ function Profile() {
                 <span
                   style={{
                     marginLeft: "1rem",
-                    color: "#002060",
+                    color: "#002060", 
                     fontWeight: "bold",
                     fontFamily: "cursive",
                     fontSize:"20px"
@@ -143,19 +142,19 @@ function Profile() {
 
       <div className="p-3    d-flex justify-content-between mb-5 mt-5 ">
         {businessDepartment.map((profile) => (
-          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
+          <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"270px"}}>
             <CardMedia  style={{width:"23rem !important"}}>
               <img style={{width:"200%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent style={{width:"25rem !important"}}>
-            <CardContent  style={{marginLeft:"80px", marginTop:"-11px"}}>
-              <Typography gutterBottom variant="h5" component="div">
-                <h2>{profile.name}</h2>
+            <CardContent  style={{marginLeft:"75px", marginTop:"-11px"}}>
+              <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+                <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
               </Typography>
-              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
             <h5>  {profile.position}</h5>
               </Typography>
-              <Typography  variant="body2" color="text.secondary">
+              <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
                {profile.about}
               </Typography>
               
@@ -184,14 +183,14 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-            <Typography gutterBottom variant="h5" component="div">
-              <h2>{profile.name}</h2>
+          <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+            <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+              <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
             </Typography>
-            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography  variant="body2" color="text.secondary">
+            <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
              {profile.about}
             </Typography>
             
@@ -217,14 +216,14 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-            <Typography gutterBottom variant="h5" component="div">
-              <h2>{profile.name}</h2>
+          <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+            <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+              <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
             </Typography>
-            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography  variant="body2" color="text.secondary">
+            <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
              {profile.about}
             </Typography>
             
@@ -252,14 +251,14 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-            <Typography gutterBottom variant="h5" component="div">
-              <h2>{profile.name}</h2>
+          <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+            <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+              <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
             </Typography>
-            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography  variant="body2" color="text.secondary">
+            <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
              {profile.about}
             </Typography>
             
@@ -286,14 +285,14 @@ function Profile() {
             <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-            <Typography gutterBottom variant="h5" component="div">
-              <h2>{profile.name}</h2>
+          <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+            <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+              <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
             </Typography>
-            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography  variant="body2" color="text.secondary">
+            <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
              {profile.about}
             </Typography>
             
@@ -320,14 +319,14 @@ function Profile() {
              <img style={{width:"180%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
            </CardMedia>
            <CardContent>
-           <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-             <Typography gutterBottom variant="h5" component="div">
-               <h2>{profile.name}</h2>
+           <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+             <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+               <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
              </Typography>
-             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
            <h5>  {profile.position}</h5>
              </Typography>
-             <Typography  variant="body2" color="text.secondary">
+             <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
               {profile.about}
              </Typography>
              
@@ -354,14 +353,14 @@ function Profile() {
              <img style={{width:"190%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
            </CardMedia>
            <CardContent>
-           <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-             <Typography gutterBottom variant="h5" component="div">
-               <h2>{profile.name}</h2>
+           <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+             <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+               <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
              </Typography>
-             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+             <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
            <h5>  {profile.position}</h5>
              </Typography>
-             <Typography  variant="body2" color="text.secondary">
+             <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
               {profile.about}
              </Typography>
              
@@ -387,14 +386,14 @@ function Profile() {
             <img style={{width:"190%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
           </CardMedia>
           <CardContent>
-          <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-            <Typography gutterBottom variant="h5" component="div">
-              <h2>{profile.name}</h2>
+          <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+            <Typography gutterBottom variant="h5"  component="div">
+              <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
             </Typography>
-            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+            <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
           <h5>  {profile.position}</h5>
             </Typography>
-            <Typography  variant="body2" color="text.secondary">
+            <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
              {profile.about}
             </Typography>
             
@@ -420,14 +419,14 @@ function Profile() {
               <img style={{width:"190%",height:"115%", transition:"translateY(-26px)",borderRadius:"10px", boxShadow:"5px  5px 30px #282C34"}} src={profile.picture} alt="" />
             </CardMedia>
             <CardContent>
-            <CardContent style={{marginLeft:"80px", marginTop:"-11px"}}>
-              <Typography gutterBottom variant="h5" component="div">
-                <h2>{profile.name}</h2>
+            <CardContent style={{marginLeft:"75px", marginTop:"-11px"}}>
+              <Typography gutterBottom variant="h5" style ={{lineHeight:"16px"}} component="div">
+                <h2 style ={{lineHeight:"15px"}}>{profile.name}</h2>
               </Typography>
-              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary">
+              <Typography style={{marginTop:"-7px"}} variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
             <h5>  {profile.position}</h5>
               </Typography>
-              <Typography  variant="body2" color="text.secondary">
+              <Typography  variant="body2" color="text.secondary" style={{fontFamily:"cursive", fontSize:"15px", color: "#002060", textAlign:"justify"}}>
                {profile.about}
               </Typography>
               

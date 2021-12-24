@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,7 +12,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { Typography } from '@mui/material/Typography';
+import { userContext } from './../../App';
 function Navigation() {
+
+  const [userLoggedIn] = useContext(userContext)
+  console.log( "user logged in",userLoggedIn.displayName);
   return (
     <div style={{ background:"#DE0959",}} className ="sticky-top">
       <div className="container">
@@ -26,7 +30,7 @@ function Navigation() {
                 alt=""
               />
              <Link style={{textDecoration:"none"}} to = "/login">
-             <h3 className="text-center text-white mt-2 border-bottom rounded p-1 loginBtn ">Login</h3>
+             <h3 className="text-center text-white mt-2 border-bottom rounded p-1 loginBtn ">{userLoggedIn.displayName? userLoggedIn.displayName:"Log_in"}</h3>
              </Link>
             </a>
             <button

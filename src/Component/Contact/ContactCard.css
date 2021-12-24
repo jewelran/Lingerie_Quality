@@ -1,0 +1,120 @@
+.topContactArea{
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    padding: 50px;
+    text-align: center;
+}
+
+.ContactCardArea{
+        width: 470px;
+        height:auto;
+        overflow: hidden;
+        margin:"0 auto";
+        border-radius: 10px;
+        background: linear-gradient(45deg, #7b00e0,#ae31d9);
+        position: relative;
+        padding-bottom: 10px;
+}
+
+.ContactCardArea .wrapper img{
+    position: relative;
+    width: 300px;
+    height:300px;
+    z-index: 200;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    margin:20px auto;
+}
+.wrapper .title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding:10px;
+    line-height: 25px;
+    font-family: cursive;
+}
+.wrapper .place {
+    color: #fff;
+    font-size: 17px;
+    line-height: 0px;
+    margin: 10px 0px;
+    font-family: cursive;
+
+}
+.content{
+    font-size: 17px;
+    margin-top: 20px;
+    font-family: cursive;
+    text-align: justify;
+    padding: 10px;
+
+}
+ .buttons .btn {
+    height: 50px;
+    width: 150px;
+    margin: 0px 5px;
+}
+ .buttons .btn  button{
+    height: 100%;
+    width: 100%;
+    margin: 0px 5px;
+    background-color: #fff;
+    color: rgb(71, 71, 71);
+    outline: none;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+    font-family: cursive;
+}
+
+.btn button:hover {
+    transform: scale(0.95);
+    background-color: orange;
+    color: #fff;
+}
+.icons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3 ease-in-out;
+}
+.ContactCardArea .icons li {
+    width: 40px;
+    height:40px;
+    margin:5px;
+    margin-left: -100px;
+
+}
+.ContactCardArea:hover .icons li {
+    margin-left: 0px;
+}
+ .ContactCardArea:hover .icons li:nth-child(1){
+     transition: all 0.1s ease;
+ }
+ .ContactCardArea:hover .icons li:nth-child(2){
+     transition: all 0.2s ease;
+ }
+ .ContactCardArea:hover .icons li:nth-child(3){
+     transition: all 0.3s ease;
+ }
+ .ContactCardArea:hover .icons li:nth-child(4){
+     transition: all 0.4s ease;
+ }
+.ContactCardArea .icons li a {
+    width: 100% !important;
+    height: 100% !important;
+    line-height: 40px;
+    display: block;
+    background:#fff;
+    border-radius: 50%;
+    color: #7b00e0;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+.ContactCardArea .icons li a:hover {
+    transform: scale(0.90);
+    background-color: orange;
+}

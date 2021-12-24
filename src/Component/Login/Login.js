@@ -7,17 +7,22 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import { firebaseConfig } from './firebaseConfig';
 import { userContext } from './../../App';
+import axios from "axios"
 import { useLocation, useNavigate } from "react-router-dom";
-
+import { getAuth, updateProfile } from "firebase/auth";
 function Login() {
-
   firebase.initializeApp(firebaseConfig);
+
   const [newUser, setNewUser] = useState(false);
   const [message, setMessage] = useState("")
   const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
+  
   console.log("user context is ready", userLoggedIn);
-  let history = useNavigate();
-  let location = useLocation();
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  console.log(navigate, "navigate is here");
+  console.log(location, "location is here");
   let { from } = location.state || { from: { pathname: "/" } };
 
   const {
@@ -26,7 +31,20 @@ function Login() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
+    console.log(data)
 
+    const imgInfo = new FormData()
+    imgInfo.set("key", "941644256336912a1409c0bcfce50071")
+    imgInfo.append("image", data.img)
+    axios.post("https://api.imgbb.com/1/upload, imgInfo")
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function(err) {
+      console.log(err);
+    })
+
+   handleImg()
     // create user email and password
     if (
       newUser &&
@@ -39,7 +57,23 @@ function Login() {
       .then((result) => {
         // Signed in
         const user = result.user;
-        console.log(user);
+      setUserLoggedIn(user)
+      localStorage.setItem("user", user.email)
+    updateUserInfo(data.fastName)
+    fetch("http://localhost:5000/user",{
+      method:"POST",
+      headers:{"content-type":"application/json"},
+      body:JSON.stringify(data)
+    })
+    .then((response) => {
+      if (response) {
+        console.log(response);
+        alert("data upload successfully")
+        window.location.reload()
+      }
+    })
+      navigate(from)
+      console.log(user.name);
         // ...
       })
       .catch((error) => {
@@ -58,7 +92,10 @@ function Login() {
       const message = "LoggedIn successfully"
       setMessage(message)
       setUserLoggedIn(user)
-      history(from)
+    localStorage.setItem("loggedInUser",user.email )
+
+      userInfoToken()
+     navigate(from)
     // ...
   })
   .catch((error) => {
@@ -68,7 +105,48 @@ function Login() {
   });
       
     }
+
   };
+
+// update user info
+
+const updateUserInfo = (userName) => {
+  
+const user = firebase.auth().currentUser;
+
+user.updateProfile({
+  displayName: userName
+  
+}).then(() => {
+  console.log("user name update successfully");
+  // Update successful
+  // ...
+}).catch((error) => {
+  console.log(error);
+  // An error occurred
+  // ...
+});  
+
+}
+
+// verify id token
+const userInfoToken = () => {
+  firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
+    localStorage.setItem("token", idToken)
+    console.log(idToken);
+  
+  })
+  .catch(function(error) {
+    console.log(error);
+  })
+}
+
+
+
+// img upload 
+const handleImg=(e) => {
+  console.log(e,"this is img data ");
+}
 
   return (
     <div style={{ background: "#222244" }} className="pb-5 pt-5 loginContainer">
@@ -227,6 +305,7 @@ function Login() {
                     <br />
                     <input
                       placeholder="Upload Your Image"
+                      onChange={handleImg}
                       type="file"
                       id="uploadImg"
                       style={{
@@ -239,6 +318,8 @@ function Login() {
                     />
                     <label htmlFor="uploadImg" className="uploadBtn">
                       <span className="uploadImgIcon">
+                   
+
                         <FontAwesomeIcon icon={faUserTie} />
                       </span>
                     </label>
