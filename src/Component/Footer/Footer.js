@@ -128,12 +128,12 @@ function Footer() {
             <div className="text-center">
             <input className="bg-transparent border  border-secondary m-4 text-white p-2 rounded" {...register("name", { required: true })} placeholder="Your Name" />
             <br />
-            {errors.name && <span className="text-danger">Name is required</span>}
+            {errors.name && <span className="text-danger">**</span>}
             </div>
               <div className="text-center">
               <input className="bg-transparent border  border-secondary m-4 text-white p-2 rounded" {...register("email", { required: true })}  placeholder="Enter Your Email"/>
               <br />
-            {errors.email && <span className="text-danger">Email is required</span>}
+            {errors.email && <span className="text-danger">**</span>}
               </div>
           <div className="mt-4">
           <input className="btn btn-dark border border-danger text-secondary" type="submit"  value="Subscribe"/>

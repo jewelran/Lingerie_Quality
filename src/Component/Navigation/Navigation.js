@@ -132,11 +132,7 @@ function Navigation() {
                         H&M Education
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/qualityReport" className="dropdown-item" href="#">
-                        Quality Report
-                      </Link>
-                    </li>
+                    
                   </ul>
                 </li>
                 <li className="nav-item">

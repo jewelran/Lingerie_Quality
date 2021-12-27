@@ -103,20 +103,20 @@ function Contact() {
                   <h6>NAME</h6>
                 <input  style={{width:"90%"}}  className=" rounded text-white bg-transparent border border-secondary" placeholder="Your Name" {...register("name", { required: true })} />
                 <br />
-                {errors.name && <span className="text-danger">This field is required</span>}
+                {errors.name && <span className="text-danger">**</span>}
                 <br />
                 <br />
                 <h6>EMAIL</h6>
 
                 <input  type="email"  style={{width:"90%"}} className=" rounded text-white bg-transparent border border-secondary" placeholder="Your Email" {...register("email", { required: true })} />
                 <br />
-                {errors.email && <span className="text-danger">This field is required</span>}
+                {errors.email && <span className="text-danger">**</span>}
                 <br />
                 <br />
                 <h6>MESSAGE</h6>
                 <textarea   className="rounded bg-transparent text-white" rows="5" cols="63" placeholder="Your Comments" {...register("massage", { required: true })} />
                 <br />
-                {errors.massage && <span className="text-danger">massage field is required</span>}
+                {errors.massage && <span className="text-danger">**</span>}
                 <br />
                 <br />
                 <button className="btn btn-secondary bg-transparent hover-danger ">SEND MESSAGE</button>

@@ -47,7 +47,7 @@ import rashguard from "./Gallery_img/Single/rashguard.png"
 function Gallery() {
     return (
         <div className='p-5 mt-5' >
-          <h1 style={{fontFamily:"cursive", fontWeight:"800", color:"white", paddingBottom:"10rem",textDecoration:"underline"}} className='text-center'>OUR PRODUCTS</h1>
+          <h1 style={{fontFamily:"cursive", fontWeight:"800", color:"#0A0546", paddingBottom:"10rem",textDecoration:"underline"}} className='text-center'>OUR PRODUCTS</h1>
              <div className="mainContainer">
     <div class="slides">
       <img src={albertus} alt=""/>
