@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import "./ManagementTeam.css"
 import jobDescription from "../jobDescription.json"
-import SopFollowChart from './ManagementContainer/SopAndFollowChart/SopFollowChart';
+import auth from "../Images/documentsImg/signature-with-seal.png"
 import {
     BrowserRouter as Router,
     Switch,
@@ -224,11 +224,12 @@ const id = 7;
                     <div style={{fontSize:"14px", lineHeight:"15px"}} className="fw-bold text-secondary">
                         <span style={{marginLeft:"5rem", borderBottom:"1px solid grey", marginBottom:"2rem"}}>  Copy To</span>
                         <li>01. Recipient ------------01 Copy</li>
+                        <li>02. Personal File --------- 01 Copy</li>
                         <li>02. Dept. Head ------------01 Copy</li>
                         <li>03. HR Department ---------01 Copy</li>
                     </div>
-                    <div className="">
-                        <img src="" alt="" />
+                    <div className="docAuthWrapper">
+                        <img src={auth} alt="" />
                         <h3>Authorized By</h3>
                     </div>
 

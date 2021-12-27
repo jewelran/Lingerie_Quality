@@ -52,10 +52,7 @@ function Footer() {
               <span style={{ borderBottom: "3px solid white" }}> About</span> Us
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
-              necessitatibus quaerat corrupti commodi quisquam repudiandae nisi
-              saepe obcaecati nemo blanditiis nostrum cumque, officia rem
-              provident eligendi incidunt laudantium? Laborum,
+            We Started our journey in 2011 as a 100% export oriented garment industry. We always respect our customer demand & work as hard as possible to achieve our goal with innovative & excellent ideas and methods that align with trends. We are Committed to our customers to provide the best quality product and maintain all of their restrictions. We have established the most precise quality control system in our premises to secure product quality standards.
             </p>
             <div className=" d-flex justify-content-around ">
               <h2 className="rounded text-primary">
@@ -122,10 +119,7 @@ function Footer() {
         <div className=" d-flex justify-content-center">
           <div className="col-md-8">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              tempore reiciendis laborum repellendus natus tenetur perferendis,
-              beatae hic, culpa distinctio vitae ut, blanditiis obcaecati
-              dolorem! Iusto tempora reprehenderit ad. 
+            Please Hit the Subscribe Button below with your name and Email to Get in touch with us. You are always welcome to share your valuable comments & Suggestions through our contact box. 
             </p>
           </div>
         </div>

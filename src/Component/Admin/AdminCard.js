@@ -45,11 +45,10 @@ function AdminCard(props) {
           <Typography style={{marginTop:"-17px", marginBottom:"20px"}} gutterBottom variant="h8" component="div">
             <h5>{designation}</h5>
           </Typography>
-          <Typography variant="body2" style={{color:"#212525"}}>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body2" style={{color:"#212525", marginLeft:"-15px",paddingRight:"15px"}}>
+           {about}
           </Typography>
-          <CardActions className="mt-5 mediaBtn">
+          <CardActions className=" mediaBtn">
             <Button size="small" color="primary">
               <a href="">
                 {" "}

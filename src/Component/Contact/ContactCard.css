@@ -3,12 +3,12 @@
     font-family:"Poppins", sans-serif;
     padding: 50px;
     text-align: center;
+    margin-top: 5rem;
 }
 
 .ContactCardArea{
         width: 470px;
-        height:auto;
-        overflow: hidden;
+        height:500px;
         margin:"0 auto";
         border-radius: 10px;
         background: linear-gradient(45deg, #7b00e0,#ae31d9);
@@ -18,13 +18,18 @@
 
 .ContactCardArea .wrapper img{
     position: relative;
-    width: 300px;
-    height:300px;
+    width: 265px;
+    height: 265px;
     z-index: 200;
     border-radius: 50%;
     border: 5px solid #fff;
     object-fit: cover;
-    margin:20px auto;
+    margin: 20px auto;
+    transform: translateY(-10rem);
+    transition: all 0.3s ease-in-out;
+}
+.ContactCardArea:hover .wrapper img{
+    transform: translateY(-10.5em);
 }
 .wrapper .title {
     color: #fff;
@@ -33,14 +38,30 @@
     padding:10px;
     line-height: 25px;
     font-family: cursive;
+    margin-top: -9rem;
 }
 .wrapper .place {
     color: #fff;
     font-size: 17px;
     line-height: 0px;
-    margin: 10px 0px;
+    margin: 15px 0px;
     font-family: cursive;
 
+}
+
+.wrapper::before{
+    content: "";
+    top: -156px;
+    left: 94px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    background-color: #2E3141;
+    border-radius: 50%;
+    width: 60%;
+    border-top: none;
+    height: 58%;
 }
 .content{
     font-size: 17px;
@@ -53,7 +74,8 @@
  .buttons .btn {
     height: 50px;
     width: 150px;
-    margin: 0px 5px;
+    margin: 30px 5px;
+
 }
  .buttons .btn  button{
     height: 100%;
@@ -84,24 +106,31 @@
 .ContactCardArea .icons li {
     width: 40px;
     height:40px;
+    z-index: 300;
     margin:5px;
-    margin-left: -100px;
-
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 .ContactCardArea:hover .icons li {
-    margin-left: 0px;
+
+    opacity: 1;
 }
  .ContactCardArea:hover .icons li:nth-child(1){
-     transition: all 0.1s ease;
- }
- .ContactCardArea:hover .icons li:nth-child(2){
+    
      transition: all 0.2s ease;
  }
- .ContactCardArea:hover .icons li:nth-child(3){
+ .ContactCardArea:hover .icons li:nth-child(2){
+     margin-top: 3.5rem;
      transition: all 0.3s ease;
  }
- .ContactCardArea:hover .icons li:nth-child(4){
+ .ContactCardArea:hover .icons li:nth-child(3){
+     margin-top: 6.5rem;
      transition: all 0.4s ease;
+ }
+ .ContactCardArea:hover .icons li:nth-child(4){
+     margin-top: 9.5rem;
+     transition: all 0.5s ease;
  }
 .ContactCardArea .icons li a {
     width: 100% !important;
