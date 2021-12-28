@@ -40,7 +40,7 @@
     "authority": [
       {
         "id": 0,
-        "li_1": "Take all kind quality Related decision.",
+        "li_1": "Take all kind of quality Related decision.",
         "li_2": "Share Idea to increase Productivity of all section."
       }
     ],
@@ -952,6 +952,663 @@
         "li_3": "Hourly Finishing Inspection Summary.",
         "li_4": "100% Re-check Done Report. (If Need).",
         "li_5": "Skill Development Training Format."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427r",
+    "index": 18,
+    "guid": "radb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "QC",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "QC",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "03 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "External Part (Print / Embroidery Factory)."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Monitor Work Flow & Routine of Print / Embroidery Factory as per SOP & Buyer Requirement to secure expected quality standard."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Monitor the working method of Print / Embroidery factory based on Buyer expectation & Routine.",
+        "li_2": "Collect all required paper & information of an order from QC In-charge on due time during cutting & before start print / Embroidery.",
+        "li_3": "If print / Embroidery size/grading, measurement changed or up-dated than collect the document from QC In-charge with proper understanding.",
+        "li_4": "Get Approval on 1st Produced piece (Size & Color Wise) from Authorized person before start bulk Production.",
+        "li_5": "Check Bulk Produced goods against approved copy by following SOP.",
+        "li_6": "For any kind of findings communicate with QC In-charge with documented record.",
+        "li_7": "Check & Ensure for any up-date on buyer requirement of an order before start work of every new lot.",
+        "li_8": "Check quality, measurement, size wise ratio with approved art work & buyer comments.",
+        "li_9": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Take decision about Quality tolerance of print / Embroidery based on approved standard."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Daily Print Panel Inspection Summary.",
+        "li_2": "Daily production & Defect Status of Print Panel."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427s",
+    "index": 19,
+    "guid": "sadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "QC",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "QC",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "In-Charge QC",
+        "workArea": "Spreading & Marker."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Work Flow & Routine of Spreading & Marker at Cutting as per SOP & Buyer Requirement to secure expected quality standard."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Monitor the work of subordinate & develop their working skill by continuous training.",
+        "li_2": "Collect all required paper, information & pattern of an order from Senior QC on due time before start Cutting.",
+        "li_3": "Ensure measurement of the pattern at beginning of a new style by cross match with approved M-list with report.",
+        "li_4": "Ensure that the marker is correct for applicable order by checking ratio, order information & measurement.",
+        "li_5": "Make sure that the layer is OK as based on buyer requirement before start cutting also the marker & layer measurement is same for every cutting to reduce wastage.",
+        "li_6": "Check & Ensure for any up-date on buyer requirement of every order before start Spreading.",
+        "li_7": "For any kind of findings communicate with Senior QC & QC In-charge for solution with documented record.",
+        "li_8": "Make sure about proper keeping of remains fabric against every cutting (Shade & Roll Wise).",
+        "li_9": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Take decision about Spreading & Marker Quality is Ok or not based on findings."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Pattern Measurement Report.",
+        "li_2": "Daily marker inspection report."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427t",
+    "index": 20,
+    "guid": "tadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Sr. Auditor / Auditor Quality",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Sr. Auditor / Auditor Quality",
+        "qualification": "Graduate / Post graduate.",
+        "experience": "03 to 05 Years",
+        "reportTo": "Head of Quality",
+        "workArea": "Finishing."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Expected Quality work with proper maintaining of Routine, Method, SOP & Buyer Requirement of shippable goods After Finish Packing."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect all information, Requirements, Approval & Standard of each order through Raw Material to Packing Before start work.",
+        "li_2": "Check & make sure about quality standard of Material, appearance, Measurement & Packing of Finished goods.",
+        "li_3": "Check that all the required Information & routine are correct as per buyer demand on finished pack.",
+        "li_4": "If Found any Discrepancies Communicate with Head of Quality & Finishing responsible for solution with documented record.",
+        "li_5": "Take update of Running & Upcoming pre-final / final Inspection & shipment status to make Smooth work plan.",
+        "li_6": "Be up to date about goal progress & take necessary action.",
+        "li_7": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Take decision about Quality Standard of Finished Carton based on inspection findings.",
+        "li_2": "Communicate with Merchandising & Buyer Representative Team about quality related updates."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "1st Carton / Two Hours Pre-Final Inspection Report.",
+        "li_2": "Daily Two Hours Pre-Final Inspection Summary.",
+        "li_3": "Two Hours Packing Audit Check list.",
+        "li_4": "Finished Garments Measurement Report."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427u",
+    "index": 21,
+    "guid": "uadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Quality Auditor",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Quality Auditor",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "02 Years",
+        "reportTo": "MQC Responsible",
+        "workArea": "Material Store."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure the quality of the material before sending to the sewing section by maintain all routine & Requirement."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect the goods from the store for inspection.",
+        "li_2": "Collecting approved Copy, art-work, samples. If there is no approved copy, get it approved from responsible person.",
+        "li_3": "Match all packing list and invoice information with received material.",
+        "li_4": "Inspect all components according to specific SOP & Routine.",
+        "li_5": "Check the shade, measurement, color, quality and all the information of material.",
+        "li_6": "If any problem is found, immediately inform the responsible person and at the same time inform to the store Responsible.",
+        "li_7": "Record all kinds of problems in the report and share it with every related person as well as keep the report safe as per routine.",
+        "li_8": "Write OK or Not OK on the cartoon at the end of the inspection.",
+        "li_9": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Based on the amount of problems found in the inspection, Take the decision of the accessories inspection pass or fail."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Accessories Inspection Report.",
+        "li_2": "Elastic Relaxation Report.",
+        "li_3": "Order Wise Accessories Inspection Summary.",
+        "li_4": "Daily Accessories Inspection Summary."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427v",
+    "index": 22,
+    "guid": "vadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Line QC",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Line QC",
+        "qualification": "H.S.C / Graduate.",
+        "experience": "01 Years",
+        "reportTo": "Senior QC",
+        "workArea": "Sewing."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Product quality with proper maintaining of all routine, method, system & Requirement at needle point in Sewing line during production."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect all required paper, information, Approved sample, Paper pattern & Art work of each order from Senior QC on due time with proper understanding Before start line feeding of a new order, style or color.",
+        "li_2": "Complete the Line lay out by follow SOP, Approved Sample & technical instruction every time carefully.",
+        "li_3": "Collect Size, Color & Order Wise initial / Trail Cutting goods from sewing line after complete line lay out.",
+        "li_4": "Conduct Line pre-production meeting after complete lay out at presence of all operator, Inspectors & others related people to discus about all necessary things of the style with them and keep Documented record.",
+        "li_5": "Conduct Cross Inspection of inputted Material & Cut piece by follow SOP with documented record.",
+        "li_6": "Maintain TLS & SCM Functionally at sewing line by follow SOP with Documented record.",
+        "li_7": "Take Update of hourly end-table inspector’s findings & work to achieve the expected quality standard.",
+        "li_8": "For any kind of major Issue communicate with Senior QC & QC In-charge as soon as possible.",
+        "li_9": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Maintain Quality Standard & all requirement, Routine, Method & Report of Sewing line.",
+        "li_2": "Communicate with Supervisor about findings to improve Quality standard."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Daily Sewing Cut Panel Measurement Report.",
+        "li_2": "Sewing Line Feeding Report.",
+        "li_3": "Daily Line Wise Machine Oil Leakage Check Report.",
+        "li_4": "Sewing to Cutting Reject Cut Panel Replace Record.",
+        "li_5": "Bulk Compare with Approved Sample.",
+        "li_6": "First Out Put Meeting Report.",
+        "li_7": "Daily 1st 20pcs Garments Inspection Report.",
+        "li_8": "Daily Needle Point Check Report.",
+        "li_9": "Problem Broadcasting Report.",
+        "li_10": "Daily Traffic Light Summary.",
+        "li_11": "1st 20pcs Garments Quality Check Before Start Bulk Production.",
+        "li_12": "Bulk Compare with Approved Sample.",
+        "li_13": "Process Control Report by Traffic Light System."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427w",
+    "index": 23,
+    "guid": "wadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Spot Remover",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Spot Remover",
+        "qualification": "J.S.C / S.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "Sewing."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Product quality standard by remove all kind of unexpected spot from garments Which is found in all inspection area."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect all Spot Removing equipment from Supervisor before start work.",
+        "li_2": "Collect & Prepare Register Book to keep documented record of receive & send data for Spot removable garments.",
+        "li_3": "Receive Garments (Size, Color & Order Wise) with proper understanding & send it back to Supervisor after remove spot from allocated area.",
+        "li_4": "Make sure about Proper Use & keeping of all equipment by follow all routine with care.",
+        "li_5": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Receive & Send back defective garments.",
+        "li_2": "Communicate with Supervisor about any kind of difficulties."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427x",
+    "index": 24,
+    "guid": "xadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Loader",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Loader",
+        "qualification": "J.S.C / S.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "Fabric Store."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Proper availability & Keeping of Fabric rolls as per expectation before & after inspection. Consume work time to make sure about proper inspection as per routine."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect Fabric Delivery Challan from store responsible & submit to supervisor.",
+        "li_2": "Collect Inspection plan to make sure proper availability of fabric at inspection area.",
+        "li_3": "Collect fabric roll from rake for inspection as per instruction of supervisor.",
+        "li_4": "Make sure about proper keeping of fabric rolls after inspection (order, color & Lot wise).",
+        "li_5": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Communicate with store responsible to collect delivery challan.",
+        "li_2": "Collect & keeping fabric rolls from rake."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427y",
+    "index": 25,
+    "guid": "yadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Ordinary QI / QI",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Ordinary QI / QI",
+        "qualification": "S.S.C / H.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "Fabric Store."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure the quality of Fabric with proper maintain of routine & Requirement before sending to the Cutting."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect the Fabric from the store for inspection.",
+        "li_2": "Collect all necessary equipment for inspection from Supervisor.",
+        "li_3": "Check the GSM and Shade of the fabric according to the requirement. Prepare GSM and Shade bands.",
+        "li_4": "Check the fabric according to the routine of 4 Point System in accordance with the approved sample and separate according to the shade grade.",
+        "li_5": "Inspect Fabric according to specific SOP & Routine.",
+        "li_6": "Check that is there any shade variation at the same roll.",
+        "li_7": "If any problem is found, immediately inform the Supervisor and Continue work as per further instruction.",
+        "li_8": "Record all kinds of problems in the report and submit it to supervisor as well as keep the report safe as per routine.",
+        "li_9": "Red tags should be used on the roll of the Rejected fabric and it should be kept in a safe place.",
+        "li_10": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Based on the amount of problems found in the inspection, Take the decision of the Fabric inspection pass or fail."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Finished Fabric Inspection Report (4-Point System)."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878427z",
+    "index": 26,
+    "guid": "zadb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Ordinary QI / QI",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Ordinary QI / QI",
+        "qualification": "S.S.C / H.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "Spreading & Marker Inspection Area."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Expected Quality Standard & proper maintaining of Required report by following Routine, Method, SOP & Buyer Demand with expected productivity."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect Necessary Equipment & All Inspection Related Documents, Sample, Approval, Pattern & art work from Supervisor with proper understanding before start work.",
+        "li_2": "Follow Routine, Method, SOP & Buyer Demand Strictly during work & Communicate with supervisor for any unclarity.",
+        "li_3": "Make Sure about proper Use & Keeping of equipment & all-important components during inspection.",
+        "li_4": "If Found any mismatch between standard & Bulk Production Communicate with senior with documented record.",
+        "li_5": "Attend Daily Training season arranged by supervisor & be understood about everything carefully.",
+        "li_6": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Find out Defect & Mismatch as well as Record in Specific Format."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Daily Layer Inspection Report."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878423z",
+    "index": 27,
+    "guid": "zbdb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Ordinary QI / QI",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Ordinary QI / QI",
+        "qualification": "S.S.C / H.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "Bank Knife & Auto Cutter Inspection Area."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Expected Quality Standard & proper maintaining of Required report by following Routine, Method, SOP & Buyer Demand with expected productivity."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect Necessary Equipment & All Inspection Related Documents, Sample, Approval, Pattern & art work from Supervisor with proper understanding before start work.",
+        "li_2": "Follow Routine, Method, SOP & Buyer Demand Strictly during work & Communicate with supervisor for any unclarity.",
+        "li_3": "Make Sure about proper Use & Keeping of equipment & all-important components during inspection.",
+        "li_4": "If Found any mismatch between standard & Bulk Production Communicate with senior with documented record.",
+        "li_5": "Attend Daily Training season arranged by supervisor & be understood about everything carefully.",
+        "li_6": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Find out Defect & Mismatch as well as Record in Specific Format."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Daily Band Knife / Auto Cutter Inspection Summary."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878424z",
+    "index": 28,
+    "guid": "zcdb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Ordinary QI / QI",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Ordinary QI / QI",
+        "qualification": "S.S.C / H.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "Cut & Print Panel Inspection Area."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Expected Quality Standard & proper maintaining of Required report by following Routine, Method, SOP & Buyer Demand with expected productivity."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect Necessary Equipment & All Inspection Related Documents, Sample, Approval, Pattern & art work from Supervisor with proper understanding before start work.",
+        "li_2": "Follow Routine, Method, SOP & Buyer Demand Strictly during work & Communicate with supervisor for any unclarity.",
+        "li_3": "Make Sure about proper Use & Keeping of equipment & all-important components during inspection.",
+        "li_4": "Make sure about quality standard with expected productivity during inspection.",
+        "li_5": "If Found any mismatch between standard & Bulk Production Communicate with supervisor with documented record.",
+        "li_6": "Attend Daily Training season arranged by supervisor & be understood about everything carefully.",
+        "li_7": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Find out Defect & Mismatch as well as Inform to Supervisor as soon as possible."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Daily Cut Panel Inspection Summary.",
+        "li_2": "Daily Cut Panel Shade Check Report.",
+        "li_3": "Daily Print Panel Inspection Summary."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878425z",
+    "index": 29,
+    "guid": "zddb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Ordinary QI / QI",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Ordinary QI / QI",
+        "qualification": "S.S.C / H.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "End-Table Inspection Area."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Expected Quality Standard of Finished Goods & proper maintaining of Required report by following Routine, Method, SOP & Buyer Demand."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect Necessary Equipment, All Inspection Related Documents & Duplicate Counter Sample from Supervisor with proper understanding before start work.",
+        "li_2": "Follow Routine, Method, SOP & Buyer Demand Strictly during work & Communicate with supervisor for any unclarity.",
+        "li_3": "Make Sure about proper Use & Keeping of equipment & all-important components during inspection with care.",
+        "li_4": "Make sure about quality standard with expected productivity during inspection.",
+        "li_5": "If Found any mismatch between standard & Bulk Production Communicate with supervisor & Line QC with documented record.",
+        "li_6": "Attend Daily Training season arranged by supervisor & be understood about everything carefully.",
+        "li_7": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Find out Defect & Mismatch as well as Inform to Supervisor & Line QC as soon as possible."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "End-Table Inspection & 2-Hours Cross Checking Report.",
+        "li_2": "Finished Garments Measurement Report.",
+        "li_3": "Hourly Size Wise End-Table QC Pass Summary."
+      }
+    ]
+  },
+  {
+    "_id": "61ab958e6086faf14878426z",
+    "index": 30,
+    "guid": "zedb2187-0080-43d7-b249-b1dccf4e4fc3",
+    "designation": "Ordinary QI / QI",
+    "isActive": true,
+    "headerTitle": [
+      {
+        "id": 0,
+        "title": "Ordinary QI / QI",
+        "qualification": "S.S.C / H.S.C.",
+        "experience": "06 to 08 Month (Experience is not required for beginners)",
+        "reportTo": "Supervisor",
+        "workArea": "Finishing Inspection Area."
+      }
+    ],
+
+    "purposeOfThePosition": [
+      {
+        "id": 0,
+        "position": "Ensure Expected Quality Standard of Finished Goods & proper maintaining of Required report by following Routine, Method, SOP & Buyer Demand."
+      }
+    ],
+    "responsibilities": [
+      {
+        "id": 0,
+        "li_1": "Collect Necessary Equipment, All Inspection Related Documents & Duplicate Counter Sample from Supervisor with proper understanding before start work.",
+        "li_2": "Follow Routine, Method, SOP & Buyer Demand Strictly during work & Communicate with supervisor for any unclarity.",
+        "li_3": "Make Sure about proper Use & Keeping of equipment & all-important components during inspection with care.",
+        "li_4": "Make sure about quality standard with expected productivity during inspection.",
+        "li_5": "If Found any mismatch between standard & Bulk Production Communicate with supervisor with documented record.",
+        "li_6": "Attend Daily Training season arranged by supervisor & be understood about everything carefully.",
+        "li_7": "Work must be done as per instruction of authorities."
+      }
+    ],
+    "authority": [
+      {
+        "id": 0,
+        "li_1": "Find out Defect & Mismatch as well as Inform to Supervisor & Line QC as soon as possible."
+      }
+    ],
+    "maintained": [
+      {
+        "id": 0,
+        "li_1": "Hourly Person Wise QC Pass Summary."
       }
     ]
   }

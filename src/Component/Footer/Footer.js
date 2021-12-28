@@ -51,38 +51,32 @@ function Footer() {
             <h1>
               <span style={{ borderBottom: "3px solid white" }}> About</span> Us
             </h1>
-            <p>
+            <p style={{textAlign:"justify"}}>
             We Started our journey in 2011 as a 100% export oriented garment industry. We always respect our customer demand & work as hard as possible to achieve our goal with innovative & excellent ideas and methods that align with trends. We are Committed to our customers to provide the best quality product and maintain all of their restrictions. We have established the most precise quality control system in our premises to secure product quality standards.
             </p>
-            <div className=" d-flex justify-content-around ">
-              <h2 className="rounded text-primary">
-                <FontAwesomeIcon icon={faFacebook} />
-              </h2>
-              <h2 className="rounded text-primary ">
-                <FontAwesomeIcon icon={faTwitter} />
-              </h2>
-              <h2 className="rounded text-primary ">
-                <FontAwesomeIcon icon={faInstagram} />
-              </h2>
-              <h2 className="rounded text-primary ">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </h2>
-              <h2 className="rounded text-primary ">
-                <FontAwesomeIcon icon={faWhatsapp} />
-              </h2>
-            </div>
+        
           </div>
           <div className="col-md-4">
             <h1>
               <span style={{ textDecoration: "underline" }}>Get</span> In Touch
             </h1>
-            <ul>
-                <li> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faMapPin}/> </span> <span style={{marginLeft:"10px"}}>Narayongonj, Dhaka , Bangladesh</span> </li>
-                <li><a href="mailto:"><span className="fs-4  mediaIcon"><FontAwesomeIcon icon = {faEnvelope}/></span> <span style={{marginLeft:"10px"}}>mdjewelrana6487@gmail.com</span> </a></li>
-                <li><a href="https://confident-heyrovsky-c8a58c.netlify.app/" target="_blank"><span className="fs-4  mediaIcon"><FontAwesomeIcon icon = {faGlobeEurope}/></span> <span style={{marginLeft:"10px"}}>website</span></a></li>
-                <li><a href=""> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faLinkedin}/></span> <span style={{marginLeft:"10px"}}>linkedin</span></a></li>
-               
-            </ul>  
+            <div className="d-flex justify-content-center ">
+              <div className="">
+              <h2 className="rounded text-primary">
+                <FontAwesomeIcon icon={faFacebook} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Facebook</span>
+              </h2>
+              <h2 className="rounded text-primary ">
+                <FontAwesomeIcon icon={faTwitter} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Twitter</span>
+              </h2>
+              <h2 className="rounded text-primary ">
+                <FontAwesomeIcon icon={faInstagram} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Instagram</span>
+              </h2>
+              <h2 className="rounded text-primary ">
+                <FontAwesomeIcon icon={faLinkedin} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Linkedin</span>
+              </h2>
+           
+              </div>
+            </div>
           </div>
         
           <div className="col-md-4">
@@ -118,7 +112,7 @@ function Footer() {
       <div className=" container pt-4 pb-5">
         <div className=" d-flex justify-content-center">
           <div className="col-md-8">
-            <p>
+            <p className="text-center">
             Please Hit the Subscribe Button below with your name and Email to Get in touch with us. You are always welcome to share your valuable comments & Suggestions through our contact box. 
             </p>
           </div>
