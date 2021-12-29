@@ -1,14 +1,14 @@
 .adminImg{
-    padding-right: 10px;
-    margin-left: -5px;
-    height: 360px;
-    border-radius: 10px;
     position: relative;
     transition: all 0.4s ease-in-out;
 
 }
 .profileContainer{
     overflow: hidden;
+}
+.profileContainer .adminImg {
+    width: 16rem !important;
+    height: 17rem !important;
 }
  .profileContainer:hover .adminImg{
     
@@ -47,7 +47,7 @@
 }
 
 .adminProfileBtn{
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
 

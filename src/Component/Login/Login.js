@@ -9,15 +9,16 @@ import { firebaseConfig } from './firebaseConfig';
 import { userContext } from './../../App';
 import axios from "axios"
 import { useLocation, useNavigate } from "react-router-dom";
-import { getAuth, updateProfile } from "firebase/auth";
 function Login() {
   firebase.initializeApp(firebaseConfig);
 
   const [newUser, setNewUser] = useState(false);
   const [message, setMessage] = useState("")
+  const [signInUser , setSingInUser] = useState({})
+  console.log(signInUser , "sign in user is found");
   const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
   
-  console.log("user context is ready", userLoggedIn);
+  console.log("user context is ready", userLoggedIn.email);
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -32,6 +33,8 @@ function Login() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data)
+    setSingInUser(data)
+
 
     const imgInfo = new FormData()
     imgInfo.set("key", "941644256336912a1409c0bcfce50071")
@@ -43,6 +46,8 @@ function Login() {
     .catch(function(err) {
       console.log(err);
     })
+ 
+   
 
    handleImg()
     // create user email and password
@@ -59,20 +64,24 @@ function Login() {
         const user = result.user;
       setUserLoggedIn(user)
       localStorage.setItem("user", user.email)
-    updateUserInfo(data.fastName)
-    fetch("http://localhost:5000/user",{
-      method:"POST",
-      headers:{"content-type":"application/json"},
-      body:JSON.stringify(data)
-    })
-    .then((response) => {
-      if (response) {
-        console.log(response);
-        alert("data upload successfully")
-        window.location.reload()
+      updateUserInfo(data.fastName)
+  //  user send to data base
+      if (user) {
+        fetch("http://localhost:5000/user",{
+          method:"POST",
+          headers:{"content-type":"application/json"},
+          body:JSON.stringify(data)
+        })
+        .then((response) => {
+          alert("user sign in successfully")
+
+          if (response) {
+            navigate(from)
+          }
+          
+        })
+       
       }
-    })
-      navigate(from)
       console.log(user.name);
         // ...
       })

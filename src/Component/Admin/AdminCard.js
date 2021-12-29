@@ -26,7 +26,6 @@ function AdminCard(props) {
         <CardMedia
           className="adminImg"
           component="img"
-        
           image={ImgUrl}
           alt="green iguana"
         />
@@ -38,14 +37,14 @@ function AdminCard(props) {
         
       </div>   
      
-        <CardContent style={{ marginTop: "-5rem" }}>
+        <CardContent style={{ marginTop: "-1rem" }}>
           <Typography  gutterBottom variant="h5" component="div">
             <h2>{name}</h2>
           </Typography>
           <Typography style={{marginTop:"-17px", marginBottom:"20px"}} gutterBottom variant="h8" component="div">
             <h5>{designation}</h5>
           </Typography>
-          <Typography variant="body2" style={{color:"#212525", marginLeft:"-15px",paddingRight:"15px"}}>
+          <Typography variant="body2" style={{color:"#212525",padding:"5px", textAlign:"justify"}}>
            {about}
           </Typography>
           <CardActions className=" mediaBtn">

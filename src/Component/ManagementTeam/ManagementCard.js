@@ -17,7 +17,7 @@ const singleIndex = 0
     console.log(singleJobInfo);
     console.log(singleJobInfo,"single index info");
     return (
-        <div className= "container">
+        <div style={{minHeight:"100vh"}} className= "container">
           {
               singleJobInfo.length === 0 ?  <div style={{ color:"black", paddingBottom:"3%", paddingTop:"1rem", fontFamily:"tahoma"}}>
               <div className="">
@@ -206,6 +206,18 @@ const singleIndex = 0
                                           }
                                           {
                                               info.li_10? <li style = {{listStyleType:"number"}}>{info.li_10}</li> :""
+                                          }
+                                          {
+                                              info.li_11? <li style = {{listStyleType:"number"}}>{info.li_11}</li> :""
+                                          }
+                                          {
+                                              info.li_12? <li style = {{listStyleType:"number"}}>{info.li_12}</li> :""
+                                          }
+                                          {
+                                              info.li_13? <li style = {{listStyleType:"number"}}>{info.li_13}</li> :""
+                                          }
+                                          {
+                                              info.li_14? <li style = {{listStyleType:"number"}}>{info.li_14}</li> :""
                                           }
                                          
                                            
@@ -447,7 +459,18 @@ const singleIndex = 0
                                               info.li_10? <li style = {{listStyleType:"number"}}>{info.li_10}</li> :""
                                           }
                                          
-                                           
+                                         {
+                                              info.li_11? <li style = {{listStyleType:"number"}}>{info.li_11}</li> :""
+                                          }
+                                          {
+                                              info.li_12? <li style = {{listStyleType:"number"}}>{info.li_12}</li> :""
+                                          }
+                                          {
+                                              info.li_13? <li style = {{listStyleType:"number"}}>{info.li_13}</li> :""
+                                          }
+                                          {
+                                              info.li_14? <li style = {{listStyleType:"number"}}>{info.li_14}</li> :""
+                                          } 
                                   
 
                                       </li> )
