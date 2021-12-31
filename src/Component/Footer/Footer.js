@@ -56,11 +56,11 @@ function Footer() {
             </p>
         
           </div>
-          <div className="col-md-4">
+          <div style={{margin:"0px 15px"}} className="col-md-3">
             <h1>
               <span style={{ textDecoration: "underline" }}>Get</span> In Touch
             </h1>
-            <div className="d-flex justify-content-center ">
+            <div style={{marginLeft:"38px"}} className="">
               <div className="">
               <h2 className="rounded text-primary">
                 <FontAwesomeIcon icon={faFacebook} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Facebook</span>
@@ -79,13 +79,17 @@ function Footer() {
             </div>
           </div>
         
-          <div className="col-md-4">
+          <div className="col-md-5">
             <h1>
               <span style={{ textDecoration: "underline" }}>Latest</span>{" "}
               Projects
             </h1>
             <div className="footerImgGallery">
-              <div className="d-flex">
+              <div className="d-flex justify-content-between">
+                <img
+                  src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
+                  alt="img"
+                />
                 <img
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"
@@ -95,7 +99,11 @@ function Footer() {
                   alt="img"
                 />
               </div>
-              <div className="d-flex">
+              <div className="d-flex justify-content-between">
+                <img
+                  src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
+                  alt="img"
+                />
                 <img
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"

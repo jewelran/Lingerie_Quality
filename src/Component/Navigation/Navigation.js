@@ -8,10 +8,10 @@ import {
   faFileAlt,
   faHeadset,
   faBell,
+  faUserShield,
   
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { Typography } from '@mui/material/Typography';
 import { userContext } from './../../App';
 function Navigation() {
 
@@ -162,6 +162,15 @@ console.log(user[1]?.data?.fastName);
                     <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
                       {" "}
                       <FontAwesomeIcon icon={faBell} />
+                    </span>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/adminPanel" className="nav-link text-center  navIcons" href="#">
+                    {" "}
+                    <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
+                      {" "}
+                      <FontAwesomeIcon icon={faUserShield} />
                     </span>
                   </Link>
                 </li>

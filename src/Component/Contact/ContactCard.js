@@ -3,20 +3,20 @@ import React from 'react'
 import "./ContactCard.css"
 import { faFacebook, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 function ContactCard(props) {
-  const {ImgUrl,name,about} = props.admin
+  const {ImgUrl,name,about,designation} = props.admin
 
   
   
   return (
     <div className='topContactArea'>
       <div className=" ContactCardArea">
-        <div className="wrapper">
+        <div className="wrapper" style={{lineHeight:"5px"}}>
           <a href="">
             <img src={ImgUrl} alt="" />
           </a>
          
-            <div className='title'>{name}</div>
-            <div className='place'>dhaka bangladesh</div>
+            <div   className='title'>{name}</div>
+            <div  className='place'>{designation}</div>
       
         </div>
         <div className="content">
