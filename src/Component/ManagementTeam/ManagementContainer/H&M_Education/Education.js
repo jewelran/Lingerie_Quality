@@ -1,7 +1,7 @@
 import React from "react";
-import "./H&M_Education.css";
-import Navigation from './../../../Navigation/Navigation';
-function H_And_M_Education() {
+import "./Education.css";
+import Navigation from '../../../Navigation/Navigation';
+function Education() {
   return (
     <div style={{height:"100vh",background: "#2E3141"}}>
           <div  className="">
@@ -32,4 +32,4 @@ function H_And_M_Education() {
   );
 }
 
-export default H_And_M_Education;
+export default Education;

@@ -149,7 +149,7 @@ console.log(user[1]?.data?.fastName);
                       </Link>
                     </li>
                     <li>
-                      <Link to="/hAndMEducation" className="dropdown-item" href="#">
+                      <Link to="/education" className="dropdown-item" href="#">
                         H&M Education
                       </Link>
                     </li>
