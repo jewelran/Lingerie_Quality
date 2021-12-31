@@ -21,7 +21,7 @@ function AdminCard(props) {
 
 ;
   return (
-    <Card sx={{ maxWidth: 800, marginLeft: "1rem", height: "260px" }}>
+    <Card sx={{ maxWidth: 700, marginLeft: "1rem", height: "320px" }}>
       <CardActionArea className="d-flex profileContainer">
         <CardMedia
           className="adminImg"
@@ -44,7 +44,7 @@ function AdminCard(props) {
           <Typography style={{marginTop:"-17px", marginBottom:"20px"}} gutterBottom variant="h8" component="div">
             <h5>{designation}</h5>
           </Typography>
-          <Typography variant="body2" style={{color:"#212525",padding:"5px", textAlign:"justify"}}>
+          <Typography variant="body2" style={{color:"#212525",padding:"5px",fontSize:"16px", textAlign:"justify"}}>
            {about}
           </Typography>
           <CardActions className=" mediaBtn">

@@ -27,8 +27,7 @@
     z-index: 9999;
 }
 .profileLogo{
-    clip-path: polygon(52% 0, 96% 27%, 95% 77%, 46% 99%, 4% 76%, 5% 27%);
-    padding: 10px;
+    padding:2px;
 }
 .loginBtn{
     margin-top: 18px !important;

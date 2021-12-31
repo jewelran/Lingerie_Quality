@@ -85,40 +85,40 @@ const singleIndex = 0
                                       headerInfo.responsibilities.map(info=><li>
                                       
                                           {
-                                              info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_1}</div> </li> : ""
+                                              info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_1}</div> </li> : ""
                                           }
                                        
                                        
                                           {
-                                              info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_2}</div> </li> : ""
+                                              info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_2}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_3}</div> </li> : ""
+                                              info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_3}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_4}</div> </li> : ""
+                                              info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_4}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_5}</div> </li> : ""
+                                              info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_5}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_6}</div> </li> : ""
+                                              info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_6}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_7}</div> </li> : ""
+                                              info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_7}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_8?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_8}</div> </li> : ""
+                                              info.li_8?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_8}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_9?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_9}</div> </li> : ""
+                                              info.li_9?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_9}</div> </li> : ""
                                           }
                                          
                                        
@@ -135,31 +135,31 @@ const singleIndex = 0
                                   {
                                       headerInfo.authority.map(info=><li>
                                      {
-                                       info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_1}</div> </li> : ""
+                                       info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_1}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_2}</div> </li> : ""
+                                       info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_2}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_3}</div> </li> : ""
+                                       info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_3}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_4}</div> </li> : ""
+                                       info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_4}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_5}</div> </li> : ""
+                                       info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_5}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_6}</div> </li> : ""
+                                       info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_6}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_7}</div> </li> : ""
+                                       info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_7}</div> </li> : ""
                                       }
                                           
 
@@ -230,7 +230,7 @@ const singleIndex = 0
                   </div>
               </div>
               <div  className="d-flex justify-content-between mt-3 border-top border-secondary">
-                  <div style={{fontSize:"14px", lineHeight:"15px"}} className="fw-bold text-secondary">
+                  <div style={{fontSize:"14px", lineHeight:"20px"}} className="fw-bold text-secondary">
                       <span style={{marginLeft:"5rem", borderBottom:"1px solid grey", marginBottom:"2rem"}}>  Copy To</span>
                       <li>01. Recipient ------------01 Copy</li>
                       <li>02. Personal File ---------01 Copy</li>
@@ -336,40 +336,40 @@ const singleIndex = 0
                                       headerInfo.responsibilities.map(info=><li>
                                       
                                           {
-                                              info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_1}</div> </li> : ""
+                                              info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_1}</div> </li> : ""
                                           }
                                        
                                        
                                           {
-                                              info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_2}</div> </li> : ""
+                                              info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_2}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_3}</div> </li> : ""
+                                              info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_3}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_4}</div> </li> : ""
+                                              info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_4}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_5}</div> </li> : ""
+                                              info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_5}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_6}</div> </li> : ""
+                                              info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_6}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_7}</div> </li> : ""
+                                              info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_7}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_8?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_8}</div> </li> : ""
+                                              info.li_8?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_8}</div> </li> : ""
                                           }
                                        
                                           {
-                                              info.li_9?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_9}</div> </li> : ""
+                                              info.li_9?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_9}</div> </li> : ""
                                           }
                                          
                                        
@@ -386,31 +386,31 @@ const singleIndex = 0
                                   {
                                       headerInfo.authority.map(info=><li>
                                      {
-                                       info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_1}</div> </li> : ""
+                                       info.li_1?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_1}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_2}</div> </li> : ""
+                                       info.li_2?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_2}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_3}</div> </li> : ""
+                                       info.li_3?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_3}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_4}</div> </li> : ""
+                                       info.li_4?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_4}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_5}</div> </li> : ""
+                                       info.li_5?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_5}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_6}</div> </li> : ""
+                                       info.li_6?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_6}</div> </li> : ""
                                       }
                                           
                                      {
-                                       info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"15px"}}>{info.li_7}</div> </li> : ""
+                                       info.li_7?  <li style = {{listStyle:"circle",lineHeight:'22px'}}> <div style={{marginTop:"-1rem",marginLeft:"2rem",lineHeight:"20px"}}>{info.li_7}</div> </li> : ""
                                       }
                                           
 
@@ -480,7 +480,7 @@ const singleIndex = 0
                   </div>
               </div>
               <div  className="d-flex justify-content-between mt-3 border-top border-secondary">
-                  <div style={{fontSize:"14px", lineHeight:"15px"}} className="fw-bold text-secondary">
+                  <div style={{fontSize:"14px", lineHeight:"20px"}} className="fw-bold text-secondary">
                       <span style={{marginLeft:"5rem", borderBottom:"1px solid grey", marginBottom:"2rem"}}>  Copy To</span>
                       <li>01. Recipient ------------01 Copy</li>
                       <li>02. Personal File --------- 01 Copy</li>

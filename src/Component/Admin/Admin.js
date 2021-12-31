@@ -26,7 +26,7 @@ function Admin() {
             designation:"Web Developer (QC)" ,
             contact:"017xxxxxxxxx",
             about:"Excellent Knowledge on garment product quality & Web Development. Full Stack Web Developer. Highly Experienced in HTML, CSS, Bootstrap, JavaScript, ReactJS, & NudeJS. Highly Capable to Develop any web site by using data & Instruction within a short time. ",
-            ImgUrl:"https://i.ibb.co/wKJkMZz/jewel-Rana.png",
+            ImgUrl:"https://i.ibb.co/YyXVR9Q/jewel.png",
             github:"https://github.com/jewelran",
             facebook:"faFacebook",
             linkedIn:"faLinkedinIn",

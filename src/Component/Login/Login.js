@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext,  useEffect,  useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +15,10 @@ function Login() {
   const [newUser, setNewUser] = useState(false);
   const [message, setMessage] = useState("")
   const [signInUser , setSingInUser] = useState({})
+  const [imgUrl, setImgUrl] =useState("") 
+  const {name, } =signInUser
+  console.log("this is name" , name);
+  console.log( "img url found",imgUrl);
   console.log(signInUser , "sign in user is found");
   const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
   
@@ -26,6 +30,7 @@ function Login() {
   console.log(location, "location is here");
   let { from } = location.state || { from: { pathname: "/" } };
 
+ 
   const {
     register,
     handleSubmit,
@@ -36,20 +41,7 @@ function Login() {
     setSingInUser(data)
 
 
-    const imgInfo = new FormData()
-    imgInfo.set("key", "941644256336912a1409c0bcfce50071")
-    imgInfo.append("image", data.img)
-    axios.post("https://api.imgbb.com/1/upload, imgInfo")
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function(err) {
-      console.log(err);
-    })
- 
-   
 
-   handleImg()
     // create user email and password
     if (
       newUser &&
@@ -70,7 +62,7 @@ function Login() {
         fetch("http://localhost:5000/user",{
           method:"POST",
           headers:{"content-type":"application/json"},
-          body:JSON.stringify(data)
+          body:JSON.stringify({data,imgUrl})
         })
         .then((response) => {
           alert("user sign in successfully")
@@ -154,7 +146,22 @@ const userInfoToken = () => {
 
 // img upload 
 const handleImg=(e) => {
-  console.log(e,"this is img data ");
+  console.log(e.target.files[0],"this is img data ");
+  const profileImg = e.target.files[0]
+  const imgInfo = new FormData()
+  imgInfo.set("key", "5bce158fb0a8dfa35765ad620a59622c")
+  imgInfo.append("image", profileImg)
+  axios.post("https://api.imgbb.com/1/upload", imgInfo)
+  .then(function (response) {
+    console.log(response.data.data.display_url);
+    const url = response.data.data.display_url
+    setImgUrl(url)
+  })
+  .catch(function(err) {
+    console.log(err);
+  })
+
+ 
 }
 
   return (
@@ -304,6 +311,17 @@ const handleImg=(e) => {
                         <p>{message}</p>
                       </div>
                 <br />
+                <div className="">
+                  <input   placeholder="Upload Your Image"
+                      onChange={handleImg}
+                      type="file"
+                      id="uploadImg"
+                      style={{
+                        width: "25%",
+                        background: "grey",
+                        display: "none",
+                      }}  />
+                </div>
                 <div className="d-flex justify-content-center">
                   <div className="">
                   {errors.img && (
@@ -312,9 +330,9 @@ const handleImg=(e) => {
                       </span>
                     )}
                     <br />
-                    <input
+                    {/* <input
                       placeholder="Upload Your Image"
-                      onChange={handleImg}
+                      // onChange={handleImg}
                       type="file"
                       id="uploadImg"
                       style={{
@@ -324,7 +342,7 @@ const handleImg=(e) => {
                       }}
                       className="text-white"
                       {...register("img", { required: true })}
-                    />
+                    /> */}
                     <label htmlFor="uploadImg" className="uploadBtn">
                       <span className="uploadImgIcon">
                    

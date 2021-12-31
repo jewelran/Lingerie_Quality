@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,6 +15,27 @@ import { Typography } from '@mui/material/Typography';
 import { userContext } from './../../App';
 function Navigation() {
 
+  const [user, setUser] = useState([])
+  console.log(user);
+const profileImg = user[2]?.imgUrl
+const name = user[2]?.data?.fastName
+const LastName = user[2]?.data?.lastName
+console.log(user[1]?.imgUrl, "user is here");
+console.log(user[1]?.data?.fastName);
+  const localStorageEmail = localStorage.getItem("loggedInUser")
+  const email = "mdjewelranaa6688@gmail.com"
+  console.log(localStorageEmail, "email is here");
+  useEffect (() => {
+    fetch("http://localhost:5000/allUser")
+    .then(res => res.json())
+    .then(data => {
+      setUser(data)
+    })
+  },[])
+
+  const singleUser = user.filter(singleUser => singleUser.email === email)
+  console.log(singleUser, "this is single user");
+
   const [userLoggedIn] = useContext(userContext)
   console.log( "user logged in",userLoggedIn.displayName);
   return (
@@ -25,12 +46,12 @@ function Navigation() {
             <a className="navbar-brand d-flex align-items-center " href="#">
               <img
               className="profileLogo"
-                style={{ width: "100px" , height:"100px" ,background:"#222244", }}
-                src="https://i.ibb.co/X4Yv37f/coo.png"
+                style={{ width: "100px" , height:"100px" ,background:"#222244", borderRadius:"50%" }}
+                src={profileImg}
                 alt=""
               />
              <Link style={{textDecoration:"none"}} to = "/login">
-             <h3 className="text-center text-white mt-2 border-bottom rounded p-1 loginBtn ">{userLoggedIn.displayName? userLoggedIn.displayName:"Log_in"}</h3>
+             <h3 className="text-center text-white mt-2 border-bottom rounded p-1 loginBtn ">{ name? `${name} ${LastName}` :"Log_in"}</h3>
              </Link>
             </a>
             <button
