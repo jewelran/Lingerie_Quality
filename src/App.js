@@ -16,6 +16,7 @@ import { createContext } from 'react';
 import { useState } from 'react';
 import PrivateRoute from './Component/Login/PrivateRoute';
 import NotFound from './Component/NotFound/NotFound';
+import AdminPanel from './Component/Admin/AdminPanel';
 export const userContext = createContext();
 function App() {
   const [userLoggedIn , setUserLoggedIn] = useState({})
@@ -44,6 +45,7 @@ function App() {
         <Route path = "/qualityManual" element = {<QualityManual/>} />
         <Route path = "/routineAndMethod" element = {<RoutineAndMethod/>} />
         <Route path = "/sopFollowChart" element = {<SopFollowChart/>} />
+        <Route path = "/adminPanel" element = {<AdminPanel/>} />
         <Route path = "*" element = {<NotFound/>} />
         
 

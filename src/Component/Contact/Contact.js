@@ -10,6 +10,7 @@ import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faGlobeEurope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css"
 import ContactCard from "./ContactCard";
+import serviceImg from "../Images/bgImg/service.svg"
 
 function Contact() {
     const [massageInfo, setMassageInfo] = useState({})
@@ -83,7 +84,9 @@ function Contact() {
       <div className="container">
      <div className=" pt-5 pb-5 ">
 
-       <h3 className="text-center pb-4 fs-1" style={{fontFamily:"cursive"}}><span>S</span><span>ervice</span></h3>
+      <div className="mb-5 d-flex justify-content-center align-items-center">
+        <img src={serviceImg} alt="" />
+      </div>
     <div className="d-flex justify-content-around">
     {
           admins.map(admin => <ContactCard key = {admin.id} admin = {admin}></ContactCard>)
