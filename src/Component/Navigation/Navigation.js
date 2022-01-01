@@ -16,6 +16,7 @@ import { userContext } from './../../App';
 function Navigation() {
 
   const [user, setUser] = useState([])
+  const [navbar, setNavbar] = useState(false)
   console.log(user);
 const profileImg = user[2]?.imgUrl
 const name = user[2]?.data?.fastName
@@ -38,8 +39,19 @@ console.log(user[1]?.data?.fastName);
 
   const [userLoggedIn] = useContext(userContext)
   console.log( "user logged in",userLoggedIn.displayName);
+
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY>= 80) {
+      setNavbar(true)
+    }
+    else{
+        setNavbar(false)
+    }
+  }
+window.addEventListener("scroll", changeBackground)
   return (
-    <div style={{ background:"#DE0959",}} className ="sticky-top">
+    <div className={navbar?"nabBar active sticky-top" : "navBar "}>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container-fluid ">
@@ -77,7 +89,7 @@ console.log(user[1]?.data?.fastName);
                 className="navbar-nav"
               >
                 <li className="nav-item">
-                  <Link  to= "/home" className="nav-link text-center  navIcons active text-center" aria-current="page" href="#">
+                  <Link  to= "/home" className="nav-link text-center  navIcons  text-center" aria-current="page" href="#">
                     <span style={{display:"block", textAlign:"center", color: "#385723", marginRight: "5px" }}>
                       <FontAwesomeIcon icon={faHome} />
                     </span>{" "}

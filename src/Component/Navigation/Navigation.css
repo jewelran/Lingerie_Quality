@@ -32,3 +32,11 @@
 .loginBtn{
     margin-top: 18px !important;
 }
+.navBar{
+    background-color: transparent;
+   
+}
+.active{
+    background-color: #DE0959;
+    transition: all 0.4s ease-in-out;
+}
