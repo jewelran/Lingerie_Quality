@@ -7,14 +7,14 @@ import {
     Navigate
   } from "react-router-dom";
 import { userContext } from '../../App';
-function PrivateRoute({children, ...rest}) {
+function PrivateRoute({children,}) {
     const [userLoggedIn] = useContext(userContext)
     const token = localStorage.getItem("token")
     console.log(token);
     return (
         <div>
             {
-                userLoggedIn.email || localStorage.getItem("token") ? children : <Navigate to="/login" />
+               userLoggedIn.email || localStorage.getItem("token") ? children : <Navigate to="/login" />
             }
 
         </div>

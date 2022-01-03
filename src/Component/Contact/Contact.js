@@ -22,7 +22,7 @@ function Contact() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/message", {
+    fetch("https://lingerie.herokuapp.com/message", {
       method:"POST",
       headers:{"content-type": "application/json"},
       body: JSON.stringify(data)

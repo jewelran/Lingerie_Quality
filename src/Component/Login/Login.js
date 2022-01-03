@@ -40,7 +40,7 @@ function Login() {
     console.log(data)
     setSingInUser(data)
 
-
+    const {fastName,lastName, email,department,designation} = data;
 
     // create user email and password
     if (
@@ -59,10 +59,10 @@ function Login() {
       updateUserInfo(data.fastName)
   //  user send to data base
       if (user) {
-        fetch("http://localhost:5000/user",{
+        fetch("https://lingerie.herokuapp.com/user",{
           method:"POST",
           headers:{"content-type":"application/json"},
-          body:JSON.stringify({data,imgUrl})
+          body:JSON.stringify({name:fastName,lastName:lastName,department: department, designation:designation, imgUrl:imgUrl, email:email})
         })
         .then((response) => {
           alert("user sign in successfully")

@@ -18,16 +18,11 @@ function Navigation() {
   const [user, setUser] = useState([])
   const [navbar, setNavbar] = useState(false)
   console.log(user);
-const profileImg = user[2]?.imgUrl
-const name = user[2]?.data?.fastName
-const LastName = user[2]?.data?.lastName
-console.log(user[1]?.imgUrl, "user is here");
-console.log(user[1]?.data?.fastName);
-  const localStorageEmail = localStorage.getItem("loggedInUser")
-  const email = "mdjewelranaa6688@gmail.com"
+  const localStorageEmail = localStorage.getItem("user")
+  const email = localStorageEmail
   console.log(localStorageEmail, "email is here");
   useEffect (() => {
-    fetch("http://localhost:5000/allUser")
+    fetch("https://lingerie.herokuapp.com/allUser")
     .then(res => res.json())
     .then(data => {
       setUser(data)
@@ -35,14 +30,14 @@ console.log(user[1]?.data?.fastName);
   },[])
 
   const singleUser = user.filter(singleUser => singleUser.email === email)
+  // const {imgUrl, name, lastName} = singleUser
   console.log(singleUser, "this is single user");
-
   const [userLoggedIn] = useContext(userContext)
   console.log( "user logged in",userLoggedIn.displayName);
 
   const changeBackground = () => {
     console.log(window.scrollY);
-    if (window.scrollY>= 80) {
+    if (window.scrollY>= 100) {
       setNavbar(true)
     }
     else{
@@ -59,11 +54,11 @@ window.addEventListener("scroll", changeBackground)
               <img
               className="profileLogo"
                 style={{ width: "100px" , height:"100px" ,background:"#222244", borderRadius:"50%" }}
-                src={profileImg}
+                src={singleUser[0]?.imgUrl}
                 alt=""
               />
              <Link style={{textDecoration:"none"}} to = "/login">
-             <h3 className="text-center text-white mt-2 border-bottom rounded p-1 loginBtn ">{ name? `${name} ${LastName}` :"Log_in"}</h3>
+             <h3 className="text-center text-white mt-2 border-bottom rounded p-1 loginBtn ">{singleUser.length?`${singleUser[0]?.name} ${singleUser[0]?.lastName}`: "login" }</h3>
              </Link>
             </a>
             <button

@@ -29,7 +29,7 @@ function Footer() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/subscriber",{
+    fetch("https://lingerie.herokuapp.com/subscriber",{
       method:"POST",
       headers:{"content-type": "application/json"},
       body: JSON.stringify(data)
