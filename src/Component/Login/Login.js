@@ -93,9 +93,8 @@ function Login() {
       const message = "LoggedIn successfully"
       setMessage(message)
       setUserLoggedIn(user)
-    localStorage.setItem("loggedInUser",user.email )
-
       userInfoToken()
+      localStorage.setItem("user", user.email)
      navigate(from)
     // ...
   })
