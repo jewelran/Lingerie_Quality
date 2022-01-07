@@ -1,0 +1,59 @@
+.userInfoCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.userCard{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(66, 74, 88);
+    background-color: #003;
+    margin: 10px;
+    border-radius: 7px;
+}
+li{
+    color: white;
+
+}
+a{
+    text-decoration: none;
+}
+.userCard img{
+    margin: 5px;
+}
+.userCard h6 , p{
+    margin-left: 10px;
+}
+.userCard{
+    line-height: 12px;
+}
+.userCard button{
+    margin-top: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.userCard:hover button{
+    opacity: 1;
+}
+.UserSearch{
+    width: 20%;
+    margin-left: 51px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    color: aliceblue;
+}
+.UserSearch:focus{
+    width: 50%;
+    color: white;
+    padding: 0px 10px;
+}
+
+::-webkit-input-placeholder {
+    color: oldlace;
+    opacity: 0.6;
+  }

@@ -1,0 +1,32 @@
+.sixSteps{
+    background-color: #66FF99;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #fff;
+    height: 100%;
+    min-height: 800px;
+}
+.qualityPolicy{
+    border-radius: 10px;
+
+}
+.sixSteps ul li {
+    list-style-type: number;
+    line-height: 60px;
+    font-size: 18px;
+    font-family: cursive;
+}
+.sixSteps .title h1 {
+    text-align: center;
+    font-family: cursive;
+    padding-top: 2rem;
+}
+.sixSteps h4{
+    text-align: center;
+    text-decoration: underline;
+    font-family: cursive;
+    font-size: 30px;
+}
+.policyOption ul li{
+
+    list-style-type: square;
+}
