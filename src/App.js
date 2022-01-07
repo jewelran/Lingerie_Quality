@@ -16,12 +16,11 @@ import { createContext } from 'react';
 import { useState } from 'react';
 import PrivateRoute from './Component/Login/PrivateRoute';
 import NotFound from './Component/NotFound/NotFound';
-import AdminPanel from './Component/Admin/AdminPanel';
 import AllUser from './Component/Admin/MaintainUserInfo/AllUser';
 import SubscriberInfo from './Component/Admin/MaintainUserInfo/SubscriberInfo';
 import Message from './Component/Admin/MaintainUserInfo/Message';
 import AddNotification from './Component/Admin/MaintainUserInfo/AddNotification';
-import Navigation from './Component/Navigation/Navigation';
+
 export const userContext = createContext();
 function App() {
   const [userLoggedIn , setUserLoggedIn] = useState({})
@@ -51,7 +50,6 @@ function App() {
         <Route path = "/qualityManual" element = {<QualityManual/>} />
         <Route path = "/routineAndMethod" element = {<RoutineAndMethod/>} />
         <Route path = "/sopFollowChart" element = {<SopFollowChart/>} />
-        <Route path = "/adminPanel" element = {<AdminPanel/>} />
         <Route path = "/allUser" element = {<AllUser/>} />
         <Route path = "/subscriber" element = {<SubscriberInfo/>} />
         <Route path = "/addNotification" element = {<AddNotification/>} />

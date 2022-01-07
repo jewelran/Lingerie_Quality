@@ -30,10 +30,6 @@ function Navigation() {
   },[])
 
   const singleUser = user.filter(singleUser => singleUser.email === email)
-  // const {imgUrl, name, lastName} = singleUser
-  console.log(singleUser, "this is single user");
-  const [userLoggedIn] = useContext(userContext)
-  console.log( "user logged in",userLoggedIn.displayName);
 
   const changeBackground = () => {
     console.log(window.scrollY);
@@ -173,7 +169,7 @@ window.addEventListener("scroll", changeBackground)
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/adminPanel" className="nav-link text-center  navIcons" href="#">
+                  <Link to="/allUser" className="nav-link text-center  navIcons" href="#">
                     {" "}
                     <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
                       {" "}

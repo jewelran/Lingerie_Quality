@@ -1,7 +1,6 @@
-.userInfoCard{
+.userInfoCard, .AddNotificationCard{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
@@ -12,6 +11,33 @@
     background-color: #003;
     margin: 10px;
     border-radius: 7px;
+}
+.notificationWrap{
+    max-width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #002;
+    border: 1px solid rgb(66, 74, 88);
+    margin: 10px;
+    border-radius: 7px;
+    padding: 10px;
+    
+
+    
+}
+
+.notificationWrap:hover .notificationDeleteBtn button  {
+    display: block;
+    position: absolute;
+}
+.notificationDeleteBtn button {
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+.notificationContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 li{
     color: white;
@@ -56,4 +82,21 @@ a{
 ::-webkit-input-placeholder {
     color: oldlace;
     opacity: 0.6;
+  }
+.AddNotificationCard{
+    padding: 15px;
+    justify-content: center;
+}
+  .AddNotificationCard input{
+        border-radius: 5px;
+        width: 30rem !important;
+        background-color:transparent;
+        border: 1px solid rgb(66, 74, 88); 
+        color: white;
+        
+  }
+  .AddNotificationCard .button{
+      color: white;
+      border-radius: 5px;
+      background-color: orangered;
   }
