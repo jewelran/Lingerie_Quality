@@ -11,7 +11,7 @@ function AddNotification() {
     const onSubmit = data => {
         const timeAndDate = new Date().toDateString()
         console.log(timeAndDate, "time is here");
-        const url = "http://localhost:5000/adminNotification"
+        const url = "https://lingerie.herokuapp.com/adminNotification"
         fetch(url, {
             method:"POST",
             headers: {"content-type": "application/json"},
@@ -26,7 +26,7 @@ function AddNotification() {
     };
 
     useEffect(() => {
-            const url = "http://localhost:5000/allNotification"
+            const url = "https://lingerie.herokuapp.com/allNotification"
             fetch(url)
             .then(res => res.json())
             .then(data => {

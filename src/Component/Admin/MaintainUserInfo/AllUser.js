@@ -7,7 +7,7 @@ import "../AdminPanel.css"
 function AllUser() {
     const [user, setUser] = useState([])
     useEffect(() => {
-            const url = "http://localhost:5000/alluser";
+            const url = "https://lingerie.herokuapp.com/alluser";
             fetch(url)
             .then(res => res.json())
             .then(data => {
