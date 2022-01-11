@@ -14,7 +14,8 @@
 }
 .notificationWrap{
     max-width: 500px;
-    height: 200px;
+    min-height: 200px;
+    height: 100%;
     margin: 0 auto;
     background-color: #002;
     border: 1px solid rgb(66, 74, 88);
@@ -39,10 +40,7 @@
     flex-wrap: wrap;
     align-items: center;
 }
-li{
-    color: white;
 
-}
 a{
     text-decoration: none;
 }

@@ -9,6 +9,7 @@ function AddNotification() {
     const [notification, setNotification] = useState([])
     console.log(notification);
     const onSubmit = data => {
+      console.log(data, "this is data");
         const timeAndDate = new Date().toDateString()
         console.log(timeAndDate, "time is here");
         const url = "https://lingerie.herokuapp.com/adminNotification"
@@ -33,6 +34,21 @@ function AddNotification() {
                 setNotification(data)
             })
     },[])
+
+    const deleteSms =(id) => {
+
+      console.log(id,"this is delete btn");
+      const url = " http://localhost:5000/removeNotification"
+      fetch(url, {
+        method:"POST",
+        headers:{"content-type" : "application/json"},
+        body : JSON.stringify({id:id})
+      })
+      .then((response) => {
+        console.log(response);
+      })
+
+    }
     return (
         <div style={{minHeight:"100vh",background: "#004", height:"100%"}} className=' '>
         <Navigation></Navigation>
@@ -61,9 +77,9 @@ function AddNotification() {
       <br />
       <br />
         <p>Title</p>
-      <input {...register("Title", { required: true })} placeholder='Title' />
+      <input {...register("title", { required: true })} placeholder='Title' />
       <br />
-      {errors.Title && <span style={{color:"red"}}>**</span>}
+      {errors.title && <span style={{color:"red"}}>**</span>}
       <br />
       <br />
       <p>Description</p>
@@ -83,11 +99,12 @@ function AddNotification() {
      </div>
      <div className="container notificationContainer">
          {
-             notification.map(info => <div className='notificationWrap'>
+             notification.map(info => <div key={info._id} className='notificationWrap'>
                  <div className="d-flex justify-content-end notificationDeleteBtn">
-                 <button className="btn btn-danger">Remove</button>
+                 <button onClick={() => deleteSms(info._id)} className="btn btn-danger">Remove</button>
                  </div>
-                 <h4>{info.provider}</h4>
+                 <h4 style={{textAlign:"center"}}>{info.provider}</h4>
+                 <h5>{info.title}</h5>
                  <p>{info.description}</p>
                  <div className="border p-1 border-secondary">
                 <span>Notification time: {info.time}</span>
