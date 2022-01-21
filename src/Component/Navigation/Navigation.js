@@ -16,11 +16,11 @@ import { userContext } from './../../App';
 function Navigation() {
 
   const [user, setUser] = useState([])
-  const [navbar, setNavbar] = useState(false)
-  console.log(user);
+  const [navbar, setNavbar] = useState(false);
+  const [admin, setAdmin] = useState([])
+  console.log(admin,"this is admin here");
   const localStorageEmail = localStorage.getItem("user")
   const email = localStorageEmail
-  console.log(localStorageEmail, "email is here");
   useEffect (() => {
     fetch("https://lingerie.herokuapp.com/allUser")
     .then(res => res.json())
@@ -28,12 +28,20 @@ function Navigation() {
       setUser(data)
     })
   },[])
-
+  useEffect(() => {
+      const url = "http://localhost:5000/admin"
+      fetch(url)
+      .then((res) => res.json())
+      .then((data)=> {
+       setAdmin(data)
+      })
+  },[])
   const singleUser = user.filter(singleUser => singleUser.email === email)
+  const singleAdmin = admin.filter(adminInfo => adminInfo.email === localStorageEmail)
+  
 
   const changeBackground = () => {
-    console.log(window.scrollY);
-    if (window.scrollY>= 100) {
+    if (window.scrollY>= 20) {
       setNavbar(true)
     }
     else{
@@ -168,15 +176,17 @@ window.addEventListener("scroll", changeBackground)
                     </span>
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link to="/allUser" className="nav-link text-center  navIcons" href="#">
-                    {" "}
-                    <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
-                      {" "}
-                      <FontAwesomeIcon icon={faUserShield} />
-                    </span>
-                  </Link>
-                </li>
+               {
+                 singleAdmin[0]?.email ?  <li className="nav-item">
+                 <Link to="/allUser" className="nav-link text-center  navIcons" href="#">
+                   {" "}
+                   <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
+                     {" "}
+                     <FontAwesomeIcon icon={faUserShield} />
+                   </span>
+                 </Link>
+               </li>:""
+               }
               </ul>
             </div>
           </div>
