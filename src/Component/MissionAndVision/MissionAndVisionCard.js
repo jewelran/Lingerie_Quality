@@ -7,7 +7,7 @@ function MissionAndVisionCard() {
     <div className="d-flex justify-content-center mt-5 pt-5">
       <div style={{width:"95%"}} className=" h-100">
         <div className="d-flex  pb-5 h-75 justify-content-start ">
-          <div className="col-md-10 d-flex  bg-light mainMissionContainer">
+          <div className="col-md-10   bg-light mainMissionContainer">
           <div className="col-md-7  missionContainer">
            <div className="pb-3  ">
            <h2 className="text-center">MISSION</h2>
@@ -26,8 +26,8 @@ function MissionAndVisionCard() {
           </div>
           </div>
         </div>
-        <div className="d-flex justify-content-end  visionContainer mt-5 h-75">
-        <div className="col-md-10 d-flex">
+        <div className=" justify-content-end  visionContainer mt-5 h-75">
+        <div className="col-md-10 visionWrap  ">
         <div className="col-md-5 ">
             <img style={{width:"100%", height:"100%",}}  src={visionImg} alt="" />
           </div>

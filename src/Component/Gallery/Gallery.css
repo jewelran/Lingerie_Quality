@@ -176,3 +176,8 @@
    cursor: pointer;
    -webkit-box-reflect: below 20px linear-gradient(0deg, rgb(85, 30, 30));
  }
+@media only screen and (max-width:600px){
+  .mainContainer,.underMainContainer,.centerMainContainer{
+    display: none;
+  }
+}

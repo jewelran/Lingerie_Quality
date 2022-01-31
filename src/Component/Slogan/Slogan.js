@@ -6,7 +6,7 @@ import MD_Signature from "../Images/bgImg/signature.png"
 function Slogan() {
   return (
     <div style={{marginTop:"10%"}}>
-      <div className="d-flex container text-dark ">
+      <div className="sloganWrap container text-dark ">
       <div className="sixSteps col-md-5">
         <div className="title">
         <h1>6 Step Towards</h1>
@@ -105,7 +105,7 @@ function Slogan() {
                </li>
               </ul>
               <div className="d-flex justify-content-end">
-                <img style={{marginTop:"-4rem"}} src={MD_Signature} alt="" />
+                <img style={{marginTop:"-3rem"}} src={MD_Signature} alt="" />
               </div>
             </div>
           </div>

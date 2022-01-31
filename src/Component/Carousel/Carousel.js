@@ -71,7 +71,7 @@ function Carousel() {
         <div class="carousel-inner">
         <div class="carousel-item">
             <img
-              style={{ height: "80vh" }}
+             
               src={DefectNature}
               class="d-block w-100"
               alt="..."
@@ -85,7 +85,7 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              style={{ height: "80vh" }}
+             
               src={DoIt}
               class="d-block w-100"
               alt="..."
@@ -99,7 +99,7 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              style={{ height: "80vh" }}
+             
               src={QualityArt}
               class="d-block w-100"
               alt="..."
@@ -113,7 +113,7 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              style={{ height: "80vh" }}
+             
               src={Happiness}
               class="d-block w-100"
               alt="..."
@@ -128,7 +128,7 @@ function Carousel() {
 
         <div class="carousel-item">
             <img
-              style={{ height: "80vh" }}
+             
               src={QualityControl}
               class="d-block w-100"
               alt="..."
@@ -142,7 +142,7 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              style={{ height: "80vh" }}
+             
               src={QualityOwner}
               class="d-block w-100"
               alt="..."
@@ -156,7 +156,7 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              style={{ height: "80vh" }}
+             
               src={Solution}
               class="d-block w-100"
               alt="..."
@@ -172,7 +172,7 @@ function Carousel() {
    
           <div class="carousel-item active">
             <img
-              style={{ height: "80vh" }}
+             
               src={KeyToSuccess}
               class="d-block w-100"
               alt="..."

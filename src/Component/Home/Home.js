@@ -6,15 +6,15 @@ import Slogan from '../Slogan/Slogan';
 import Footer from './../Footer/Footer';
 import Navigation from './../Navigation/Navigation';
 import Gallery from '../Gallery/Gallery';
-
+import "./Home.css"
 function Home() {
     return (
         <div>
              <Navigation/>
             <Carousel/>
             <MissionAndVisionCard/>
-           <div className="mt-5 pt-5">
-           <Gallery/>
+           <div className="mt-5 pt-5 galleryWap">
+           < Gallery/>
            </div>
             <div className="mt-5">
             <Slogan/>

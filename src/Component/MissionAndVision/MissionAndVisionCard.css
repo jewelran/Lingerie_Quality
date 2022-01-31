@@ -15,6 +15,7 @@
     background-color: orangered;
     font-weight: 500;
 }
+
 .visionContainer img {
     border-radius: 10px 0px 0px 10px;
 }
@@ -24,6 +25,9 @@
     border-bottom: 14px solid white;
     border-radius: 0px 10px 10px 0px;
     height: 60vh;
+}
+.visionWrap{
+    display: flex;
 }
 .visionContainer ul li:first-child{
     margin-top: 0px;
@@ -36,6 +40,8 @@
     border-top: 13px solid #0A0546!important;
     border-bottom: 13px solid #0A0546!important;
     border-radius: 12px !important;
+    display: flex;
+   
 }
 .mainMissionContainer h2{
     color: #0A0546;
@@ -43,3 +49,19 @@
     font-family: cursive;
     
 }
+@media only screen and (max-width: 600px) {
+   .mainMissionContainer{
+       display: block !important;
+   }
+   .visionContainer{
+       padding-bottom: 20px;
+   }
+   .visionWrap{
+       display: block !important;
+   }
+   .visionCard{
+       height: 100% ;
+       border-top: none!important;
+       border-radius: 0px;
+   }
+  }

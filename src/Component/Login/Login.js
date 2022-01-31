@@ -35,17 +35,43 @@ function Login() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data)
-    setSingInUser(data)
+    console.log(signInUser,"this is data")
     
     const {fastName,lastName, email,department,designation,otp} = data;
-    if (department == "Quality") {
+
+    const quality = "Quality"
+    const production = "Production"
+    if (department === department) {
       setQuality(true)
+    }else{
+      setQuality(false) 
+    }
+    if (department == quality) {
+      const currentOtp = 12345
+      if(otp == currentOtp){
+
+    setSingInUser(data)
+
+     }
+     else{
+       alert("Quality otp is incurrect")
+     }
+  
+    }
+   if (department == production) {
+     setQuality(true)
+
+     const currentOtp = 1234
+     if(otp == currentOtp){
+   setSingInUser(data)
+
     }
     else{
-
-      setQuality(false)
+      alert("production otp is incurrect")
     }
+
+   }
+   
     // create user email and password
 //     if (
 //       newUser &&
@@ -260,8 +286,8 @@ const handleImg=(e) => {
                     /> */}
                     <label >Department</label>
                       <select {...register("department", { required: true })} className="w-100 text-white rounded-3 bg-transparent border border-secondary">
-                        <option value="Quality">Quality</option>
-                        <option value="Kc Print ltd.">Production</option>
+                        <option   value="Quality">Quality</option>
+                        <option  value="Production">Production</option>
                         <option value="Management">Management</option>
                         <option value="Others">Others</option>
                       </select>
