@@ -41,7 +41,7 @@ function Admin() {
     return (
         <div className="mt-5 pb-5">
             <h1 style={{fontFamily:"cursive", }} className="text-center mb-2"> <span style={{fontSize:"4rem"}}>S</span>ERVICE</h1>
-           <div style={{maxWidth:"1480px"}} className=" container d-flex justify-content-around mr-6 ">
+           <div style={{maxWidth:"1480px"}} className=" container adminContainer justify-content-around mr-6 ">
            {
                 admins.map(admin => <AdminCard key= {admin.id} admin = {admin}></AdminCard>)
             }

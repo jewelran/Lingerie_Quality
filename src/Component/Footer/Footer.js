@@ -45,8 +45,8 @@ function Footer() {
   console.log(watch("example"));
   return (
     <div className="bg-dark h-50">
-      <div className="container d-flex justify-content-center align-items-center">
-        <div className="d-flex justify-content-between">
+      <div className="container footerContainer">
+        <div className=" footerWrapper justify-content-between">
           <div className="col-md-4 ">
             <h1>
               <span style={{ borderBottom: "3px solid white" }}> About</span> Us
@@ -85,7 +85,7 @@ function Footer() {
               Projects
             </h1>
             <div className="footerImgGallery">
-              <div className="d-flex justify-content-between">
+              <div className="">
                 <img
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"
@@ -98,21 +98,13 @@ function Footer() {
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"
                 />
+                <img
+                  src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
+                  alt="img"
+                />
+              
               </div>
-              <div className="d-flex justify-content-between">
-                <img
-                  src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
-                  alt="img"
-                />
-                <img
-                  src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
-                  alt="img"
-                />
-                <img
-                  src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
-                  alt="img"
-                />
-              </div>
+             
             </div>
           </div>
         </div>
@@ -126,7 +118,7 @@ function Footer() {
           </div>
         </div>
         <div className=" d-flex justify-content-center">
-          <form onSubmit={handleSubmit(onSubmit)} className="d-flex">
+          <form onSubmit={handleSubmit(onSubmit)} className="footerFormWrap">
             <div className="text-center">
             <input className="bg-transparent border  border-secondary m-4 text-white p-2 rounded" {...register("name", { required: true })} placeholder="Your Name" />
             <br />

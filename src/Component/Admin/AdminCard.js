@@ -21,7 +21,7 @@ function AdminCard(props) {
 
 ;
   return (
-    <Card sx={{ maxWidth: 700, marginLeft: "1rem", height: "320px" }}>
+    <Card className="adminCard">
       <CardActionArea className="d-flex profileContainer">
         <CardMedia
           className="adminImg"

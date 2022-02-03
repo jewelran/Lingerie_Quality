@@ -1,13 +1,36 @@
 .footerImgGallery img{
-    width: 200px;
+    width: 210px;
     height:120px;
     border-radius: 5px;
     margin: 5px;
+   
     
 }
-
+.footerImgGallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .submitBtn{
     margin-left: 30px;
     padding:"5px 30px"
+}
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+.footerWrapper{
+    display: flex;
+    
+}
+@media only screen and (max-width:600px){
+        .footerWrapper{
+            display: block;
+        }
+        .footerContainer{
+            display: block;
+        }
 }
