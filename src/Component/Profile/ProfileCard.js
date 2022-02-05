@@ -10,7 +10,7 @@ function ProfileCard(props) {
   const {name, img, id ,title, about} =props.profile
     return (
       <div className=" pt-5 pb-5 m-5">
-        <div  className="d-flex mt-5 justify-content-between">
+        <div  className=" qualityAndProdContainer mt-5 justify-content-between">
           <div style={{width:"16rem"}} className=" col-md-4  profileImgCard underProfileImg Card">
             <img style={{ width: "100%" }} src={img} alt="" />
           </div>

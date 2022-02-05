@@ -26,11 +26,48 @@
     display: flex;
     
 }
+.footerDescription{
+   
+}
+.footerIcons{
+    font-size: 22px;
+    color: white;
+    margin-left: 8px;
+}
+.subscribeBtn:hover{
+    color:white !important ;
+}
 @media only screen and (max-width:600px){
         .footerWrapper{
             display: block;
+
         }
         .footerContainer{
             display: block;
         }
+        .footerDescription{
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .footerImgGallery{
+            margin-top: 20px;
+        }
+        .subscribeWrapper{
+            margin-top: 20px;
+            border-top: 1px solid #fff;
+        }
+        .subscribeBtn{
+           background: rgb(255, 188, 5);
+           margin-top: -20px;
+           margin-left: 20px;
+           color: black !important;
+           font-size: 18px;
+           font-weight: large;
+        }
+        .submitBtn:hover{
+            
+        }
+        
 }

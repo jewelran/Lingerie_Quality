@@ -62,17 +62,17 @@ function Footer() {
             </h1>
             <div style={{marginLeft:"38px"}} className="">
               <div className="">
-              <h2 className="rounded text-primary">
-                <FontAwesomeIcon icon={faFacebook} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Facebook</span>
+              <h2 className="rounded text-secondary">
+                <FontAwesomeIcon icon={faFacebook} /> <span className="footerIcons">Facebook</span>
               </h2>
-              <h2 className="rounded text-primary ">
-                <FontAwesomeIcon icon={faTwitter} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Twitter</span>
+              <h2 className="rounded text-secondary ">
+                <FontAwesomeIcon icon={faTwitter} /> <span className="footerIcons">Twitter</span>
               </h2>
-              <h2 className="rounded text-primary ">
-                <FontAwesomeIcon icon={faInstagram} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Instagram</span>
+              <h2 className="rounded text-secondary ">
+                <FontAwesomeIcon icon={faInstagram} /> <span className="footerIcons" >Instagram</span>
               </h2>
-              <h2 className="rounded text-primary ">
-                <FontAwesomeIcon icon={faLinkedin} /> <span style={{fontSize:"23px", color:"white", marginLeft:"8px"}}>Linkedin</span>
+              <h2 className="rounded text-secondary ">
+                <FontAwesomeIcon icon={faLinkedin} /> <span className="footerIcons" >Linkedin</span>
               </h2>
            
               </div>
@@ -110,14 +110,14 @@ function Footer() {
         </div>
       </div>
       <div className=" container pt-4 pb-5">
-        <div className=" d-flex justify-content-center">
+        <div className=" d-flex justify-content-center footerDescription">
           <div className="col-md-8">
             <p className="text-center">
             Please Hit the Subscribe Button below with your name and Email to Get in touch with us. You are always welcome to share your valuable comments & Suggestions through our contact box. 
             </p>
           </div>
         </div>
-        <div className=" d-flex justify-content-center">
+        <div className=" d-flex justify-content-center subscribeWrapper">
           <form onSubmit={handleSubmit(onSubmit)} className="footerFormWrap">
             <div className="text-center">
             <input className="bg-transparent border  border-secondary m-4 text-white p-2 rounded" {...register("name", { required: true })} placeholder="Your Name" />
@@ -130,7 +130,7 @@ function Footer() {
             {errors.email && <span className="text-danger">**</span>}
               </div>
           <div className="mt-4">
-          <input className="btn btn-dark border border-danger text-secondary" type="submit"  value="Subscribe"/>
+          <input className="btn subscribeBtn btn-dark border border-danger " type="submit"  value="Subscribe"/>
           </div>
            
           </form>

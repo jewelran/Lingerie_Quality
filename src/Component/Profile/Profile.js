@@ -70,13 +70,13 @@ function Profile() {
     <div className="">
        <Navigation/>
       <div className="container  pt-5 pb-5">
-        <div className="d-flex mt-5  justify-content-center">
+        <div className="cooProfile mt-5  justify-content-center">
           <div className="col-md-3  profileImgCard Card">
             <img style={{ width: "100%" }} src={cooOfCompany} alt="" />
           </div>
           
           <div className="col-md-7 profileImgTitle  bg-light Title p-3">
-            <div className="ml-3">
+            <div className="ml-3 cooDescription">
               <h3
                 style={{
                   color: "#002060", 
@@ -132,7 +132,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div className="container d-flex justify-content-center" style={{maxWidth:"1600px"}}>
+      <div className="container  QualityAndProducHead justify-content-center" style={{maxWidth:"1600px"}}>
        {
          profileList.map(profile => <ProfileCard key = {profile.id}  profile={profile}></ProfileCard>)
        }
@@ -140,7 +140,7 @@ function Profile() {
 
       {/* business container */}
 
-      <div className="p-3    d-flex justify-content-between mb-5 mt-5 ">
+      <div className="p-3 businessWrapper  justify-content-between mb-5 mt-5 ">
         {businessDepartment.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"270px"}}>
             <CardMedia  style={{width:"23rem !important"}}>
@@ -176,7 +176,7 @@ function Profile() {
         
       </div>
       {/* hrdDepartment container */}
-      <div className="container    d-flex justify-content-around mb-5 mt-5">
+      <div className="container HRDWrapper justify-content-around mb-5 mt-5">
         {hrdDepartment.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
@@ -209,7 +209,7 @@ function Profile() {
         ))}
       </div>
       {/* qs team  container*/}
-      <div className="p-3    d-flex justify-content-around mb-5 mt-5">
+      <div className="p-3 qsWrapper justify-content-around mb-5 mt-5">
         {qsAndNqc.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
@@ -244,7 +244,7 @@ function Profile() {
 
 
       {/* cad sample file container */}
-      <div className="p-3    d-flex justify-content-between mb-5 mt-5">
+      <div className="p-3  cadSamplePlanningWrapper  justify-content-between mb-5 mt-5">
         {cadSamplePlanning.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
@@ -278,7 +278,7 @@ function Profile() {
       </div>
 
       {/* IE and store */}
-      <div className="container  d-flex justify-content-around mb-5 mt-5">
+      <div className="container ieAndStoreWrapper justify-content-around mb-5 mt-5">
         {ieAndStore.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
@@ -312,7 +312,7 @@ function Profile() {
       </div>
 
       {/* cuttingMaintainceAndEnovation container */}
-      <div className="p-3  pt-4  d-flex justify-content-between mb-5 mt-5">
+      <div className="p-3  pt-4  cuttingMaintainceAndEnovationWrap justify-content-between mb-5 mt-5">
         {cuttingMaintainceAndEnovation.map((profile) => (
            <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
            <CardMedia>
@@ -346,7 +346,7 @@ function Profile() {
       </div>
 
       {/* production container */}
-      <div className="container  pt-4   d-flex justify-content-around mb-5 mt-5">
+      <div className="container  pt-4  productionWrap justify-content-around mb-5 mt-5">
         {production.map((profile) => (
            <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
            <CardMedia>
@@ -379,7 +379,7 @@ function Profile() {
         ))}
       </div>
       {/* quality container */}
-      <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
+      <div className="container pt-4  qualityWrap justify-content-around mb-5 mt-5">
         {quality.map((profile) => (
           <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
           <CardMedia>
@@ -412,7 +412,7 @@ function Profile() {
         ))}
       </div>
       {/* finishing and MQac container */}
-      <div className="container pt-4   d-flex justify-content-around mb-5 mt-5">
+      <div className="container pt-4  finishingAndMqacWrap justify-content-around mb-5 mt-5">
         {finishingAndMqac.map((profile) => (
             <Card className= "profileCard" sx={{ maxWidth: 600, margin:"15px", display: "flex" ,height:"260px"}}>
             <CardMedia>
