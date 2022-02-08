@@ -21,7 +21,7 @@ function AdminCard(props) {
 
 ;
   return (
-    <Card className="adminCard">
+    <Card  className="adminCard">
       <CardActionArea className="d-flex profileContainer">
         <CardMedia
           className="adminImg"

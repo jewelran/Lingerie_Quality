@@ -39,7 +39,9 @@ function Admin() {
      
     ]
     return (
-        <div className="mt-5 pb-5">
+        <div data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" className="mt-5 pb-5">
             <h1 style={{fontFamily:"cursive", }} className="text-center mb-2"> <span style={{fontSize:"4rem"}}>S</span>ERVICE</h1>
            <div style={{maxWidth:"1480px"}} className=" container adminContainer justify-content-around mr-6 ">
            {

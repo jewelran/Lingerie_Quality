@@ -49,7 +49,7 @@ function Gallery() {
         <div className='p-5 mt-5' >
           <h1 style={{fontFamily:"cursive", fontWeight:"800", color:"#0A0546", paddingBottom:"10rem",}} className='text-center'><span  style={{fontSize:"80px"}}>O</span>UR <span  style={{fontSize:"80px"}}>P</span>RODUCTS</h1>
              <div className="mainContainer">
-    <div class="slides">
+    <div  class="slides">
       <img src={albertus} alt=""/>
       <img src={allaBrif} alt=""/>
       <img src={dylan} alt=""/>

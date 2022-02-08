@@ -10,7 +10,7 @@ import QualityOwner from "../Images/carouselImg/QualityOwner.jpg"
 import Solution from "../Images/carouselImg/Solution.jpg"
 function Carousel() {
   return (
-    <div className="container h-75 mt-5">
+    <div  data-aos="zoom-out-right" className="container h-75 mt-5">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"

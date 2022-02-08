@@ -7,7 +7,9 @@ function Slogan() {
   return (
     <div style={{marginTop:"10%"}}>
       <div className="sloganWrap container text-dark ">
-      <div className="sixSteps col-md-5">
+      <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="sixSteps col-md-5">
         <div className="title">
         <h1>6 Step Towards</h1>
         </div>
@@ -53,7 +55,9 @@ function Slogan() {
           </ul>
         </div>
       </div>
-      <div className="qualityPolicy col-md-7 d-flex justify-content-center px-4  ">
+      <div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="qualityPolicy col-md-7 d-flex justify-content-center px-4  ">
         <div style={{borderBottom:"3px solid black",borderRadius:"10px"}} className="bg-white px-2 ">
         <div style={{borderBottom:"3px solid black"}} className=" d-flex justify-content-center">
          <div className="pt-3">
@@ -113,7 +117,9 @@ function Slogan() {
         </div>
       </div>
       </div>
-      <div style={{ marginTop: "2rem" }} className="p-4">
+      <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" style={{ marginTop: "2rem" }} className="p-4">
       <img className="w-100" src={HeaderImg} alt="" />
       </div>
     

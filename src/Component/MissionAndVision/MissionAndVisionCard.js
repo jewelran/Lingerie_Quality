@@ -8,7 +8,8 @@ function MissionAndVisionCard() {
       <div style={{width:"95%"}} className=" h-100">
         <div className="d-flex  pb-5 h-75 justify-content-start ">
           <div className="col-md-10   bg-light mainMissionContainer">
-          <div className="col-md-7  missionContainer">
+          <div data-aos="fade-up"
+     data-aos-duration="2000" className="col-md-7  missionContainer">
            <div className="pb-3  ">
            <h2 className="text-center">MISSION</h2>
             <ul>
@@ -21,17 +22,22 @@ function MissionAndVisionCard() {
             </ul>
            </div>
           </div>
-          <div className="col-md-5 ">
-            <img  style ={{ width:"100%",height:'100%'}}src={mission} alt="" />
+          <div  data-aos="fade-left"
+     data-aos-duration="1000" className="col-md-5 d-flex justify-content-center align-items-center ">
+            <img className='missionImg' src={mission} alt="" />
           </div>
           </div>
         </div>
         <div className=" justify-content-end  visionContainer mt-5 h-75">
         <div className="col-md-10 visionWrap  ">
-        <div className="col-md-5 ">
+        <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000" className="col-md-5 ">
             <img style={{width:"100%", height:"100%",}}  src={visionImg} alt="" />
           </div>
-          <div className="col-md-7 card visionCard">
+          <div data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1000" className="col-md-7 card visionCard">
             <h1  className="text-center pt-2">VISION</h1>
             <ul>
               <li>Stablish zero defect project.</li>
