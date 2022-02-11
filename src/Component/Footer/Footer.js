@@ -44,10 +44,12 @@ function Footer() {
 
   console.log(watch("example"));
   return (
-    <div className="bg-dark h-50">
+    <div data-aos="fade-up"
+    data-aos-duration="2000" className="bg-dark h-50">
       <div className="container footerContainer">
         <div className=" footerWrapper justify-content-between">
-          <div className="col-md-4 ">
+          <div data-aos="zoom-in-right"
+     data-aos-duration="1000" className="col-md-4 ">
             <h1>
               <span style={{ borderBottom: "3px solid white" }}> About</span> Us
             </h1>
@@ -56,7 +58,8 @@ function Footer() {
             </p>
         
           </div>
-          <div style={{margin:"0px 15px"}} className="col-md-3">
+          <div data-aos="zoom-out"
+     data-aos-duration="1000"  style={{margin:"0px 15px"}} className="col-md-3">
             <h1>
               <span style={{ textDecoration: "underline" }}>Get</span> In Touch
             </h1>
@@ -86,19 +89,30 @@ function Footer() {
             </h1>
             <div className="footerImgGallery">
               <div className="">
-                <img
+                <img data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1800"
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"
                 />
                 <img
+                data-aos="flip-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1700"
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"
                 />
                 <img
+                data-aos="flip-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1600"
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"
                 />
                 <img
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500"
                   src="https://media.istockphoto.com/photos/scientists-working-in-the-laboratory-picture-id1096502340?k=20&m=1096502340&s=170667a&w=0&h=MEUpYktW-DkcMetQsardZkKPwPlO9HtZkNy1EEA4j5M="
                   alt="img"
                 />
@@ -110,14 +124,18 @@ function Footer() {
         </div>
       </div>
       <div className=" container pt-4 pb-5">
-        <div className=" d-flex justify-content-center footerDescription">
-          <div className="col-md-8">
+        <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000"  className=" d-flex justify-content-center footerDescription">
+          <div   className="col-md-8">
             <p className="text-center">
             Please Hit the Subscribe Button below with your name and Email to Get in touch with us. You are always welcome to share your valuable comments & Suggestions through our contact box. 
             </p>
           </div>
         </div>
-        <div className=" d-flex justify-content-center subscribeWrapper">
+        <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1200" className=" d-flex justify-content-center subscribeWrapper">
           <form onSubmit={handleSubmit(onSubmit)} className="footerFormWrap">
             <div className="text-center">
             <input className="bg-transparent border  border-secondary m-4 text-white p-2 rounded" {...register("name", { required: true })} placeholder="Your Name" />
@@ -137,7 +155,7 @@ function Footer() {
         </div>
         
       </div>
-      <div className="text-center bg-black p-3 text-white">
+      <div  className="text-center bg-black p-3 text-white">
           <p>@Foolish Developer.All Right Reserved</p>
         </div>
     </div>

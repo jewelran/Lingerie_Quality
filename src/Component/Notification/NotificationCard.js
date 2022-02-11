@@ -5,7 +5,8 @@ function NotificationCard(props) {
 
   return (
     <div>
-      <div className="col-md-12   text-center pt-4 container mb-5 d-flex justify-content-aground align-items-center">
+      <div data-aos="fade-left"
+     data-aos-duration="2000" className="col-md-12   text-center pt-4 container mb-5 d-flex justify-content-aground align-items-center">
         <div
           style={{ boxShadow: "#a39e9e 0px 9px 20px 10px", height: "auto" }}
           className="col-md-6 text-start rounded justify-content-center, align-items-center p-3 "

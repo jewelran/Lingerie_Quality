@@ -84,24 +84,27 @@ function Contact() {
       <div className="container">
      <div className=" pt-5 pb-5 ">
 
-      <div className="mb-5 d-flex justify-content-center align-items-center">
+      <div data-aos="fade-down"
+     data-aos-duration="2000" className="mb-5 d-flex justify-content-center align-items-center">
         <img src={serviceImg} alt="" />
       </div>
-    <div className="d-flex justify-content-around">
+    <div className=" contactCardWrap justify-content-around">
     {
           admins.map(admin => <ContactCard key = {admin.id} admin = {admin}></ContactCard>)
         }
     </div>
      </div>
-        <div className="">
+        <div data-aos="fade-down"
+     data-aos-duration="2000" className="">
           <h1 className="border-bottom p-1 border-secondary">GET IN TOUCH</h1>
           <p className=" pt-3 pb-3">
             You want to talk to me about the problem? I'd be happy to! Just let
             me know when is good for you via the form below or use any of the
             social media channels.{" "}
           </p>
-          <div className="d-flex justify-content-around">
-            <div className="col-md-5 pb-4 text-white">
+          <div  className="contactWrap justify-content-around">
+            <div data-aos="fade-left"
+     data-aos-duration="1500" className="col-md-5 pb-4 text-white">
               <form onSubmit={handleSubmit(onSubmit)}>
                   <h6>NAME</h6>
                 <input  style={{width:"90%"}}  className=" rounded text-white bg-transparent border border-secondary" placeholder="Your Name" {...register("name", { required: true })} />
@@ -125,7 +128,8 @@ function Contact() {
                 <button className="btn btn-secondary bg-transparent hover-danger ">SEND MESSAGE</button>
               </form>
             </div>
-            <div className="col-md-5 contactMedia">
+            <div data-aos="fade-right"
+     data-aos-duration="1500" className="col-md-5 contactMedia">
             <ul>
                 <li> <span className="fs-4  mediaIcon"><FontAwesomeIcon icon= {faPhone}/> </span> <span style={{marginLeft:"10px"}}> <a href="tel:+8801708648728">Call now</a> <span className="fs-3">/</span> 01947946784</span> </li>
                 <li><a href="mailto:"><span className="fs-4  mediaIcon"><FontAwesomeIcon icon = {faEnvelope}/></span> <span style={{marginLeft:"10px"}}>Email</span> </a></li>

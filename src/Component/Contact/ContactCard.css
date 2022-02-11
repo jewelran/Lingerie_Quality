@@ -146,3 +146,49 @@
     transform: scale(0.90);
     background-color: orange;
 }
+.contactCardWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactWrap{
+    display: flex;
+}
+@media only screen and (max-width:600px){
+    .contactCardWrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .contactWrap{
+        display: block;
+    }
+    .contactWrap textarea{
+         width: 90%;
+        
+    }
+    .ContactCardArea .icons li {
+        opacity: 1;
+        position: unset;
+        
+    }
+
+    .ContactCardArea:hover .icons li:nth-child(1){
+    
+        transition: all 0.2s ease;
+    }
+    .ContactCardArea:hover .icons li:nth-child(2){
+        margin-top: 0rem;
+        transition: all 0.3s ease;
+    }
+    .ContactCardArea:hover .icons li:nth-child(3){
+        margin-top: 0rem;
+        transition: all 0.4s ease;
+    }
+    .ContactCardArea:hover .icons li:nth-child(4){
+        margin-top: 0rem;
+        transition: all 0.5s ease;
+    }
+
+}

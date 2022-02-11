@@ -8,11 +8,12 @@ function ContactCard(props) {
   
   
   return (
-    <div className='topContactArea'>
+    <div data-aos="fade-up"
+    data-aos-duration="2000" className='topContactArea'>
       <div className=" ContactCardArea">
-        <div className="wrapper" style={{lineHeight:"5px"}}>
+        <div  className="wrapper" style={{lineHeight:"5px"}}>
           <a href="">
-            <img src={ImgUrl} alt="" />
+            <img   src={ImgUrl} alt="" />
           </a>
          
             <div   className='title'>{name}</div>

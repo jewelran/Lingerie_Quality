@@ -22,8 +22,8 @@
     justify-content: center;
     
 }
-.footerWrapper{
-    display: flex;
+.footerWrapper,.footerFormWrap{
+    display: flex ;
     
 }
 .footerDescription{
@@ -38,7 +38,7 @@
     color:white !important ;
 }
 @media only screen and (max-width:600px){
-        .footerWrapper{
+        .footerWrapper,.footerFormWrap{
             display: block;
 
         }

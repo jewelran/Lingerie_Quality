@@ -27,9 +27,10 @@ function Notification() {
             <div className="text-center p-3">
                 <h1>ATTENTION EVERY BODY!</h1>
             </div>
-            <div className="d-flex justify-content-center">
-                <div className="d-flex">
-                <div className="col-md-6">
+            <div  className="  d-flex justify-content-center">
+                <div className="notificationWrapper">
+                <div data-aos="fade-up"
+     data-aos-duration="2000" className="col-md-6">
                            <img style={{width:'100%'}} src={notificationImg} alt="" />
                            </div>
              <div className="col-md-6">
