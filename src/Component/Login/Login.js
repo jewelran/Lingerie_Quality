@@ -196,7 +196,7 @@ const handleImg=(e) => {
   return (
     <div style={{ background: "#222244" }} className="pb-5 pt-5 loginContainer">
       <div className="container ">
-        <div className="d-flex justify-content-center align-items-center  w-100 pt-5" style={{height:"80vh"}}>
+        <div className="d-flex justify-content-center align-items-center  w-100 pt-5" >
           <div
             style={{ justifyContent: "center" , }}
             className="border loginInput p-5"
@@ -285,11 +285,33 @@ const handleImg=(e) => {
                       {...register("department", { required: true })}
                     /> */}
                     <label >Department</label>
-                      <select {...register("department", { required: true })} className="w-100 text-white rounded-3 bg-transparent border border-secondary">
-                        <option   value="Quality">Quality</option>
-                        <option  value="Production">Production</option>
-                        <option value="Management">Management</option>
-                        <option value="Others">Others</option>
+                      <select {...register("department", { required: true })} className="w-75 text-white rounded-3 bg-transparent border border-secondary">
+                        <option   value="Quality">Top Management
+</option>
+                        <option  value="Production">Business </option>
+                        <option value="Management">HR</option>
+                        <option value="Others">IT</option>
+                        <option value="Others">Accounts</option>
+                        <option value="Others">Electrical </option>
+                        <option value="Others">Lab</option>
+                        <option value="Others">Dyeing </option>
+                        <option value="Others">Knitting </option>
+                        <option value="Others">Printing</option>
+                        <option value="Others">Washing</option>
+                        <option value="Others">MQAC</option>
+                        <option value="Others">Maintenance </option>
+                        <option value="Others">Store</option>
+                        <option value="Others">Planning </option>
+                        <option value="Others">IE </option>
+                        <option value="Others">Sample</option>
+                        <option value="Others">CAD</option>
+                        <option value="Others">Cutting</option>
+                        <option value="Others">Sewing</option>
+                        <option value="Others">Finishing</option>
+                        <option value="Others">Quality Control</option>
+                        <option value="Others">Quality Assurance</option>
+                        <option value="Others">Quality System</option>
+                        <option value="Others">Technical / Innovative</option>
                       </select>
                     <br />
                    {
