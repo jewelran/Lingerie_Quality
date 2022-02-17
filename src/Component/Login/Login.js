@@ -290,28 +290,28 @@ const handleImg=(e) => {
 </option>
                         <option  value="Production">Business </option>
                         <option value="Management">HR</option>
-                        <option value="Others">IT</option>
-                        <option value="Others">Accounts</option>
-                        <option value="Others">Electrical </option>
-                        <option value="Others">Lab</option>
-                        <option value="Others">Dyeing </option>
-                        <option value="Others">Knitting </option>
-                        <option value="Others">Printing</option>
-                        <option value="Others">Washing</option>
-                        <option value="Others">MQAC</option>
-                        <option value="Others">Maintenance </option>
-                        <option value="Others">Store</option>
-                        <option value="Others">Planning </option>
-                        <option value="Others">IE </option>
-                        <option value="Others">Sample</option>
-                        <option value="Others">CAD</option>
-                        <option value="Others">Cutting</option>
-                        <option value="Others">Sewing</option>
-                        <option value="Others">Finishing</option>
-                        <option value="Others">Quality Control</option>
-                        <option value="Others">Quality Assurance</option>
-                        <option value="Others">Quality System</option>
-                        <option value="Others">Technical / Innovative</option>
+                        <option value="IT">IT</option>
+                        <option value="Account">Accounts</option>
+                        <option value="Electrical">Electrical </option>
+                        <option value="Lab">Lab</option>
+                        <option value="Dyeing">Dyeing </option>
+                        <option value="Knitting">Knitting </option>
+                        <option value="Printing">Printing</option>
+                        <option value="Washing">Washing</option>
+                        <option value="MQAC">MQAC</option>
+                        <option value="Maintenance">Maintenance </option>
+                        <option value="Store">Store</option>
+                        <option value="Planning">Planning </option>
+                        <option value="IE">IE </option>
+                        <option value="Sample">Sample</option>
+                        <option value="CAD">CAD</option>
+                        <option value="Cutting">Cutting</option>
+                        <option value="Sewing">Sewing</option>
+                        <option value="Finishing">Finishing</option>
+                        <option value="Quality Control">Quality Control</option>
+                        <option value="Quality Assurance">Quality Assurance</option>
+                        <option value="Quality System">Quality System</option>
+                        <option value="Technical / Innovative">Technical / Innovative</option>
                       </select>
                     <br />
                    {
