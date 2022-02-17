@@ -5,7 +5,6 @@ import "./Gallery.css"
 import albertus from "./Gallery_img/Set/albertus.png"
 import allaBrif from "./Gallery_img/Set/allaBrif.png"
 import dylan from "./Gallery_img/Set/dylan.png"
-import ellen from "./Gallery_img/Set/ellen.png"
 import fionaBikini from "./Gallery_img/Set/fionaBikini.png"
 import friends from "./Gallery_img/Set/friends.png"
 import friendsBrief from "./Gallery_img/Set/friendsBrief.png"
@@ -37,7 +36,6 @@ import swimsuit from "./Gallery_img/Single/swimsuit.png"
 import swimsuit2 from "./Gallery_img/Single/swimsuit2.png"
 import swimsuit3 from "./Gallery_img/Single/swimsuit3.png"
 import swimsuit4 from "./Gallery_img/Single/swimsuit4.png"
-import swimsuit5 from "./Gallery_img/Single/swimsuit5.png"
 import swimsuit6 from "./Gallery_img/Single/swimsuit6.png"
 import swimsuit7 from "./Gallery_img/Single/swimsuit7.png"
 import swimsuit8 from "./Gallery_img/Single/swimsuit8.png"
@@ -53,7 +51,6 @@ function Gallery() {
       <img src={albertus} alt=""/>
       <img src={allaBrif} alt=""/>
       <img src={dylan} alt=""/>
-      <img src={ellen} alt=""/>
       <img src={fionaBikini} alt=""/>
       <img src={friends} alt=""/>
       <img src={friendsBrief} alt=""/>
@@ -90,7 +87,6 @@ function Gallery() {
       <img src={swimsuit2} alt=""/>
       <img src={swimsuit3} alt=""/>
       <img src={swimsuit4} alt=""/>
-      <img src={swimsuit5} alt=""/>
       <img src={swimsuit6} alt=""/>
       <img src={swimsuit7} alt=""/>
       <img src={swimsuit8} alt=""/>
