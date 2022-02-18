@@ -39,6 +39,8 @@ function Login() {
     
     const {fastName,lastName, email,department,designation,otp} = data;
 
+    
+
     // create user email and password
    if (
      newUser &&
