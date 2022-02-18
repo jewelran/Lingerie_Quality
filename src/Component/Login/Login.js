@@ -17,9 +17,9 @@ function Login() {
   const [message, setMessage] = useState("")
   const [signInUser , setSingInUser] = useState({})
   const [imgUrl, setImgUrl] =useState("") 
-  const [verifyOpt, setVerifyOtp] = useState(true)
+  const [verifyOpt, setVerifyOtp] = useState(false)
   const [Otp, setOtp] = useState({})
-  const {name, } =signInUser
+  // const {name, } =signInUser
   // console.log(signInUser , "sign in user is found");
   const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
   
@@ -38,15 +38,22 @@ function Login() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(signInUser,"this is data")
-    console.log(data, "user data is here");
-    
+    // console.log(data, "user data is here");
+    const onTimePass = 12345;
     const {fastName,lastName, email,department,designation,otp} = data;
   
-
     
+    if (department === "QualityControl") {
+      setVerifyOtp(true)
+      
+    }
+    if (department === otp) {
+      setSingInUser(data)
+    }
+
 
     // create user email and password
-//    if (
+//    if ()
 //      newUser &&
 //      data.email &&
 //      data.password &&
@@ -166,7 +173,9 @@ const handleImg=(e) => {
   return (
     <div style={{ background: "#222244",height:"1000px" }} className="pb-5 pt-5 loginContainer">
       <div  style={{ background: "#222244",height:"100%" }}  className="container ">
-        <div className="d-flex justify-content-center align-items-center  w-100 pt-5" >
+       { 
+       !verifyOpt ? <div className="">
+       <div className="d-flex justify-content-center align-items-center  w-100 pt-5" >
           <div
             style={{ justifyContent: "center" ,width:"30em",}}
             className="border loginInput p-5"
@@ -256,10 +265,10 @@ const handleImg=(e) => {
                     /> */}
                     <label >Department</label>
                       <select {...register("department", { required: true })} className="w-75 text-white rounded-3 bg-transparent border border-secondary">
-                        <option   value="Quality">Top Management
+                        <option   value="Top Management">Top Management
 </option>
-                        <option  value="Production">Business </option>
-                        <option value="Management">HR</option>
+                        <option  value="Business">Business </option>
+                        <option value="HR">HR</option>
                         <option value="IT">IT</option>
                         <option value="Account">Accounts</option>
                         <option value="Electrical">Electrical </option>
@@ -468,11 +477,43 @@ const handleImg=(e) => {
             </p>
           )}
         </div>
-        <div className="">
+        
+       </div>: <div className="">
+       <div className="">
           {
-            verifyOpt? <VerifyOtp></VerifyOtp>: ""
+             <div>
+             <div className="container d-flex justify-content-center align-items-center ">
+               <div style={{width:"30em"}} className=" border  border-secondary  p-3 rounded">
+                   <div className="">
+                       <img style={{width:"100%"}} src="https://storecdn.webkul.com/wysiwyg/mega-menu/Website-otp.png" alt="otp img" />
+                   </div>
+                 <h3>Please enter your One Time <br /> Password</h3>
+                 <p>
+                   You entered the correct PIN or password.But now you also need to
+                   enter a valid One Time Password as the second factor.
+                 </p>
+                 <div className="">
+                   <form onSubmit={handleSubmit(onSubmit)}>
+                       {/* errors will return when field validation fails  */}
+                     {errors.otp && <span className="text-danger">**</span>}
+                     <input style={{border:"1px solid darkGray",outline:'none'}} className="w-100 rounded p1 bg-transparent text-white "  {...register("otp", { required: true })} placeholder="enter your otp code" />
+                     
+                       <br /> <br />
+                   <div className="d-flex justify-content-center">
+                       <div className="">
+                       <input className="w-100 btn btn-primary" type="submit" />
+                       </div>
+                   </div>
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </div>
           }
         </div>
+       </div>
+
+       }
       </div>
     </div>
   );
