@@ -8,13 +8,18 @@ function VerifyOtp() {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+      console.log(data, "this is data");
+  };
 
   console.log(watch("example"));
   return (
     <div>
       <div className="container d-flex justify-content-center align-items-center ">
         <div style={{width:"30em"}} className=" border  border-secondary  p-3 rounded">
+            <div className="">
+                <img style={{width:"100%"}} src="https://storecdn.webkul.com/wysiwyg/mega-menu/Website-otp.png" alt="otp img" />
+            </div>
           <h3>Please enter your One Time <br /> Password</h3>
           <p>
             You entered the correct PIN or password.But now you also need to
