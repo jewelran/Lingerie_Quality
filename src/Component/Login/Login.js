@@ -9,6 +9,7 @@ import { firebaseConfig } from './firebaseConfig';
 import { userContext } from './../../App';
 import axios from "axios"
 import { useLocation, useNavigate } from "react-router-dom";
+import VerifyOtp from './VerifyOtp';
 function Login() {
   firebase.initializeApp(firebaseConfig);
 
@@ -16,6 +17,7 @@ function Login() {
   const [message, setMessage] = useState("")
   const [signInUser , setSingInUser] = useState({})
   const [imgUrl, setImgUrl] =useState("") 
+  const [verifyOpt, setVerifyOtp] = useState(true)
   const {name, } =signInUser
   // console.log(signInUser , "sign in user is found");
   const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
@@ -48,7 +50,6 @@ function Login() {
      data.password &&
      data.password === data.confirmPass
    ) {
-     alert("data is ready");
      firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
      .then((result) => {
        // Signed in
@@ -71,9 +72,7 @@ function Login() {
          }
           
        })
-       
      }
-     console.log(user.name);
        // ...
      })
      .catch((error) => {
@@ -466,6 +465,11 @@ const handleImg=(e) => {
               </span>
             </p>
           )}
+        </div>
+        <div className="">
+          {
+            verifyOpt? <VerifyOtp></VerifyOtp>: ""
+          }
         </div>
       </div>
     </div>
