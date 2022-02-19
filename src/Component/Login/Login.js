@@ -38,18 +38,22 @@ function Login() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(signInUser,"this is data")
+    console.log(data,"data is here");
     // console.log(data, "user data is here");
     const onTimePass = 12345;
     const {fastName,lastName, email,department,designation,otp} = data;
-  
-    
+    const sessionStorageOtp  = sessionStorage.setItem("otpPass",data.department);
+    const otpPassword = sessionStorage.getItem("otpPass")
+    console.log(sessionStorageOtp);
     if (department === "QualityControl") {
       setVerifyOtp(true)
       
     }
-    if (department === otp) {
+    if (otpPassword === otp) {
       setSingInUser(data)
+      
     }
+
 
 
     // create user email and password
