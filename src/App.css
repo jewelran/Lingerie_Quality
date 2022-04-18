@@ -1,8 +1,9 @@
 .App{
-  background-image: url("../src/Component/Images/bgImg/uiBg.gif");
-  background-attachment: fixed;
-  background-position: center center;
+  /* background-image: url("../src/Component/Images/bgImg/uiBg.gif"); */
+  /* background-attachment: fixed;
+  background-position: center center; */
   color: white ;
+  background-color: aqua;
   /* background-size: cover; */
 }
 .mainContainer{
