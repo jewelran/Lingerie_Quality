@@ -160,12 +160,7 @@ window.addEventListener("scroll", changeBackground)
                         Routine & method
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/education" className="dropdown-item" href="#">
-                        H&M Education
-                      </Link>
-                    </li>
-                    
+                 
                   </ul>
                 </li>
                 <li className="nav-item">
