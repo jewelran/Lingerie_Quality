@@ -144,7 +144,33 @@ function QualityManual() {
                 <p>2.	Check quality, shade, measurement, color, lettering, comments, care instructions, lay out, safety issues & routine.</p>
             
               </div>
+              <div className="border-bottom p-5 border-top">
               <p style={{fontSize:"16px",fontWeight:"bold"}}>⮚	Store Auditor is responsible for Accessories inspection.</p>
+              <h5>8.2. Fabric Inspection.</h5>
+              <p style={{lineHeight:"20px"}}>After receiving fabric form supplier, we inspect fabric by using 4-point inspection system. Total 20points is our acceptable range. Quality inspectors inspect the fabric and make a report based on found points and share with fabric & cutting quality responsible. After analysis the report we take final decision. Point rating for fabric inspection is given below.</p>
+
+              <p>0 to 3” defect = 1point</p>
+              <p>Over 3” to 6” = 2point</p>
+              <p>Over 6” to 9” = 3point</p>
+              <p>Over 9” defect is count as 4point.</p>
+              <p>Any hole count as 4point.</p>
+            <div className="">
+              <h5>Routine for fabric inspection: -</h5>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </div>
+              </div>
             </div>
           </div>
         </div>
