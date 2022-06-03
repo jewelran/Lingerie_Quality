@@ -30,16 +30,17 @@ function Navigation() {
     })
   },[])
   useEffect(() => {
-      const url = "https://lingerie.herokuapp.com/admin"
+      const url = "http://localhost:5000/admin"
       fetch(url)
       .then((res) => res.json())
       .then((data)=> {
+        console.log(data, "this is admin");
        setAdmin(data)
       })
   },[])
   const singleUser = user.filter(singleUser => singleUser.email === email)
   const singleAdmin = admin.filter(adminInfo => adminInfo.email === email)
-  
+  console.log(singleAdmin,"this is admin");
 
   const changeBackground = () => {
     if (window.scrollY>= 20) {
@@ -179,6 +180,7 @@ window.addEventListener("scroll", changeBackground)
                    <span style={{display:"block", textAlign:"center", color: "#0070C0", marginRight: "5px" }}>
                      {" "}
                      <FontAwesomeIcon icon={faUserShield} />
+                     <p></p>
                    </span>
                  </Link>
                </li>:""

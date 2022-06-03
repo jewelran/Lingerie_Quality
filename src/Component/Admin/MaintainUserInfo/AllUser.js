@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import "../AdminPanel.css"
 function AllUser() {
     const [user, setUser] = useState([])
+    console.log(user, "user here");
     useEffect(() => {
             const url = "https://lingerie.herokuapp.com/alluser";
             fetch(url)
@@ -15,7 +16,22 @@ function AllUser() {
             })
     },[])
 
-
+const handleDeleteUser= (id) => {
+  console.log(id, "this is user id");
+  const url = `http://localhost:5000/deleteUser/${id}`
+  fetch(url, {
+    method:"DELETE"
+  })
+  .then(res  => res.json())
+  .then(data => {
+    if (data.deletedCount > 0) {
+      const remainingUser = user.filter(user => user._id !== id)
+      setUser(remainingUser)
+    }
+  })
+  
+  
+}
 
     return (
         <div style={{height:"100vh",background: "#004"}} className=' '>
@@ -43,7 +59,7 @@ function AllUser() {
                           <img style={{width:"100px", height:"100px",borderRadius:"5px"}} src={userInfo.imgUrl} alt="" />
                           </div>
                           <div className="">
-                            <button className='btn btn-danger'>Delete</button>
+                            <button onClick={()=> handleDeleteUser(userInfo._id)} className='btn btn-danger' >Delete</button>
                           </div>
                         </div>
                         <h6>Name: {userInfo.name} {userInfo.lastName}</h6>

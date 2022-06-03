@@ -4,14 +4,11 @@ import { Link } from 'react-router-dom';
 import "../AdminPanel.css"
 import { useForm } from "react-hook-form";
 function AddNotification() {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     
     const [notification, setNotification] = useState([])
-    console.log(notification);
     const onSubmit = data => {
-      console.log(data, "this is data");
         const timeAndDate = new Date().toDateString()
-        console.log(timeAndDate, "time is here");
         const url = "https://lingerie.herokuapp.com/adminNotification"
         fetch(url, {
             method:"POST",
@@ -20,12 +17,11 @@ function AddNotification() {
         })
         .then((response) => {
             if (response) {
-                alert("notification upload successfully")
                 window.location.reload()
             }
         })
     };
-
+// FIND NOTIFICATION
     useEffect(() => {
             const url = "https://lingerie.herokuapp.com/allNotification"
             fetch(url)
@@ -34,19 +30,20 @@ function AddNotification() {
                 setNotification(data)
             })
     },[])
-
+// DELETE NOTIFICATIONS
     const deleteSms =(id) => {
-
-      console.log(id,"this is delete btn");
-      const url = " http://localhost:5000/removeNotification"
+      const url = `http://localhost:5000/removeNotification/${id}`
       fetch(url, {
-        method:"POST",
-        headers:{"content-type" : "application/json"},
-        body : JSON.stringify({id:id})
+        method:"DELETE",
       })
-      .then((response) => {
-        console.log(response);
+      .then(res => res.json())
+      .then(data => {
+        if (data.deletedCount > 0) {
+          const remainingNotification = notification.filter(notification => notification._id !== id) 
+          setNotification(remainingNotification)
+        }
       })
+     
 
     }
     return (
