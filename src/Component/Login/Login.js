@@ -17,8 +17,7 @@ function Login() {
   const [message, setMessage] = useState("")
   const [signInUser , setSingInUser] = useState({})
   const [imgUrl, setImgUrl] =useState("") 
-  const [verifyOpt, setVerifyOtp] = useState(false)
-  const [Otp, setOtp] = useState({})
+  const [verifyOtp, setVerifyOtp] = useState(false)
   // const {name, } =signInUser
   // console.log(signInUser , "sign in user is found");
   const [userLoggedIn, setUserLoggedIn] = useContext(userContext)
@@ -49,127 +48,139 @@ function Login() {
       setVerifyOtp(true)
       
     }
-    if (otpPassword === otp) {
-      setSingInUser(data)
-      
-    }
+   
 
 
 
     // create user email and password
-//    if ()
-//      newUser &&
-//      data.email &&
-//      data.password &&
-//      data.password === data.confirmPass
-//    ) {
-//      firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
-//      .then((result) => {
-//        // Signed in
-//        const user = result.user;
-//      setUserLoggedIn(user)
-//      localStorage.setItem("user", user.email)
-//      updateUserInfo(data.fastName)
+   if (
+     newUser &&
+     data.email &&
+     data.password &&
+     data.password === data.confirmPass
+   ) {
+     firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
+     .then((result) => {
+       // Signed in
+       const user = result.user;
+     setUserLoggedIn(user)
+     localStorage.setItem("user", user.email)
+     updateUserInfo(data.fastName)
 // //  user send to data base
-//      if (user) {
-//        fetch("https://lingerie.herokuapp.com/user",{
-//          method:"POST",
-//          headers:{"content-type":"application/json"},
-//          body:JSON.stringify({name:fastName,lastName:lastName,department: department, designation:designation, imgUrl:imgUrl, email:email})
-//        })
-//        .then((response) => {
-//          alert("user sign in successfully")
+        if (data.otp && user) {
+          fetch("https://lingerie.herokuapp.com/user",{
+            method:"POST",
+            headers:{"content-type":"application/json"},
+            body:JSON.stringify({name:fastName,lastName:lastName,department: department, designation:designation, imgUrl:imgUrl, email:email})
+          })
+          .then((response) => {
+            alert("user sign in successfully")
+   
+            if (response) {
+              navigate(from)
+            }
+             
+          }) 
+        }
+        if(user) {
+       fetch("https://lingerie.herokuapp.com/user",{
+         method:"POST",
+         headers:{"content-type":"application/json"},
+         body:JSON.stringify({name:fastName,lastName:lastName,department: department, designation:designation, imgUrl:imgUrl, email:email})
+       })
+       .then((response) => {
+         alert("user sign in successfully")
 
-//          if (response) {
-//            navigate(from)
-//          }
+         if (response) {
+           navigate(from)
+         }
           
-//        })
-//      }
-//        // ...
-//      })
-//      .catch((error) => {
-//        var errorMessage = error.message;
-//        setMessage(errorMessage)
-//        // ..
-//      });
-  //  }
+       })
+     }
+       // ...
+     })
+     .catch((error) => {
+       var errorMessage = error.message;
+       setMessage(errorMessage)
+       // ..
+     });
+   }
    
 // // sign in with email and password
 
-//    if (!newUser && data.email && data.password) {
-//      firebase.auth().signInWithEmailAndPassword(data.email, data.password)
-//  .then((res) => {
-//      const user= res.user
-//      const message = "LoggedIn successfully"
-//      setMessage(message)
-//      setUserLoggedIn(user)
-//      userInfoToken()
-//      localStorage.setItem("user", user.email)
-//     navigate(from)
+   if (!newUser && data.email && data.password) {
+     firebase.auth().signInWithEmailAndPassword(data.email, data.password)
+ .then((res) => {
+     const user= res.user
+     const message = "LoggedIn successfully"
+     setMessage(message)
+     setUserLoggedIn(user)
+     userInfoToken()
+     localStorage.setItem("user", user.email)
+    navigate(from)
 //    // ...
-//  })
-//  .catch((error) => {
-//    var errorMessage = error.message;
-//    console.log(error.message)
-//    setMessage(errorMessage);
-//  });
+ })
+ .catch((error) => {
+   var errorMessage = error.message;
+   console.log(error.message)
+   setMessage(errorMessage);
+ });
       
-//    }
+   }
 
  };
 
-// // update user info
+// update user info
 
 const updateUserInfo = (userName) => {
   
-// const user = firebase.auth().currentUser;
+const user = firebase.auth().currentUser;
 
-// user.updateProfile({
-//  displayName: userName
+user.updateProfile({
+ displayName: userName
   
-// }).then(() => {
-//  console.log("user name update successfully");
-//  // Update successful
-//  // ...
-// }).catch((error) => {
-//  console.log(error);
-//  // An error occurred
-//  // ...
-// });  
+}).then(() => {
+ console.log("user name update successfully");
+ // Update successful
+ // ...
+}).catch((error) => {
+ console.log(error);
+ // An error occurred
+ // ...
+});  
 
 }
 
  // verify id token
 const userInfoToken = () => {
-//  firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
-//    localStorage.setItem("token", idToken)
-//    console.log(idToken);
+ firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
+   localStorage.setItem("token", idToken)
+   console.log(idToken);
   
-//  })
-//  .catch(function(error) {
-//    console.log(error);
-//  })
+ })
+ .catch(function(error) {
+   console.log(error);
+ })
 }
 
 
 
 // img upload 
 const handleImg=(e) => {
-  // console.log(e.target.files[0],"this is img data ");
-  // const profileImg = e.target.files[0]
-  // const imgInfo = new FormData()
-  // imgInfo.set("key", "5bce158fb0a8dfa35765ad620a59622c")
-  // imgInfo.append("image", profileImg)
-  // axios.post("https://api.imgbb.com/1/upload", imgInfo)
-  // .then(function (response) {
-  //  console.log(response.data.data.display_url);
-  //  const url = response.data.data.display_url
-  //  setImgUrl(url)
-  // })
-  // .catch(function(err) {
-  //  console.log(err);
-  // })
+  console.log(e.target.files[0],"this is img data ");
+  const profileImg = e.target.files[0]
+  const imgInfo = new FormData()
+  imgInfo.set("key", "5bce158fb0a8dfa35765ad620a59622c")
+  imgInfo.append("image", profileImg)
+  axios.post("https://api.imgbb.com/1/upload", imgInfo)
+  .then(function (response) {
+   console.log(response.data.data.display_url);
+   const url = response.data.data.display_url
+   setImgUrl(url)
+  })
+  .catch(function(err) {
+   console.log(err);
+  })
 
  
 }
@@ -178,7 +189,7 @@ const handleImg=(e) => {
     <div style={{ background: "#222244",height:"1000px" }} className="pb-5 pt-5 loginContainer">
       <div  style={{ background: "#222244",height:"100%" }}  className="container ">
        { 
-       !verifyOpt ? <div className="">
+       !verifyOtp ? <div className="">
        <div className="d-flex justify-content-center align-items-center  w-100 pt-5" >
           <div
             style={{ justifyContent: "center" ,width:"30em",}}
