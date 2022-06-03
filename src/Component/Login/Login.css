@@ -8,7 +8,7 @@
 }
 
 .loginContainer{
-    height: 100vh;
+    height: auto !important;
     padding-bottom: 2rem;
     
 }

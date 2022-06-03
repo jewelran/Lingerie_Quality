@@ -48,7 +48,10 @@ function Login() {
       setVerifyOtp(true)
       
     }
-   
+    if (otpPassword === otp) {
+      setSingInUser(data)
+      
+    }
 
 
 
@@ -66,23 +69,8 @@ function Login() {
      setUserLoggedIn(user)
      localStorage.setItem("user", user.email)
      updateUserInfo(data.fastName)
-// //  user send to data base
-        if (data.otp && user) {
-          fetch("https://lingerie.herokuapp.com/user",{
-            method:"POST",
-            headers:{"content-type":"application/json"},
-            body:JSON.stringify({name:fastName,lastName:lastName,department: department, designation:designation, imgUrl:imgUrl, email:email})
-          })
-          .then((response) => {
-            alert("user sign in successfully")
-   
-            if (response) {
-              navigate(from)
-            }
-             
-          }) 
-        }
-        if(user) {
+//  user send to data base
+     if (user) {
        fetch("https://lingerie.herokuapp.com/user",{
          method:"POST",
          headers:{"content-type":"application/json"},
@@ -118,7 +106,7 @@ function Login() {
      userInfoToken()
      localStorage.setItem("user", user.email)
     navigate(from)
-//    // ...
+   // ...
  })
  .catch((error) => {
    var errorMessage = error.message;
@@ -130,7 +118,7 @@ function Login() {
 
  };
 
-// update user info
+// // update user info
 
 const updateUserInfo = (userName) => {
   
@@ -195,11 +183,43 @@ const handleImg=(e) => {
             style={{ justifyContent: "center" ,width:"30em",}}
             className="border loginInput p-5"
           >
-            <h3 style={{ fontFamily: "cursive" }} className="pb-4">
+            <h3 style={{ fontFamily: "cursive"  }} className="pb-4 text-center">
               {!newUser ? <span>Log-In</span> : <span>Sign-Up</span>}
             </h3>
             {newUser ? (
               <form onSubmit={handleSubmit(onSubmit)}>
+
+<div className="">
+                  <input   placeholder="Upload Your Image"
+                      onChange={handleImg}
+                      type="file"
+                      id="uploadImg"
+                      style={{
+                        width: "25%",
+                        background: "grey",
+                        display: "none",
+                      }}  />
+                </div>
+                <div className="d-flex justify-content-center">
+                  <div className="">
+                  {errors.img && (
+                      <span style={{color: "red", fontSize:"18px" }}>
+                       **
+                      </span>
+                    )}
+                    <br />
+                 
+                    <label htmlFor="uploadImg" className="uploadBtn">
+                      <span className="uploadImgIcon">
+                   
+
+                        <FontAwesomeIcon icon={faUserTie} />
+                      </span>
+                    </label>
+                    <br />
+                  </div>
+                </div>
+
                 <div className="d-flex justify-content-between">
                   <div className="">
                   {errors.fastName && (
@@ -363,36 +383,7 @@ const handleImg=(e) => {
                         <p>{message}</p>
                       </div>
                 <br />
-                <div className="">
-                  <input   placeholder="Upload Your Image"
-                      onChange={handleImg}
-                      type="file"
-                      id="uploadImg"
-                      style={{
-                        width: "25%",
-                        background: "grey",
-                        display: "none",
-                      }}  />
-                </div>
-                <div className="d-flex justify-content-center">
-                  <div className="">
-                  {errors.img && (
-                      <span style={{color: "red", fontSize:"18px" }}>
-                       **
-                      </span>
-                    )}
-                    <br />
-                 
-                    <label htmlFor="uploadImg" className="uploadBtn">
-                      <span className="uploadImgIcon">
-                   
-
-                        <FontAwesomeIcon icon={faUserTie} />
-                      </span>
-                    </label>
-                    <br />
-                  </div>
-                </div>
+                
                 <br />
                 <div className="d-flex justify-content-center">
                   <input

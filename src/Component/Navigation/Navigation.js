@@ -21,6 +21,7 @@ function Navigation() {
   console.log(admin,"this is admin here");
   const localStorageEmail = localStorage.getItem("user")
   const email = localStorageEmail
+  console.log(email);
   useEffect (() => {
     fetch("https://lingerie.herokuapp.com/allUser")
     .then(res => res.json())
@@ -29,7 +30,7 @@ function Navigation() {
     })
   },[])
   useEffect(() => {
-      const url = "http://localhost:5000/admin"
+      const url = "https://lingerie.herokuapp.com/admin"
       fetch(url)
       .then((res) => res.json())
       .then((data)=> {
@@ -37,7 +38,7 @@ function Navigation() {
       })
   },[])
   const singleUser = user.filter(singleUser => singleUser.email === email)
-  const singleAdmin = admin.filter(adminInfo => adminInfo.email === localStorageEmail)
+  const singleAdmin = admin.filter(adminInfo => adminInfo.email === email)
   
 
   const changeBackground = () => {
@@ -159,12 +160,7 @@ window.addEventListener("scroll", changeBackground)
                         Routine & method
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/education" className="dropdown-item" href="#">
-                        H&M Education
-                      </Link>
-                    </li>
-                    
+                 
                   </ul>
                 </li>
                 <li className="nav-item">

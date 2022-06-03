@@ -12,11 +12,11 @@ function Notification() {
     // notification
     const [notification, setNotification] = useState([])
     useEffect(()=> {
-        const url = "http://localhost:5000/allNotification"
+        const url = "https://lingerie.herokuapp.com/allNotification"
         fetch(url)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            console.log(data,"this is notification");
             setNotification(data)
         })
     },[])

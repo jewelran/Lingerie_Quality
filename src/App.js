@@ -8,7 +8,6 @@ import Login from './Component/Login/Login';
 import Notification from './Component/Notification/Notification';
 import Contact from './Component/Contact/Contact';
 import OrganizationalChart from './Component/Organizational/OrganizationalChart ';
-import Education from './Component/ManagementTeam/ManagementContainer/H&M_Education/Education';
 import QualityManual from './Component/ManagementTeam/ManagementContainer/QualityManual/QualityManual';
 import RoutineAndMethod from './Component/ManagementTeam/ManagementContainer/RoutineAndMethod/RoutineAndMethod';
 import SopFollowChart from './Component/ManagementTeam/ManagementContainer/SopAndFollowChart/SopFollowChart';
@@ -46,7 +45,6 @@ function App() {
         <Route path = "/notification" element = {<Notification/>} />
         <Route path = "/contact" element = {<Contact/>} />
         <Route path = "/organizational_chart" element = {<OrganizationalChart/>} />
-        <Route path = "/education" element = {<Education/>} />
         <Route path = "/qualityManual" element = {<QualityManual/>} />
         <Route path = "/routineAndMethod" element = {<RoutineAndMethod/>} />
         <Route path = "/sopFollowChart" element = {<SopFollowChart/>} />
