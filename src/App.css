@@ -1,9 +1,10 @@
 .App{
-  background-image: url("../src/Component/Images/bgImg/uiBg.gif");
+  /* background-image: url("../src/Component/Images/bgImg/uiBg.gif");
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center center; */
   color: white ;
   /* background-size: cover; */
+  background-color: aqua;
 }
 .mainContainer{
   max-width: 1800px;
