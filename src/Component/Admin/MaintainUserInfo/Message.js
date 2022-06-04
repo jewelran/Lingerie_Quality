@@ -5,7 +5,7 @@ import "../AdminPanel.css"
 function Message() {
   const [userMessage, setUserMessage]= useState([]);
   useEffect(()=> {
-    const url = "http://localhost:5000/notification";
+    const url = "https://lingerie.herokuapp.com/notification";
     fetch(url)
     .then(res => res.json())
     .then(data => {

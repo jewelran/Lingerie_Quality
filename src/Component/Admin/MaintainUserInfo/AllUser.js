@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import "../AdminPanel.css"
+import Sidebar from './Sidebar';
 function AllUser() {
     const [user, setUser] = useState([])
     console.log(user, "user here");
@@ -18,7 +19,7 @@ function AllUser() {
 
 const handleDeleteUser= (id) => {
   console.log(id, "this is user id");
-  const url = `http://localhost:5000/deleteUser/${id}`
+  const url = `https://lingerie.herokuapp.com/deleteUser/${id}`
   fetch(url, {
     method:"DELETE"
   })
@@ -37,13 +38,9 @@ const handleDeleteUser= (id) => {
         <div style={{height:"100vh",background: "#004"}} className=' '>
         <Navigation></Navigation>
      <div className="container d-flex justify-content-center mt-4">
-       <div style={{background:"#002",maxHeight:"500px"}} className="col-md-3 ">
-         <ul>
-         <Link to = "/allUser"> <li style={{color:"white"}}>All User</li></Link>
-         <Link to ="/subscriber"><li> All Subscriber </li></Link>
-         <Link to ="/message"><li> Message info </li></Link>
-         <Link to ="/addNotification"> <li>Add Notification</li></Link>
-         </ul>
+     
+       <div className="">
+         <Sidebar></Sidebar>
        </div>
        <div className="col-md-9">
      <div className=" d-flex justify-content-around">

@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 function SubscriberInfo() {
   const [subscribe, setSubscribe] = useState([]);
   useEffect(()=> {
-    const url = "http://localhost:5000/subscriber";
+    const url = "https://lingerie.herokuapp.com/subscriber";
     fetch(url)
     .then(res => res.json())
     .then(data => {

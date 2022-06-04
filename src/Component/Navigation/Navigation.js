@@ -30,7 +30,7 @@ function Navigation() {
     })
   },[])
   useEffect(() => {
-      const url = "http://localhost:5000/admin"
+      const url = "https://lingerie.herokuapp.com/admin"
       fetch(url)
       .then((res) => res.json())
       .then((data)=> {

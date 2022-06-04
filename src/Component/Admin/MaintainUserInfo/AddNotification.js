@@ -3,6 +3,7 @@ import Navigation from './../../Navigation/Navigation';
 import { Link } from 'react-router-dom';
 import "../AdminPanel.css"
 import { useForm } from "react-hook-form";
+import Sidebar from './Sidebar';
 function AddNotification() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     
@@ -32,7 +33,7 @@ function AddNotification() {
     },[])
 // DELETE NOTIFICATIONS
     const deleteSms =(id) => {
-      const url = `http://localhost:5000/removeNotification/${id}`
+      const url = `https://lingerie.herokuapp.com/removeNotification/${id}`
       fetch(url, {
         method:"DELETE",
       })
@@ -51,12 +52,7 @@ function AddNotification() {
         <Navigation></Navigation>
      <div className="container d-flex justify-content-center mt-4">
        <div style={{background:"#002",maxHeight:"500px"}} className="col-md-3 ">
-         <ul>
-         <Link to = "/allUser"> <li style={{color:"white"}}>All User</li></Link>
-         <Link to ="/subscriber"><li> All Subscriber </li></Link>
-         <Link to ="/message"><li> Message info </li></Link>
-         <Link to ="/addNotification"> <li>Add Notification</li></Link>
-         </ul>
+        <Sidebar></Sidebar>
        </div>
        <div className="col-md-9">
     
